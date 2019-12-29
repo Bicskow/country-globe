@@ -1,0 +1,26 @@
+{
+  "name": "country-globe",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@types/three": "^0.103.2",
+    "three": "^0.112.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.1",
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "clean": "del /F /Q dist\\*",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "build": "(tsc -p ./tsconfig.json) & (npx webpack)"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
