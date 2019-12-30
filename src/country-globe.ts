@@ -1,60 +1,18 @@
 import * as THREE from 'three';
 
 export default class CountryGlobe {
-  container: Element;
-  scene: THREE.Scene;
-  renderer: THREE.WebGLRenderer;
-  camera: THREE.PerspectiveCamera;
-  geometry: THREE.SphereGeometry;
-  texture: THREE.Texture;
-  material: THREE.MeshPhongMaterial;
-  mesh: THREE.Mesh;
+  private container: Element;
+  private scene: THREE.Scene;
+  private renderer: THREE.WebGLRenderer;
+  private camera: THREE.PerspectiveCamera;
+  private geometry: THREE.SphereGeometry;
+  private texture: THREE.Texture;
+  private material: THREE.MeshPhongMaterial;
+  private mesh: THREE.Mesh;
 
-  mouseDown: boolean = false;
-  mouseX: number = 0;
-  mouseY: number = 0;
-
-  render() {
-    requestAnimationFrame(this.render.bind(this));
-    this.renderer.render(this.scene, this.camera);
-  }
-
-  rotateGlobe(deltaX: number, deltaY: number) {
-    this.mesh.rotation.y += deltaX / 100;
-    this.mesh.rotation.x += deltaY / 100;
-  }
-
-  onMouseMove(evt: MouseEvent) {
-    if (!this.mouseDown) {
-      return;
-    }
-
-    evt.preventDefault();
-
-    var deltaX = evt.clientX - this.mouseX,
-      deltaY = evt.clientY - this.mouseY;
-    this.mouseX = evt.clientX;
-    this.mouseY = evt.clientY;
-    this.rotateGlobe(deltaX, deltaY);
-  }
-
-  onMouseDown(evt: MouseEvent) {
-    evt.preventDefault();
-
-    this.mouseDown = true;
-    this.mouseX = evt.clientX;
-    this.mouseY = evt.clientY;
-  }
-
-  onMouseUp(evt: MouseEvent) {
-    evt.preventDefault();
-
-    this.mouseDown = false;
-  }
-
-  onMouseWheel(event: WheelEvent) {
-    this.camera.position.z += event.deltaY * 0.3;
-  }
+  private mouseDown: boolean = false;
+  private mouseX: number = 0;
+  private mouseY: number = 0;
 
   constructor(ct: Element) {
     this.container = ct;
@@ -84,11 +42,11 @@ export default class CountryGlobe {
     this.mesh.rotation.set(Math.PI / 4, Math.PI / 4, 0);
     this.scene.add(this.mesh);
 
-    var light = new THREE.PointLight(0xffffff, 1, 1000);
+    const light = new THREE.PointLight(0xffffff, 1, 1000);
     light.position.set(500, 50, 500);
     this.scene.add(light);
 
-    var light2 = new THREE.AmbientLight(0x808080);
+    const light2 = new THREE.AmbientLight(0x808080);
     this.scene.add(light2);
 
     this.container.addEventListener('mousemove', this.onMouseMove.bind(this) as any);
@@ -97,6 +55,48 @@ export default class CountryGlobe {
     this.container.addEventListener('mousewheel', this.onMouseWheel.bind(this) as any);
 
     this.render();
+  }
+
+  private render() {
+    requestAnimationFrame(this.render.bind(this));
+    this.renderer.render(this.scene, this.camera);
+  }
+
+  private rotateGlobe(deltaX: number, deltaY: number) {
+    this.mesh.rotation.y += deltaX / 100;
+    this.mesh.rotation.x += deltaY / 100;
+  }
+
+  private onMouseMove(evt: MouseEvent) {
+    if (!this.mouseDown) {
+      return;
+    }
+
+    evt.preventDefault();
+
+    const deltaX = evt.clientX - this.mouseX;
+    const deltaY = evt.clientY - this.mouseY;
+    this.mouseX = evt.clientX;
+    this.mouseY = evt.clientY;
+    this.rotateGlobe(deltaX, deltaY);
+  }
+
+  private onMouseDown(evt: MouseEvent) {
+    evt.preventDefault();
+
+    this.mouseDown = true;
+    this.mouseX = evt.clientX;
+    this.mouseY = evt.clientY;
+  }
+
+  private onMouseUp(evt: MouseEvent) {
+    evt.preventDefault();
+
+    this.mouseDown = false;
+  }
+
+  private onMouseWheel(event: WheelEvent) {
+    this.camera.position.z += event.deltaY * 0.3;
   }
 }
 
