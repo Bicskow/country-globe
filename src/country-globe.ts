@@ -6,7 +6,7 @@ export default class CountryGlobe {
   private renderer: THREE.WebGLRenderer;
   private camera: THREE.PerspectiveCamera;
   private geometry: THREE.SphereGeometry;
-  private texture: THREE.Texture;
+  private texture = <THREE.Texture[]>[];
   private material: THREE.MeshPhongMaterial;
   private mesh: THREE.Mesh;
 
@@ -35,9 +35,11 @@ export default class CountryGlobe {
     });
 
     this.geometry = new THREE.SphereGeometry(5, 100, 100);
-    this.texture = new THREE.TextureLoader().load('img/World_location_map_(equirectangular_191).png');
+    
+    this.texture.push(new THREE.TextureLoader().load('img/w1.png'));
+    this.texture.push(new THREE.TextureLoader().load('img/w2.png'));
 
-    this.material = new THREE.MeshPhongMaterial({ map: this.texture });
+    this.material = new THREE.MeshPhongMaterial({ map: this.texture[0] });
     this.mesh = new THREE.Mesh(this.geometry, this.material);
     this.mesh.rotation.set(Math.PI / 4, Math.PI / 4, 0);
     this.scene.add(this.mesh);
@@ -55,6 +57,11 @@ export default class CountryGlobe {
     this.container.addEventListener('mousewheel', this.onMouseWheel.bind(this) as any);
 
     this.render();
+  }
+
+  public setTexture(){
+    this.material.map = this.texture[1];
+    this.material.map.needsUpdate = true;
   }
 
   private render() {
@@ -83,6 +90,8 @@ export default class CountryGlobe {
 
   private onMouseDown(evt: MouseEvent) {
     evt.preventDefault();
+
+    this.setTexture();
 
     this.mouseDown = true;
     this.mouseX = evt.clientX;
