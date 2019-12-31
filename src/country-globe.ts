@@ -6,7 +6,7 @@ export default class CountryGlobe {
   private renderer: THREE.WebGLRenderer;
   private camera: THREE.PerspectiveCamera;
   private geometry: THREE.SphereGeometry;
-  private texture = <THREE.Texture[]>[];
+  private texture = [] as THREE.Texture[];
   private material: THREE.MeshPhongMaterial;
   private mesh: THREE.Mesh;
 
@@ -35,7 +35,7 @@ export default class CountryGlobe {
     });
 
     this.geometry = new THREE.SphereGeometry(5, 100, 100);
-    
+
     this.texture.push(new THREE.TextureLoader().load('img/w1.png'));
     this.texture.push(new THREE.TextureLoader().load('img/w2.png'));
 
@@ -59,9 +59,17 @@ export default class CountryGlobe {
     this.render();
   }
 
-  public setTexture(){
+  public setTexture() {
     this.material.map = this.texture[1];
     this.material.map.needsUpdate = true;
+  }
+
+  public addBox() {
+    const geometry = new THREE.BoxGeometry(2, 2, 1);
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const cube = new THREE.Mesh(geometry, material);
+    cube.position.setY(6);
+    this.scene.add(cube);
   }
 
   private render() {
@@ -91,7 +99,7 @@ export default class CountryGlobe {
   private onMouseDown(evt: MouseEvent) {
     evt.preventDefault();
 
-    this.setTexture();
+    this.addBox();
 
     this.mouseDown = true;
     this.mouseX = evt.clientX;
