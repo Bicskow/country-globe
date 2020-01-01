@@ -82,7 +82,7 @@ export default class CountryGlobe {
   public loadGeoJsonData(data: any){
     
     for (let feature of data["features"]) {
-      if((feature["properties"]["ADMIN"] == "Italy") || true){
+      if((feature["properties"]["ADMIN"] == "Hungary")){
         for (let entry of feature["geometry"]["coordinates"]) {
           for (let entry2 of entry) {
             const geometry = new THREE.Geometry();
@@ -98,6 +98,10 @@ export default class CountryGlobe {
             } );
             const mesh = new THREE.Line(geometry, material);
             this.scene.add(mesh);
+            const OBJExporter = require('three-obj-exporter');
+            const exporter = new OBJExporter();
+            const result = exporter.parse(mesh);
+            console.log(result);
           }
         }
       }
