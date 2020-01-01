@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import $ from "jquery";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 
 export default class CountryGlobe {
   private container: Element;
@@ -9,10 +11,13 @@ export default class CountryGlobe {
   private texture = [] as THREE.Texture[];
   private material: THREE.MeshPhongMaterial;
   private mesh: THREE.Mesh;
+  private raycaster = new THREE.Raycaster();
 
+  private radius: number = 5
   private mouseDown: boolean = false;
   private mouseX: number = 0;
   private mouseY: number = 0;
+  private controls: OrbitControls;
 
   constructor(ct: Element) {
     this.container = ct;
@@ -20,6 +25,8 @@ export default class CountryGlobe {
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(10, window.innerWidth / window.innerHeight, 0.1, 1000);
     this.camera.position.z = 75;
+
+    this.controls = new OrbitControls( this.camera, this.renderer.domElement );
 
     this.renderer.setClearColor('#050505');
     this.renderer.setSize(window.innerWidth, window.innerHeight);
@@ -34,14 +41,14 @@ export default class CountryGlobe {
       this.camera.updateProjectionMatrix();
     });
 
-    this.geometry = new THREE.SphereGeometry(5, 100, 100);
+    this.geometry = new THREE.SphereGeometry(this.radius, 100, 100);
 
     this.texture.push(new THREE.TextureLoader().load('img/w1.png'));
     this.texture.push(new THREE.TextureLoader().load('img/w2.png'));
 
-    this.material = new THREE.MeshPhongMaterial({ map: this.texture[0] });
+    //this.material = new THREE.MeshPhongMaterial({ map: this.texture[0] });
+    this.material = new THREE.MeshPhongMaterial({color: 0x3471eb});
     this.mesh = new THREE.Mesh(this.geometry, this.material);
-    this.mesh.rotation.set(Math.PI / 4, Math.PI / 4, 0);
     this.scene.add(this.mesh);
 
     const light = new THREE.PointLight(0xffffff, 1, 1000);
@@ -51,12 +58,55 @@ export default class CountryGlobe {
     const light2 = new THREE.AmbientLight(0x808080);
     this.scene.add(light2);
 
-    this.container.addEventListener('mousemove', this.onMouseMove.bind(this) as any);
-    this.container.addEventListener('mousedown', this.onMouseDown.bind(this) as any);
-    this.container.addEventListener('mouseup', this.onMouseUp.bind(this) as any);
-    this.container.addEventListener('mousewheel', this.onMouseWheel.bind(this) as any);
+    //this.container.addEventListener('mousemove', this.onMouseMove.bind(this) as any);
+    //this.container.addEventListener('mousedown', this.onMouseDown.bind(this) as any);
+    //this.container.addEventListener('mouseup', this.onMouseUp.bind(this) as any);
+    //this.container.addEventListener('mousewheel', this.onMouseWheel.bind(this) as any);
+
+    this.loadGeoJson();
 
     this.render();
+  }
+
+
+  private getVertex(longitude: number, latitude: number) : THREE.Vector3{
+    const lambda = longitude * Math.PI / 180;
+    const phi = latitude * Math.PI / 180;
+    return new THREE.Vector3(
+      this.radius * Math.cos(phi) * Math.cos(-lambda),
+      this.radius * Math.sin(phi),
+      this.radius * Math.cos(phi) * Math.sin(-lambda)
+    );
+  }
+
+  public loadGeoJsonData(data: any){
+    
+    for (let feature of data["features"]) {
+      if((feature["properties"]["ADMIN"] == "Italy") || true){
+        for (let entry of feature["geometry"]["coordinates"]) {
+          for (let entry2 of entry) {
+            const geometry = new THREE.Geometry();
+            for (let entry3 of entry2) {
+              const vertex = this.getVertex(entry3[0], entry3[1]);
+              geometry.vertices.push(vertex);
+            }
+            const material = new THREE.LineBasicMaterial( {
+              color: 0xffffff,
+              linewidth: 1,
+              linecap: 'butt', //ignored by WebGLRenderer
+              linejoin:  'round' //ignored by WebGLRenderer
+            } );
+            const mesh = new THREE.Line(geometry, material);
+            this.scene.add(mesh);
+          }
+        }
+      }
+    }
+  }
+
+  public loadGeoJson(){
+    console.log("Loading geojson");
+    $.getJSON("geo-countries-master/data/countries.geojson", this.loadGeoJsonData.bind(this))
   }
 
   public setTexture() {
@@ -74,12 +124,24 @@ export default class CountryGlobe {
 
   private render() {
     requestAnimationFrame(this.render.bind(this));
+    this.controls.update();
     this.renderer.render(this.scene, this.camera);
   }
 
   private rotateGlobe(deltaX: number, deltaY: number) {
     this.mesh.rotation.y += deltaX / 100;
     this.mesh.rotation.x += deltaY / 100;
+  }
+
+  private getIntersections(){
+    let mouse = new THREE.Vector2();
+    mouse.x = (this.mouseX / window.innerWidth) * 2 - 1;
+    mouse.y = -(this.mouseY / window.innerHeight) * 2 + 1;
+    this.raycaster.setFromCamera(mouse, this.camera);
+    let intersects = this.raycaster.intersectObject(this.mesh);
+    console.log(intersects.length);
+    if (intersects.length === 0) return;
+    console.log(intersects);
   }
 
   private onMouseMove(evt: MouseEvent) {
@@ -93,17 +155,19 @@ export default class CountryGlobe {
     const deltaY = evt.clientY - this.mouseY;
     this.mouseX = evt.clientX;
     this.mouseY = evt.clientY;
-    this.rotateGlobe(deltaX, deltaY);
+    //this.rotateGlobe(deltaX, deltaY);
   }
 
   private onMouseDown(evt: MouseEvent) {
     evt.preventDefault();
 
-    this.addBox();
+    //this.addBox();
 
     this.mouseDown = true;
     this.mouseX = evt.clientX;
     this.mouseY = evt.clientY;
+
+    //this.getIntersections();
   }
 
   private onMouseUp(evt: MouseEvent) {
