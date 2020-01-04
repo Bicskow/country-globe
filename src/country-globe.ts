@@ -41,7 +41,7 @@ export default class CountryGlobe {
       this.camera.updateProjectionMatrix();
     });
 
-    this.geometry = new THREE.SphereGeometry(this.radius, 100, 100);
+    this.geometry = new THREE.SphereGeometry(this.radius - 0.01, 100, 100);
 
     this.texture.push(new THREE.TextureLoader().load('img/w1.png'));
     this.texture.push(new THREE.TextureLoader().load('img/w2.png'));
@@ -63,11 +63,21 @@ export default class CountryGlobe {
     //this.container.addEventListener('mouseup', this.onMouseUp.bind(this) as any);
     //this.container.addEventListener('mousewheel', this.onMouseWheel.bind(this) as any);
 
-    this.loadGeoJson();
-
+    //this.loadGeoJson();
+    this.loadCountryOBJ("/flatobj/hungary.obj");
+    this.loadCountryOBJ("/3dobj/hungary.obj");
     this.render();
   }
 
+  private addCountryOBJ(object: THREE.Object3D){
+    this.scene.add( object );
+  }
+  private loadCountryOBJ(objFile: string){
+    const OBJLoader = require('three-obj-loader');
+    OBJLoader(THREE);
+    const loader = new (THREE as any).OBJLoader();
+    loader.load(objFile, this.addCountryOBJ.bind(this));
+  }
 
   private getVertex(longitude: number, latitude: number) : THREE.Vector3{
     const lambda = longitude * Math.PI / 180;
