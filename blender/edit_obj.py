@@ -17,29 +17,21 @@ def AssembleOverrideContextForView3dOps():
                         return oContextOverride
         raise Exception("ERROR: AssembleOverrideContextForView3dOps() could not find a VIEW_3D with WINDOW region to create override context to enable View3D operators.  Operator cannot function.")
 
+
+print("---------------------------------------------------------------------------------------")
 # Deselect all
 bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
 bpy.ops.object.select_all(action='DESELECT')
 
-print(bpy.data.objects)
+#print(bpy.data.objects)
 
 for key, value in bpy.data.objects.items():
-    print(key)
+    #print(key)
     if key != "Ligth" and key != "Camera":
         bpy.data.objects[key].select_set(True)
         bpy.ops.object.delete() 
-
-
-file_loc = 'd:\\gitrepos\\javascript\\country-globe\\flatobj\\'
-file_name = 'Hungary.obj'
-imported_object = bpy.ops.import_scene.obj(filepath=file_loc + file_name)
-obj_object = bpy.context.selected_objects[0] ####<--Fix
-print('Imported name: ', obj_object.name)
-
-
-
+        
 bpyscene = bpy.context.scene
-
 # Create an empty object.
 mesh = bpy.data.meshes.new('Basic_Sphere')
 basic_cube = bpy.data.objects.new("Basic_Sphere", mesh)
@@ -48,31 +40,41 @@ basic_cube = bpy.data.objects.new("Basic_Sphere", mesh)
 bpyscene.collection.objects.link(basic_cube)
 bpy.context.view_layer.objects.active = basic_cube
 basic_cube.select_set(True)
-
 bm = bmesh.new()
 bmesh.ops.create_uvsphere(bm, u_segments=200, v_segments=200, diameter=5.0)
 bm.to_mesh(mesh)
-bm.free()
+bm.free()        
+        
+
+file_loc = 'd:\\gitrepos\\javascript\\country-globe\\flatobj\\'
+#file_name = 'Hungary.obj'
+#file_name = 'United Kingdom.obj'
+file_name = 'Italy.obj'
+imported_object = bpy.ops.import_scene.obj(filepath=file_loc + file_name)
+for obj_object in bpy.context.selected_objects:
+    print('Imported name: ', obj_object.name)
+    bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
+    bpy.ops.object.select_all(action='DESELECT')
+
+    bpy.context.view_layer.objects.active = bpy.data.objects[obj_object.name]
+    bpy.ops.object.mode_set(mode='EDIT', toggle=False)
+    oContextOverride = AssembleOverrideContextForView3dOps()
+    bpy.ops.view3d.view_axis(oContextOverride, type='TOP', align_active=True)
+    bpy.ops.view3d.view_selected(oContextOverride, use_all_regions=False)
 
 
-bpy.ops.object.convert(target='MESH')
-bpy.ops.object.select_all(action='DESELECT')
-bpy.context.view_layer.objects.active = bpy.data.objects[obj_object.name]
-bpy.ops.object.mode_set(mode='EDIT', toggle=False)
-oContextOverride = AssembleOverrideContextForView3dOps()
-bpy.ops.view3d.view_axis(oContextOverride, type='TOP', align_active=True)
-bpy.ops.view3d.view_selected(oContextOverride, use_all_regions=False)
+    bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
+    bpy.ops.object.select_all(action='DESELECT')
 
+    bpy.context.view_layer.objects.active = bpy.data.objects['Basic_Sphere']
+    bpy.data.objects['Basic_Sphere'].select_set(True)
+    bpy.data.objects[obj_object.name].select_set(True)
+    bpy.ops.object.mode_set(mode='EDIT', toggle=False)
+    oContextOverride = AssembleOverrideContextForView3dOps() 
+    bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1) 
+    bpy.ops.mesh.knife_project(oContextOverride, cut_through=False)
 
-bpy.context.view_layer.objects.active = bpy.data.objects['Basic_Sphere']
-bpy.data.objects['Basic_Sphere'].select_set(True)
-bpy.data.objects[obj_object.name].select_set(True)
-bpy.ops.object.mode_set(mode='EDIT', toggle=False)
-oContextOverride = AssembleOverrideContextForView3dOps() 
-bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1) 
-bpy.ops.mesh.knife_project(oContextOverride, cut_through=False)
-
-bpy.ops.mesh.separate(type='SELECTED')
+    bpy.ops.mesh.separate(type='SELECTED')
 
 
 bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
@@ -84,6 +86,5 @@ for key, value in bpy.data.objects.items():
     if not key.startswith('Basic_Sphere'):
         bpy.data.objects[key].select_set(True)
         bpy.ops.object.delete() 
-        
         
 bpy.ops.export_scene.obj(filepath="d:\\gitrepos\\javascript\\country-globe\\3dobj\\" + file_name )
