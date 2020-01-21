@@ -2,6 +2,13 @@ import bpy
 import bmesh
 
 
+def setClipStart():
+    for oWindow in bpy.context.window_manager.windows:          ###IMPROVE: Find way to avoid doing four levels of traversals at every request!!
+        oScreen = oWindow.screen
+        for oArea in oScreen.areas:
+            if oArea.type == 'VIEW_3D':      
+                oArea.spaces.active.clip_start = 0.01
+
 def AssembleOverrideContextForView3dOps():
     #=== Iterates through the blender GUI's windows, screens, areas, regions to find the View3D space and its associated window.  Populate an 'oContextOverride context' that can be used with bpy.ops that require to be used from within a View3D (like most addon code that runs of View3D panels)
     # Tip: If your operator fails the log will show an "PyContext: 'xyz' not found".  To fix stuff 'xyz' into the override context and try again!
@@ -30,20 +37,7 @@ for key, value in bpy.data.objects.items():
     if key != "Ligth" and key != "Camera":
         bpy.data.objects[key].select_set(True)
         bpy.ops.object.delete() 
-        
-bpyscene = bpy.context.scene
-# Create an empty object.
-mesh = bpy.data.meshes.new('Basic_Sphere')
-basic_cube = bpy.data.objects.new("Basic_Sphere", mesh)
-
-# Add the object into the scene.
-bpyscene.collection.objects.link(basic_cube)
-bpy.context.view_layer.objects.active = basic_cube
-basic_cube.select_set(True)
-bm = bmesh.new()
-bmesh.ops.create_uvsphere(bm, u_segments=200, v_segments=200, diameter=5.0)
-bm.to_mesh(mesh)
-bm.free()        
+                
         
 
 file_loc = 'd:\\gitrepos\\javascript\\country-globe\\flatobj\\'
@@ -51,8 +45,28 @@ file_loc = 'd:\\gitrepos\\javascript\\country-globe\\flatobj\\'
 #file_name = 'United Kingdom.obj'
 file_name = 'Italy.obj'
 imported_object = bpy.ops.import_scene.obj(filepath=file_loc + file_name)
+
+setClipStart()
+
 for obj_object in bpy.context.selected_objects:
     print('Imported name: ', obj_object.name)
+       
+    sphere_name = obj_object.name + "_sphere"
+    bpyscene = bpy.context.scene
+    # Create an empty object.
+    mesh = bpy.data.meshes.new(sphere_name)
+    basic_cube = bpy.data.objects.new(sphere_name, mesh)
+
+    # Add the object into the scene.
+    bpyscene.collection.objects.link(basic_cube)
+    bpy.context.view_layer.objects.active = basic_cube
+    basic_cube.select_set(True)
+    bm = bmesh.new()
+    bmesh.ops.create_uvsphere(bm, u_segments=200, v_segments=200, diameter=5.0)
+    bm.to_mesh(mesh)
+    bm.free()
+    
+
     bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
     bpy.ops.object.select_all(action='DESELECT')
 
@@ -66,8 +80,8 @@ for obj_object in bpy.context.selected_objects:
     bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
     bpy.ops.object.select_all(action='DESELECT')
 
-    bpy.context.view_layer.objects.active = bpy.data.objects['Basic_Sphere']
-    bpy.data.objects['Basic_Sphere'].select_set(True)
+    bpy.context.view_layer.objects.active = bpy.data.objects[sphere_name]
+    bpy.data.objects[sphere_name].select_set(True)
     bpy.data.objects[obj_object.name].select_set(True)
     bpy.ops.object.mode_set(mode='EDIT', toggle=False)
     oContextOverride = AssembleOverrideContextForView3dOps() 
@@ -75,15 +89,14 @@ for obj_object in bpy.context.selected_objects:
     bpy.ops.mesh.knife_project(oContextOverride, cut_through=False)
 
     bpy.ops.mesh.separate(type='SELECTED')
-
-
-bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
-bpy.ops.object.select_all(action='DESELECT')
-bpy.data.objects['Basic_Sphere'].select_set(True)
-bpy.ops.object.delete() 
+    
+    bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
+    bpy.ops.object.select_all(action='DESELECT')
+    bpy.data.objects[sphere_name].select_set(True)
+    bpy.ops.object.delete() 
 
 for key, value in bpy.data.objects.items():
-    if not key.startswith('Basic_Sphere'):
+    if not "_sphere" in key:
         bpy.data.objects[key].select_set(True)
         bpy.ops.object.delete() 
         
