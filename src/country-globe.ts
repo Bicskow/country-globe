@@ -49,7 +49,7 @@ export default class CountryGlobe {
     //this.material = new THREE.MeshPhongMaterial({ map: this.texture[0] });
     this.material = new THREE.MeshPhongMaterial({color: 0x3471eb});
     this.mesh = new THREE.Mesh(this.geometry, this.material);
-    this.scene.add(this.mesh);
+    //this.scene.add(this.mesh);
 
     const light = new THREE.PointLight(0xffffff, 1, 1000);
     light.position.set(500, 50, 500);
@@ -65,8 +65,8 @@ export default class CountryGlobe {
 
     //this.loadGeoJson();
     this.loadCountriesJson();
-    this.loadCountryOBJ("/flatobj/hungary.obj");
-    this.loadCountryOBJ("/3dobj/hungary.obj");
+    //this.loadCountryOBJ("/flatobj/hungary.obj");
+    //this.loadCountryOBJ("/3dobj/hungary.obj");
     this.render();
   }
 
@@ -122,8 +122,9 @@ export default class CountryGlobe {
   public loadCountriesJsonData(data: any){
     console.log("Loading countries data");
     console.log(data);
-    for (let countrie in data) {
-      console.log(countrie);
+    for (let coutry in data) {
+      console.log(coutry);
+      this.loadCountryOBJ("/3dobj/" + data[coutry]);
     }
   }
 
