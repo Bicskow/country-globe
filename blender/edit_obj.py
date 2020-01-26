@@ -118,7 +118,7 @@ def generateObjFile(file_name, file_loc):
     bpy.ops.export_scene.obj(filepath="d:\\gitrepos\\javascript\\country-globe\\3dobj\\" + file_name )
     
 
-file_loc = 'd:\\gitrepos\\javascript\\country-globe\\flatobj_\\'
+file_loc = 'd:\\gitrepos\\javascript\\country-globe\\flatobj\\'
 
 for filename in os.listdir(file_loc):
     if filename.endswith(".obj"): 
