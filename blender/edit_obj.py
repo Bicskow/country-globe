@@ -3,6 +3,18 @@ import bmesh
 import os
 
 
+def triangulate_object(obj):
+    me = obj.data
+    # Get a BMesh representation
+    bm = bmesh.new()
+    bm.from_mesh(me)
+
+    bmesh.ops.triangulate(bm, faces=bm.faces[:])
+
+    # Finish up, write the bmesh back to the mesh
+    bm.to_mesh(me)
+    bm.free()
+
 def setClipStart():
     for oWindow in bpy.context.window_manager.windows:          ###IMPROVE: Find way to avoid doing four levels of traversals at every request!!
         oScreen = oWindow.screen
@@ -98,7 +110,10 @@ def generateObjFile(file_name, file_loc):
     for key, value in bpy.data.objects.items():
         if not "_sphere" in key:
             bpy.data.objects[key].select_set(True)
-            bpy.ops.object.delete() 
+            bpy.ops.object.delete()
+        else:
+            triangulate_object(bpy.data.objects[key])
+         
             
     bpy.ops.export_scene.obj(filepath="d:\\gitrepos\\javascript\\country-globe\\3dobj\\" + file_name )
     
