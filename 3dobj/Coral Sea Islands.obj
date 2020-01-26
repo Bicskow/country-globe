@@ -1,0 +1,11 @@
+# Blender v2.81 (sub 16) OBJ File: ''
+# www.blender.org
+mtllib Coral Sea Islands.mtl
+o 0_Coral_Sea_Islands_sphere.001
+v -4.153446 -1.771013 -1.990266
+v -4.153058 -1.770577 -1.991421
+v -4.153654 -1.770449 -1.990367
+vn -0.8241 -0.3800 -0.4200
+usemtl None
+s off
+f 2//1 1//1 3//1

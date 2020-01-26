@@ -64,6 +64,7 @@ export default class CountryGlobe {
     //this.container.addEventListener('mousewheel', this.onMouseWheel.bind(this) as any);
 
     //this.loadGeoJson();
+    this.loadCountriesJson();
     this.loadCountryOBJ("/flatobj/hungary.obj");
     this.loadCountryOBJ("/3dobj/hungary.obj");
     this.render();
@@ -116,6 +117,19 @@ export default class CountryGlobe {
         }
       }
     }
+  }
+
+  public loadCountriesJsonData(data: any){
+    console.log("Loading countries data");
+    console.log(data);
+    for (let countrie in data) {
+      console.log(countrie);
+    }
+  }
+
+  public loadCountriesJson(){
+    console.log("Loading countries");
+    $.getJSON("resources/countries.json", this.loadCountriesJsonData.bind(this))
   }
 
   public loadGeoJson(){

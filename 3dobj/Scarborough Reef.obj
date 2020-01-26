@@ -1,0 +1,14 @@
+# Blender v2.81 (sub 16) OBJ File: ''
+# www.blender.org
+mtllib Scarborough Reef.mtl
+o 0_Scarborough_Reef_sphere.001
+v -2.215605 1.289511 -4.210383
+v -2.216513 1.288310 -4.210240
+v -2.215835 1.287431 -4.210819
+v -2.214870 1.288304 -4.211079
+vn -0.4413 0.2309 -0.8671
+vn -0.4419 0.2302 -0.8670
+usemtl None
+s off
+f 4//1 2//1 1//1
+f 4//2 3//2 2//2
