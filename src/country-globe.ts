@@ -19,6 +19,9 @@ export default class CountryGlobe {
   private mouseY: number = 0;
   private controls: OrbitControls;
 
+  private mapColors = [0xf78786,0x8aec7b, 0xf3f361, 0x6cbaeb, 0xbd8fcf];
+  private countryObjects = [] as THREE.Object3D[];
+
   constructor(ct: Element) {
     this.container = ct;
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -59,7 +62,7 @@ export default class CountryGlobe {
     this.scene.add(light2);
 
     //this.container.addEventListener('mousemove', this.onMouseMove.bind(this) as any);
-    //this.container.addEventListener('mousedown', this.onMouseDown.bind(this) as any);
+    this.container.addEventListener('mousedown', this.onMouseDown.bind(this) as any);
     //this.container.addEventListener('mouseup', this.onMouseUp.bind(this) as any);
     //this.container.addEventListener('mousewheel', this.onMouseWheel.bind(this) as any);
 
@@ -71,8 +74,17 @@ export default class CountryGlobe {
   }
 
   private addCountryOBJ(object: THREE.Object3D){
+    this.countryObjects.push(object);
+    var color = this.mapColors[Math.floor(Math.random()*this.mapColors.length)];
+    var ship_material = new THREE.MeshBasicMaterial( { color: color } );
+    object.traverse( function( child ) {
+      if ( child instanceof THREE.Mesh ) {
+          child.material = ship_material;
+      }
+    });
     this.scene.add( object );
   }
+
   private loadCountryOBJ(objFile: string){
     const OBJLoader = require('three-obj-loader');
     OBJLoader(THREE);
@@ -188,21 +200,29 @@ export default class CountryGlobe {
   }
 
   private onMouseDown(evt: MouseEvent) {
-    evt.preventDefault();
+    console.log("Changing color");
+    var object = this.countryObjects[Math.floor(Math.random()*this.countryObjects.length)];
+    var ship_material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF } );
+    object.traverse( function( child ) {
+      if ( child instanceof THREE.Mesh ) {
+          child.material = ship_material;
+      }
+    });
+    //evt.preventDefault();
 
     //this.addBox();
 
-    this.mouseDown = true;
-    this.mouseX = evt.clientX;
-    this.mouseY = evt.clientY;
+    //this.mouseDown = true;
+    //this.mouseX = evt.clientX;
+    //this.mouseY = evt.clientY;
 
     //this.getIntersections();
   }
 
   private onMouseUp(evt: MouseEvent) {
-    evt.preventDefault();
-
-    this.mouseDown = false;
+    console.log("MOUSE DOWN");
+    //evt.preventDefault();
+    //this.mouseDown = false;
   }
 
   private onMouseWheel(event: WheelEvent) {
