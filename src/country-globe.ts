@@ -66,14 +66,12 @@ export default class CountryGlobe {
     //this.container.addEventListener('mouseup', this.onMouseUp.bind(this) as any);
     //this.container.addEventListener('mousewheel', this.onMouseWheel.bind(this) as any);
 
-    //this.loadGeoJson();
     this.loadCountriesJson();
-    //this.loadCountryOBJ("/flatobj/hungary.obj");
-    //this.loadCountryOBJ("/3dobj/hungary.obj");
     this.render();
   }
 
   private addCountryOBJ(object: THREE.Object3D){
+    object.name = (object as any).materialLibraries[0].replace("\.mtl", "");
     this.countryObjects.push(object);
     var color = this.mapColors[Math.floor(Math.random()*this.mapColors.length)];
     var ship_material = new THREE.MeshBasicMaterial( { color: color } );
@@ -155,14 +153,6 @@ export default class CountryGlobe {
     this.material.map.needsUpdate = true;
   }
 
-  public addBox() {
-    const geometry = new THREE.BoxGeometry(2, 2, 1);
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    const cube = new THREE.Mesh(geometry, material);
-    cube.position.setY(6);
-    this.scene.add(cube);
-  }
-
   private render() {
     requestAnimationFrame(this.render.bind(this));
     this.controls.update();
@@ -179,48 +169,49 @@ export default class CountryGlobe {
     mouse.x = (this.mouseX / window.innerWidth) * 2 - 1;
     mouse.y = -(this.mouseY / window.innerHeight) * 2 + 1;
     this.raycaster.setFromCamera(mouse, this.camera);
-    let intersects = this.raycaster.intersectObject(this.mesh);
-    console.log(intersects.length);
-    if (intersects.length === 0) return;
-    console.log(intersects);
+
+    for(let object of this.countryObjects){
+      for(let child of object.children){
+        let intersects = this.raycaster.intersectObject(child);
+        if (intersects.length != 0){
+          return object;
+        }
+      }
+    }
+    return null;
   }
 
   private onMouseMove(evt: MouseEvent) {
-    if (!this.mouseDown) {
-      return;
-    }
+    //if (!this.mouseDown) {
+    //  return;
+    //}
 
-    evt.preventDefault();
+    //evt.preventDefault();
 
-    const deltaX = evt.clientX - this.mouseX;
-    const deltaY = evt.clientY - this.mouseY;
-    this.mouseX = evt.clientX;
-    this.mouseY = evt.clientY;
+    //const deltaX = evt.clientX - this.mouseX;
+    //const deltaY = evt.clientY - this.mouseY;
+    //this.mouseX = evt.clientX;
+    //this.mouseY = evt.clientY;
     //this.rotateGlobe(deltaX, deltaY);
   }
 
   private onMouseDown(evt: MouseEvent) {
-    console.log("Changing color");
-    var object = this.countryObjects[Math.floor(Math.random()*this.countryObjects.length)];
-    var ship_material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF } );
-    object.traverse( function( child ) {
-      if ( child instanceof THREE.Mesh ) {
-          child.material = ship_material;
-      }
-    });
-    //evt.preventDefault();
-
-    //this.addBox();
-
-    //this.mouseDown = true;
-    //this.mouseX = evt.clientX;
-    //this.mouseY = evt.clientY;
-
-    //this.getIntersections();
+    evt.preventDefault();
+    this.mouseX = evt.clientX;
+    this.mouseY = evt.clientY;
+    let obj = this.getIntersections();
+    if(obj != null){
+      console.log(obj.name);
+      var select_material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF } );
+      obj.traverse( function( child ) {
+        if ( child instanceof THREE.Mesh ) {
+          child.material = select_material;
+        }
+      });
+    }
   }
 
   private onMouseUp(evt: MouseEvent) {
-    console.log("MOUSE DOWN");
     //evt.preventDefault();
     //this.mouseDown = false;
   }
