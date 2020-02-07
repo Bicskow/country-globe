@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import $ from "jquery";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 
 export default class CountryGlobe {
   private container: Element;
@@ -12,6 +13,7 @@ export default class CountryGlobe {
   private material: THREE.MeshPhongMaterial;
   private mesh: THREE.Mesh;
   private raycaster = new THREE.Raycaster();
+  private objLoader: OBJLoader;
 
   private radius: number = 5
   private mouseDown: boolean = false;
@@ -23,6 +25,8 @@ export default class CountryGlobe {
   private countryObjects = [] as THREE.Object3D[];
 
   constructor(ct: Element) {
+    this.objLoader = new OBJLoader();
+
     this.container = ct;
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
     this.scene = new THREE.Scene();
@@ -52,7 +56,7 @@ export default class CountryGlobe {
     //this.material = new THREE.MeshPhongMaterial({ map: this.texture[0] });
     this.material = new THREE.MeshPhongMaterial({color: 0x3471eb});
     this.mesh = new THREE.Mesh(this.geometry, this.material);
-    //this.scene.add(this.mesh);
+    this.scene.add(this.mesh);
 
     const light = new THREE.PointLight(0xffffff, 1, 1000);
     light.position.set(500, 50, 500);
@@ -83,11 +87,26 @@ export default class CountryGlobe {
     this.scene.add( object );
   }
 
+  private addCountryBorderOBJ(object: THREE.Object3D){
+    let color = 0x000000;
+    let border_material = new THREE.LineBasicMaterial( { color: color, linewidth: 10} );
+    object.traverse( function( child ) {
+      if ( child instanceof THREE.Line ) {
+          child.material = border_material;
+          console.log("LINE");
+      } else {
+        console.log("NEMLINE");
+      }
+    });
+    this.scene.add( object );
+  }
+  
   private loadCountryOBJ(objFile: string){
-    const OBJLoader = require('three-obj-loader');
-    OBJLoader(THREE);
-    const loader = new (THREE as any).OBJLoader();
-    loader.load(objFile, this.addCountryOBJ.bind(this));
+    this.objLoader.load(objFile, this.addCountryOBJ.bind(this))
+  }
+
+  private loadCountryBorderOBJ(objFile: string){
+    this.objLoader.load(objFile, this.addCountryBorderOBJ.bind(this));
   }
 
   private getVertex(longitude: number, latitude: number) : THREE.Vector3{
@@ -135,6 +154,7 @@ export default class CountryGlobe {
     for (let coutry in data) {
       console.log(coutry);
       this.loadCountryOBJ("/3dobj/" + data[coutry]);
+      this.loadCountryBorderOBJ("/flatobj/" + data[coutry]);
     }
   }
 
