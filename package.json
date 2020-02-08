@@ -7,6 +7,8 @@
     "@types/three": "^0.103.2",
     "jquery": "^3.4.1",
     "three": "^0.112.1",
+    "three-gltf-exporter": "0.0.1",
+    "three-gltf-loader": "^1.111.0",
     "three-obj-exporter": "0.0.1",
     "three-obj-exporter-t": "^1.0.2",
     "three-obj-loader": "^1.1.3",
