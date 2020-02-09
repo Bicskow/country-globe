@@ -19,7 +19,7 @@ function loadGeoJsonData(data){
       let outObject3d = new THREE.Object3D();
       let counter = 0;
       console.log(countryName);
-      if(countryName == "Italy" || true){
+      if(countryName == "Vatican" || true){
         for (let entry of feature["geometry"]["coordinates"]) {
           for (let entry2 of entry) {
             const geometry = new THREE.Geometry();
@@ -42,7 +42,25 @@ function loadGeoJsonData(data){
         const OBJExporter = require('three-obj-exporter');
         const exporter = new OBJExporter();
         const result = exporter.parse(outObject3d);
-        fs.writeFileSync('./flatobj/' + countryName + '.obj', result);
+        let resultFixed = "";
+        let lines = result.trim().split("\n");
+        for(var i = 0; i < lines.length; i++){
+          if(lines[i].startsWith('l')){
+            vcs = lines[i].split(' ');
+            let fixedLine = vcs[0] + " " + vcs[1];
+            for(var k = 2; k < vcs.length; k++){
+              if(k != vcs.length -1){ 
+                fixedLine += " " + vcs[k] + " " + vcs[k];
+              } else {
+                fixedLine += " " + vcs[k].trim() + " " + vcs[0];
+              }
+            }
+            resultFixed += fixedLine + "\n";
+          } else {
+            resultFixed += lines[i] + "\n";
+          }
+        }
+        fs.writeFileSync('./flatobj/' + countryName + '.obj', resultFixed);
       }
     }
   }
