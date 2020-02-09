@@ -77,7 +77,7 @@ export default class CountryGlobe {
   private addCountryOBJ(object: THREE.Object3D){
     object.name = (object as any).materialLibraries[0].replace("\.mtl", "");
     this.countryObjects.push(object);
-    var color = this.mapColors[Math.floor(Math.random()*this.mapColors.length)];
+    var color = 0x44ab2b;
     var ship_material = new THREE.MeshBasicMaterial( { color: color } );
     object.traverse( function( child ) {
       if ( child instanceof THREE.Mesh ) {
@@ -89,13 +89,10 @@ export default class CountryGlobe {
 
   private addCountryBorderOBJ(object: THREE.Object3D){
     let color = 0x000000;
-    let border_material = new THREE.LineBasicMaterial( { color: color, linewidth: 10} );
+    let border_material = new THREE.LineBasicMaterial( { color: color, linewidth: 1} );
     object.traverse( function( child ) {
       if ( child instanceof THREE.Line ) {
           child.material = border_material;
-          console.log("LINE");
-      } else {
-        console.log("NEMLINE");
       }
     });
     this.scene.add( object );
@@ -119,38 +116,8 @@ export default class CountryGlobe {
     );
   }
 
-  public loadGeoJsonData(data: any){
-    
-    for (let feature of data["features"]) {
-      if((feature["properties"]["ADMIN"] == "Hungary")){
-        for (let entry of feature["geometry"]["coordinates"]) {
-          for (let entry2 of entry) {
-            const geometry = new THREE.Geometry();
-            for (let entry3 of entry2) {
-              const vertex = this.getVertex(entry3[0], entry3[1]);
-              geometry.vertices.push(vertex);
-            }
-            const material = new THREE.LineBasicMaterial( {
-              color: 0xffffff,
-              linewidth: 1,
-              linecap: 'butt', //ignored by WebGLRenderer
-              linejoin:  'round' //ignored by WebGLRenderer
-            } );
-            const mesh = new THREE.Line(geometry, material);
-            this.scene.add(mesh);
-            const OBJExporter = require('three-obj-exporter');
-            const exporter = new OBJExporter();
-            const result = exporter.parse(mesh);
-            console.log(result);
-          }
-        }
-      }
-    }
-  }
-
   public loadCountriesJsonData(data: any){
-    console.log("Loading countries data");
-    console.log(data);
+    console.log("Loading country objs and borders countries data");
     for (let coutry in data) {
       console.log(coutry);
       this.loadCountryOBJ("/3dobj/" + data[coutry]);
@@ -159,13 +126,8 @@ export default class CountryGlobe {
   }
 
   public loadCountriesJson(){
-    console.log("Loading countries");
+    console.log("Loading countries JSON");
     $.getJSON("resources/countries.json", this.loadCountriesJsonData.bind(this))
-  }
-
-  public loadGeoJson(){
-    console.log("Loading geojson");
-    $.getJSON("geo-countries-master/data/countries.geojson", this.loadGeoJsonData.bind(this))
   }
 
   public setTexture() {
