@@ -34,6 +34,8 @@ export default class CountryGlobe {
     this.camera.position.z = 75;
 
     this.controls = new OrbitControls( this.camera, this.renderer.domElement );
+    this.controls.autoRotate = false;
+    this.controls.enableZoom = true;
 
     this.renderer.setClearColor('#050505');
     this.renderer.setSize(window.innerWidth, window.innerHeight);
@@ -58,12 +60,11 @@ export default class CountryGlobe {
     this.mesh = new THREE.Mesh(this.geometry, this.material);
     this.scene.add(this.mesh);
 
-    const light = new THREE.PointLight(0xffffff, 1, 1000);
-    light.position.set(500, 50, 500);
-    this.scene.add(light);
+    const light = new THREE.PointLight(0xffffff, 1, 0, 2);
+    light.position.set(1000, 5, 1500);
+    this.camera.add(light);
 
-    const light2 = new THREE.AmbientLight(0x808080);
-    this.scene.add(light2);
+    this.scene.add(this.camera);
 
     //this.container.addEventListener('mousemove', this.onMouseMove.bind(this) as any);
     this.container.addEventListener('mousedown', this.onMouseDown.bind(this) as any);
@@ -78,7 +79,7 @@ export default class CountryGlobe {
     object.name = (object as any).materialLibraries[0].replace("\.mtl", "");
     this.countryObjects.push(object);
     var color = 0x44ab2b;
-    var ship_material = new THREE.MeshBasicMaterial( { color: color } );
+    var ship_material = new THREE.MeshPhongMaterial( { color: color } );
     object.traverse( function( child ) {
       if ( child instanceof THREE.Mesh ) {
           child.material = ship_material;
@@ -184,7 +185,7 @@ export default class CountryGlobe {
     let obj = this.getIntersections();
     if(obj != null){
       console.log(obj.name);
-      var select_material = new THREE.MeshBasicMaterial( { color: 0xFFFFFF } );
+      var select_material = new THREE.MeshPhongMaterial({ color: 0xff0513 });
       obj.traverse( function( child ) {
         if ( child instanceof THREE.Mesh ) {
           child.material = select_material;
@@ -199,7 +200,7 @@ export default class CountryGlobe {
   }
 
   private onMouseWheel(event: WheelEvent) {
-    this.camera.position.z += event.deltaY * 0.3;
+    //this.camera.position.z += event.deltaY * 0.3;
   }
 }
 
