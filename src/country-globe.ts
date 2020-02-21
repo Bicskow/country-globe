@@ -73,6 +73,7 @@ export default class CountryGlobe {
     this.container.addEventListener('keypress', this.onKeypres.bind(this) as any);
 
     this.loadCountriesJson();
+    setTimeout(this.testAnimation.bind(this), 60000);
     this.render();
   }
 
@@ -161,19 +162,25 @@ export default class CountryGlobe {
   private onMouseMove(evt: MouseEvent) {
   }
 
-  private onMouseDown(evt: MouseEvent) {
-    evt.preventDefault();
-    this.mouseX = evt.clientX;
-    this.mouseY = evt.clientY;
-    let obj = this.getIntersections();
+  private highlightObject(obj: THREE.Object3D){
     if(obj != null){
-      console.log(obj.name);
       var select_material = new THREE.MeshPhongMaterial({ color: 0xff0513 });
       obj.traverse( function( child ) {
         if ( child instanceof THREE.Mesh ) {
           child.material = select_material;
         }
       });
+    }
+  }
+
+  private onMouseDown(evt: MouseEvent) {
+    evt.preventDefault();
+    this.mouseX = evt.clientX;
+    this.mouseY = evt.clientY;
+    let obj = this.getIntersections();
+    if(obj != null){
+      this.highlightObject(obj);
+      console.log(obj.name);
     }
   }
 
@@ -207,6 +214,18 @@ export default class CountryGlobe {
     //this.setOrbit(40.71427,-74.00597,30);
     //this.setOrbit(-34.90328,-56.18816,30);
     //this.setOrbit(47.49801,19.03991,30);
+  }
+
+  public highlightCounty(country: string){
+    for(let object of this.countryObjects){
+      if(object.name == country){
+        this.highlightObject(object);
+      }
+    }
+  }
+
+  public testAnimation(){
+    this.highlightCounty("Turkey");
   }
 }
 
