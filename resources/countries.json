@@ -1,257 +1,1532 @@
 {
-    "Afghanistan": "Afghanistan.obj",
-    "Akrotiri Sovereign Base Area": "Akrotiri Sovereign Base Area.obj",
-    "Aland": "Aland.obj",
-    "Albania": "Albania.obj",
-    "Algeria": "Algeria.obj",
-    "American Samoa": "American Samoa.obj",
-    "Andorra": "Andorra.obj",
-    "Angola": "Angola.obj",
-    "Anguilla": "Anguilla.obj",
-    "Antarctica": "Antarctica.obj",
-    "Antigua and Barbuda": "Antigua and Barbuda.obj",
-    "Argentina": "Argentina.obj",
-    "Armenia": "Armenia.obj",
-    "Aruba": "Aruba.obj",
-    "Ashmore and Cartier Islands": "Ashmore and Cartier Islands.obj",
-    "Australia": "Australia.obj",
-    "Austria": "Austria.obj",
-    "Azerbaijan": "Azerbaijan.obj",
-    "Bahrain": "Bahrain.obj",
-    "Bajo Nuevo Bank (Petrel Is.)": "Bajo Nuevo Bank (Petrel Is.).obj",
-    "Bangladesh": "Bangladesh.obj",
-    "Barbados": "Barbados.obj",
-    "Baykonur Cosmodrome": "Baykonur Cosmodrome.obj",
-    "Belarus": "Belarus.obj",
-    "Belgium": "Belgium.obj",
-    "Belize": "Belize.obj",
-    "Benin": "Benin.obj",
-    "Bermuda": "Bermuda.obj",
-    "Bhutan": "Bhutan.obj",
-    "Bolivia": "Bolivia.obj",
-    "Bosnia and Herzegovina": "Bosnia and Herzegovina.obj",
-    "Botswana": "Botswana.obj",
-    "Brazil": "Brazil.obj",
-    "British Indian Ocean Territory": "British Indian Ocean Territory.obj",
-    "British Virgin Islands": "British Virgin Islands.obj",
-    "Brunei": "Brunei.obj",
-    "Bulgaria": "Bulgaria.obj",
-    "Burkina Faso": "Burkina Faso.obj",
-    "Burundi": "Burundi.obj",
-    "Cambodia": "Cambodia.obj",
-    "Cameroon": "Cameroon.obj",
-    "Canada": "Canada.obj",
-    "Cape Verde": "Cape Verde.obj",
-    "Cayman Islands": "Cayman Islands.obj",
-    "Central African Republic": "Central African Republic.obj",
-    "Chad": "Chad.obj",
-    "Chile": "Chile.obj",
-    "China": "China.obj",
-    "Clipperton Island": "Clipperton Island.obj",
-    "Colombia": "Colombia.obj",
-    "Comoros": "Comoros.obj",
-    "Cook Islands": "Cook Islands.obj",
-    "Coral Sea Islands": "Coral Sea Islands.obj",
-    "Costa Rica": "Costa Rica.obj",
-    "Croatia": "Croatia.obj",
-    "Cuba": "Cuba.obj",
-    "Curaçao": "Curaçao.obj",
-    "Cyprus No Mans Area": "Cyprus No Mans Area.obj",
-    "Cyprus": "Cyprus.obj",
-    "Czech Republic": "Czech Republic.obj",
-    "Democratic Republic of the Congo": "Democratic Republic of the Congo.obj",
-    "Denmark": "Denmark.obj",
-    "Dhekelia Sovereign Base Area": "Dhekelia Sovereign Base Area.obj",
-    "Djibouti": "Djibouti.obj",
-    "Dominica": "Dominica.obj",
-    "Dominican Republic": "Dominican Republic.obj",
-    "East Timor": "East Timor.obj",
-    "Ecuador": "Ecuador.obj",
-    "Egypt": "Egypt.obj",
-    "El Salvador": "El Salvador.obj",
-    "Equatorial Guinea": "Equatorial Guinea.obj",
-    "Eritrea": "Eritrea.obj",
-    "Estonia": "Estonia.obj",
-    "Ethiopia": "Ethiopia.obj",
-    "Falkland Islands": "Falkland Islands.obj",
-    "Faroe Islands": "Faroe Islands.obj",
-    "Federated States of Micronesia": "Federated States of Micronesia.obj",
-    "Fiji": "Fiji.obj",
-    "Finland": "Finland.obj",
-    "France": "France.obj",
-    "French Polynesia": "French Polynesia.obj",
-    "French Southern and Antarctic Lands": "French Southern and Antarctic Lands.obj",
-    "Gabon": "Gabon.obj",
-    "Gambia": "Gambia.obj",
-    "Georgia": "Georgia.obj",
-    "Germany": "Germany.obj",
-    "Ghana": "Ghana.obj",
-    "Gibraltar": "Gibraltar.obj",
-    "Greece": "Greece.obj",
-    "Greenland": "Greenland.obj",
-    "Grenada": "Grenada.obj",
-    "Guam": "Guam.obj",
-    "Guatemala": "Guatemala.obj",
-    "Guernsey": "Guernsey.obj",
-    "Guinea Bissau": "Guinea Bissau.obj",
-    "Guinea": "Guinea.obj",
-    "Guyana": "Guyana.obj",
-    "Haiti": "Haiti.obj",
-    "Heard Island and McDonald Islands": "Heard Island and McDonald Islands.obj",
-    "Honduras": "Honduras.obj",
-    "Hong Kong S.A.R.": "Hong Kong S.A.R..obj",
-    "Hungary": "Hungary.obj",
-    "Iceland": "Iceland.obj",
-    "India": "India.obj",
-    "Indian Ocean Territories": "Indian Ocean Territories.obj",
-    "Indonesia": "Indonesia.obj",
-    "Iran": "Iran.obj",
-    "Iraq": "Iraq.obj",
-    "Ireland": "Ireland.obj",
-    "Isle of Man": "Isle of Man.obj",
-    "Israel": "Israel.obj",
-    "Italy": "Italy.obj",
-    "Ivory Coast": "Ivory Coast.obj",
-    "Jamaica": "Jamaica.obj",
-    "Japan": "Japan.obj",
-    "Jersey": "Jersey.obj",
-    "Jordan": "Jordan.obj",
-    "Kazakhstan": "Kazakhstan.obj",
-    "Kenya": "Kenya.obj",
-    "Kiribati": "Kiribati.obj",
-    "Kosovo": "Kosovo.obj",
-    "Kuwait": "Kuwait.obj",
-    "Kyrgyzstan": "Kyrgyzstan.obj",
-    "Laos": "Laos.obj",
-    "Latvia": "Latvia.obj",
-    "Lebanon": "Lebanon.obj",
-    "Lesotho": "Lesotho.obj",
-    "Liberia": "Liberia.obj",
-    "Libya": "Libya.obj",
-    "Liechtenstein": "Liechtenstein.obj",
-    "Lithuania": "Lithuania.obj",
-    "Luxembourg": "Luxembourg.obj",
-    "Macao S.A.R": "Macao S.A.R.obj",
-    "Macedonia": "Macedonia.obj",
-    "Madagascar": "Madagascar.obj",
-    "Malawi": "Malawi.obj",
-    "Malaysia": "Malaysia.obj",
-    "Maldives": "Maldives.obj",
-    "Mali": "Mali.obj",
-    "Malta": "Malta.obj",
-    "Marshall Islands": "Marshall Islands.obj",
-    "Mauritania": "Mauritania.obj",
-    "Mauritius": "Mauritius.obj",
-    "Mexico": "Mexico.obj",
-    "Moldova": "Moldova.obj",
-    "Monaco": "Monaco.obj",
-    "Mongolia": "Mongolia.obj",
-    "Montenegro": "Montenegro.obj",
-    "Montserrat": "Montserrat.obj",
-    "Morocco": "Morocco.obj",
-    "Mozambique": "Mozambique.obj",
-    "Myanmar": "Myanmar.obj",
-    "Namibia": "Namibia.obj",
-    "Nauru": "Nauru.obj",
-    "Nepal": "Nepal.obj",
-    "Netherlands": "Netherlands.obj",
-    "New Caledonia": "New Caledonia.obj",
-    "New Zealand": "New Zealand.obj",
-    "Nicaragua": "Nicaragua.obj",
-    "Niger": "Niger.obj",
-    "Nigeria": "Nigeria.obj",
-    "Niue": "Niue.obj",
-    "Norfolk Island": "Norfolk Island.obj",
-    "North Korea": "North Korea.obj",
-    "Northern Cyprus": "Northern Cyprus.obj",
-    "Northern Mariana Islands": "Northern Mariana Islands.obj",
-    "Norway": "Norway.obj",
-    "Oman": "Oman.obj",
-    "Pakistan": "Pakistan.obj",
-    "Palau": "Palau.obj",
-    "Palestine": "Palestine.obj",
-    "Panama": "Panama.obj",
-    "Papua New Guinea": "Papua New Guinea.obj",
-    "Paraguay": "Paraguay.obj",
-    "Peru": "Peru.obj",
-    "Philippines": "Philippines.obj",
-    "Pitcairn Islands": "Pitcairn Islands.obj",
-    "Poland": "Poland.obj",
-    "Portugal": "Portugal.obj",
-    "Puerto Rico": "Puerto Rico.obj",
-    "Qatar": "Qatar.obj",
-    "Republic of Congo": "Republic of Congo.obj",
-    "Republic of Serbia": "Republic of Serbia.obj",
-    "Romania": "Romania.obj",
-    "Russia": "Russia.obj",
-    "Rwanda": "Rwanda.obj",
-    "Saint Barthelemy": "Saint Barthelemy.obj",
-    "Saint Helena": "Saint Helena.obj",
-    "Saint Kitts and Nevis": "Saint Kitts and Nevis.obj",
-    "Saint Lucia": "Saint Lucia.obj",
-    "Saint Martin": "Saint Martin.obj",
-    "Saint Pierre and Miquelon": "Saint Pierre and Miquelon.obj",
-    "Saint Vincent and the Grenadines": "Saint Vincent and the Grenadines.obj",
-    "Samoa": "Samoa.obj",
-    "San Marino": "San Marino.obj",
-    "Sao Tome and Principe": "Sao Tome and Principe.obj",
-    "Saudi Arabia": "Saudi Arabia.obj",
-    "Scarborough Reef": "Scarborough Reef.obj",
-    "Senegal": "Senegal.obj",
-    "Serranilla Bank": "Serranilla Bank.obj",
-    "Seychelles": "Seychelles.obj",
-    "Siachen Glacier": "Siachen Glacier.obj",
-    "Sierra Leone": "Sierra Leone.obj",
-    "Singapore": "Singapore.obj",
-    "Sint Maarten": "Sint Maarten.obj",
-    "Slovakia": "Slovakia.obj",
-    "Slovenia": "Slovenia.obj",
-    "Solomon Islands": "Solomon Islands.obj",
-    "Somalia": "Somalia.obj",
-    "Somaliland": "Somaliland.obj",
-    "South Africa": "South Africa.obj",
-    "South Georgia and South Sandwich Islands": "South Georgia and South Sandwich Islands.obj",
-    "South Korea": "South Korea.obj",
-    "South Sudan": "South Sudan.obj",
-    "Spain": "Spain.obj",
-    "Spratly Islands": "Spratly Islands.obj",
-    "Sri Lanka": "Sri Lanka.obj",
-    "Sudan": "Sudan.obj",
-    "Suriname": "Suriname.obj",
-    "Swaziland": "Swaziland.obj",
-    "Sweden": "Sweden.obj",
-    "Switzerland": "Switzerland.obj",
-    "Syria": "Syria.obj",
-    "Taiwan": "Taiwan.obj",
-    "Tajikistan": "Tajikistan.obj",
-    "Thailand": "Thailand.obj",
-    "The Bahamas": "The Bahamas.obj",
-    "Togo": "Togo.obj",
-    "Tonga": "Tonga.obj",
-    "Trinidad and Tobago": "Trinidad and Tobago.obj",
-    "Tunisia": "Tunisia.obj",
-    "Turkey": "Turkey.obj",
-    "Turkmenistan": "Turkmenistan.obj",
-    "Turks and Caicos Islands": "Turks and Caicos Islands.obj",
-    "Tuvalu": "Tuvalu.obj",
-    "Uganda": "Uganda.obj",
-    "Ukraine": "Ukraine.obj",
-    "United Arab Emirates": "United Arab Emirates.obj",
-    "United Kingdom": "United Kingdom.obj",
-    "United Republic of Tanzania": "United Republic of Tanzania.obj",
-    "United States Minor Outlying Islands": "United States Minor Outlying Islands.obj",
-    "United States of America": "United States of America.obj",
-    "United States Virgin Islands": "United States Virgin Islands.obj",
-    "Uruguay": "Uruguay.obj",
-    "US Naval Base Guantanamo Bay": "US Naval Base Guantanamo Bay.obj",
-    "Uzbekistan": "Uzbekistan.obj",
-    "Vanuatu": "Vanuatu.obj",
-    "Vatican": "Vatican.obj",
-    "Venezuela": "Venezuela.obj",
-    "Vietnam": "Vietnam.obj",
-    "Wallis and Futuna": "Wallis and Futuna.obj",
-    "Western Sahara": "Western Sahara.obj",
-    "Yemen": "Yemen.obj",
-    "Zambia": "Zambia.obj",
-    "Zimbabwe": "Zimbabwe.obj"
+    "Afghanistan": {
+        "fileName": "Afghanistan.obj",
+        "lat": 33,
+        "lng": 65,
+        "zoom": 75
+    },
+    "Akrotiri Sovereign Base Area": {
+        "fileName": "Akrotiri Sovereign Base Area.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Aland": {
+        "fileName": "Aland.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Albania": {
+        "fileName": "Albania.obj",
+        "lat": 41,
+        "lng": 20,
+        "zoom": 75
+    },
+    "Algeria": {
+        "fileName": "Algeria.obj",
+        "lat": 28,
+        "lng": 3,
+        "zoom": 75
+    },
+    "American Samoa": {
+        "fileName": "American Samoa.obj",
+        "lat": -14.33333333,
+        "lng": -170,
+        "zoom": 75
+    },
+    "Andorra": {
+        "fileName": "Andorra.obj",
+        "lat": 42.5,
+        "lng": 1.5,
+        "zoom": 75
+    },
+    "Angola": {
+        "fileName": "Angola.obj",
+        "lat": -12.5,
+        "lng": 18.5,
+        "zoom": 75
+    },
+    "Anguilla": {
+        "fileName": "Anguilla.obj",
+        "lat": 18.25,
+        "lng": -63.16666666,
+        "zoom": 75
+    },
+    "Antarctica": {
+        "fileName": "Antarctica.obj",
+        "lat": -90,
+        "lng": 0,
+        "zoom": 75
+    },
+    "Antigua and Barbuda": {
+        "fileName": "Antigua and Barbuda.obj",
+        "lat": 17.05,
+        "lng": -61.8,
+        "zoom": 75
+    },
+    "Argentina": {
+        "fileName": "Argentina.obj",
+        "lat": -34,
+        "lng": -64,
+        "zoom": 75
+    },
+    "Armenia": {
+        "fileName": "Armenia.obj",
+        "lat": 40,
+        "lng": 45,
+        "zoom": 75
+    },
+    "Aruba": {
+        "fileName": "Aruba.obj",
+        "lat": 12.5,
+        "lng": -69.96666666,
+        "zoom": 75
+    },
+    "Ashmore and Cartier Islands": {
+        "fileName": "Ashmore and Cartier Islands.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Australia": {
+        "fileName": "Australia.obj",
+        "lat": -27,
+        "lng": 133,
+        "zoom": 75
+    },
+    "Austria": {
+        "fileName": "Austria.obj",
+        "lat": 47.33333333,
+        "lng": 13.33333333,
+        "zoom": 75
+    },
+    "Azerbaijan": {
+        "fileName": "Azerbaijan.obj",
+        "lat": 40.5,
+        "lng": 47.5,
+        "zoom": 75
+    },
+    "Bahrain": {
+        "fileName": "Bahrain.obj",
+        "lat": 26,
+        "lng": 50.55,
+        "zoom": 75
+    },
+    "Bajo Nuevo Bank (Petrel Is.)": {
+        "fileName": "Bajo Nuevo Bank (Petrel Is.).obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Bangladesh": {
+        "fileName": "Bangladesh.obj",
+        "lat": 24,
+        "lng": 90,
+        "zoom": 75
+    },
+    "Barbados": {
+        "fileName": "Barbados.obj",
+        "lat": 13.16666666,
+        "lng": -59.53333333,
+        "zoom": 75
+    },
+    "Baykonur Cosmodrome": {
+        "fileName": "Baykonur Cosmodrome.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Belarus": {
+        "fileName": "Belarus.obj",
+        "lat": 53,
+        "lng": 28,
+        "zoom": 75
+    },
+    "Belgium": {
+        "fileName": "Belgium.obj",
+        "lat": 50.83333333,
+        "lng": 4,
+        "zoom": 75
+    },
+    "Belize": {
+        "fileName": "Belize.obj",
+        "lat": 17.25,
+        "lng": -88.75,
+        "zoom": 75
+    },
+    "Benin": {
+        "fileName": "Benin.obj",
+        "lat": 9.5,
+        "lng": 2.25,
+        "zoom": 75
+    },
+    "Bermuda": {
+        "fileName": "Bermuda.obj",
+        "lat": 32.33333333,
+        "lng": -64.75,
+        "zoom": 75
+    },
+    "Bhutan": {
+        "fileName": "Bhutan.obj",
+        "lat": 27.5,
+        "lng": 90.5,
+        "zoom": 75
+    },
+    "Bolivia": {
+        "fileName": "Bolivia.obj",
+        "lat": -17,
+        "lng": -65,
+        "zoom": 75
+    },
+    "Bosnia and Herzegovina": {
+        "fileName": "Bosnia and Herzegovina.obj",
+        "lat": 44,
+        "lng": 18,
+        "zoom": 75
+    },
+    "Botswana": {
+        "fileName": "Botswana.obj",
+        "lat": -22,
+        "lng": 24,
+        "zoom": 75
+    },
+    "Brazil": {
+        "fileName": "Brazil.obj",
+        "lat": -10,
+        "lng": -55,
+        "zoom": 75
+    },
+    "British Indian Ocean Territory": {
+        "fileName": "British Indian Ocean Territory.obj",
+        "lat": -6,
+        "lng": 71.5,
+        "zoom": 75
+    },
+    "British Virgin Islands": {
+        "fileName": "British Virgin Islands.obj",
+        "lat": 18.431383,
+        "lng": -64.62305,
+        "zoom": 75
+    },
+    "Brunei": {
+        "fileName": "Brunei.obj",
+        "lat": 4.5,
+        "lng": 114.66666666,
+        "zoom": 75
+    },
+    "Bulgaria": {
+        "fileName": "Bulgaria.obj",
+        "lat": 43,
+        "lng": 25,
+        "zoom": 75
+    },
+    "Burkina Faso": {
+        "fileName": "Burkina Faso.obj",
+        "lat": 13,
+        "lng": -2,
+        "zoom": 75
+    },
+    "Burundi": {
+        "fileName": "Burundi.obj",
+        "lat": -3.5,
+        "lng": 30,
+        "zoom": 75
+    },
+    "Cambodia": {
+        "fileName": "Cambodia.obj",
+        "lat": 13,
+        "lng": 105,
+        "zoom": 75
+    },
+    "Cameroon": {
+        "fileName": "Cameroon.obj",
+        "lat": 6,
+        "lng": 12,
+        "zoom": 75
+    },
+    "Canada": {
+        "fileName": "Canada.obj",
+        "lat": 60,
+        "lng": -95,
+        "zoom": 75
+    },
+    "Cape Verde": {
+        "fileName": "Cape Verde.obj",
+        "lat": 16,
+        "lng": -24,
+        "zoom": 75
+    },
+    "Cayman Islands": {
+        "fileName": "Cayman Islands.obj",
+        "lat": 19.5,
+        "lng": -80.5,
+        "zoom": 75
+    },
+    "Central African Republic": {
+        "fileName": "Central African Republic.obj",
+        "lat": 7,
+        "lng": 21,
+        "zoom": 75
+    },
+    "Chad": {
+        "fileName": "Chad.obj",
+        "lat": 15,
+        "lng": 19,
+        "zoom": 75
+    },
+    "Chile": {
+        "fileName": "Chile.obj",
+        "lat": -30,
+        "lng": -71,
+        "zoom": 75
+    },
+    "China": {
+        "fileName": "China.obj",
+        "lat": 35,
+        "lng": 105,
+        "zoom": 75
+    },
+    "Clipperton Island": {
+        "fileName": "Clipperton Island.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Colombia": {
+        "fileName": "Colombia.obj",
+        "lat": 4,
+        "lng": -72,
+        "zoom": 75
+    },
+    "Comoros": {
+        "fileName": "Comoros.obj",
+        "lat": -12.16666666,
+        "lng": 44.25,
+        "zoom": 75
+    },
+    "Cook Islands": {
+        "fileName": "Cook Islands.obj",
+        "lat": -21.23333333,
+        "lng": -159.76666666,
+        "zoom": 75
+    },
+    "Coral Sea Islands": {
+        "fileName": "Coral Sea Islands.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Costa Rica": {
+        "fileName": "Costa Rica.obj",
+        "lat": 10,
+        "lng": -84,
+        "zoom": 75
+    },
+    "Croatia": {
+        "fileName": "Croatia.obj",
+        "lat": 45.16666666,
+        "lng": 15.5,
+        "zoom": 75
+    },
+    "Cuba": {
+        "fileName": "Cuba.obj",
+        "lat": 21.5,
+        "lng": -80,
+        "zoom": 75
+    },
+    "Curaçao": {
+        "fileName": "Curaçao.obj",
+        "lat": 12.116667,
+        "lng": -68.933333,
+        "zoom": 75
+    },
+    "Cyprus No Mans Area": {
+        "fileName": "Cyprus No Mans Area.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Cyprus": {
+        "fileName": "Cyprus.obj",
+        "lat": 35,
+        "lng": 33,
+        "zoom": 75
+    },
+    "Czech Republic": {
+        "fileName": "Czech Republic.obj",
+        "lat": 49.75,
+        "lng": 15.5,
+        "zoom": 75
+    },
+    "Democratic Republic of the Congo": {
+        "fileName": "Democratic Republic of the Congo.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Denmark": {
+        "fileName": "Denmark.obj",
+        "lat": 56,
+        "lng": 10,
+        "zoom": 75
+    },
+    "Dhekelia Sovereign Base Area": {
+        "fileName": "Dhekelia Sovereign Base Area.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Djibouti": {
+        "fileName": "Djibouti.obj",
+        "lat": 11.5,
+        "lng": 43,
+        "zoom": 75
+    },
+    "Dominica": {
+        "fileName": "Dominica.obj",
+        "lat": 15.41666666,
+        "lng": -61.33333333,
+        "zoom": 75
+    },
+    "Dominican Republic": {
+        "fileName": "Dominican Republic.obj",
+        "lat": 19,
+        "lng": -70.66666666,
+        "zoom": 75
+    },
+    "East Timor": {
+        "fileName": "East Timor.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Ecuador": {
+        "fileName": "Ecuador.obj",
+        "lat": -2,
+        "lng": -77.5,
+        "zoom": 75
+    },
+    "Egypt": {
+        "fileName": "Egypt.obj",
+        "lat": 27,
+        "lng": 30,
+        "zoom": 75
+    },
+    "El Salvador": {
+        "fileName": "El Salvador.obj",
+        "lat": 13.83333333,
+        "lng": -88.91666666,
+        "zoom": 75
+    },
+    "Equatorial Guinea": {
+        "fileName": "Equatorial Guinea.obj",
+        "lat": 2,
+        "lng": 10,
+        "zoom": 75
+    },
+    "Eritrea": {
+        "fileName": "Eritrea.obj",
+        "lat": 15,
+        "lng": 39,
+        "zoom": 75
+    },
+    "Estonia": {
+        "fileName": "Estonia.obj",
+        "lat": 59,
+        "lng": 26,
+        "zoom": 75
+    },
+    "Ethiopia": {
+        "fileName": "Ethiopia.obj",
+        "lat": 8,
+        "lng": 38,
+        "zoom": 75
+    },
+    "Falkland Islands": {
+        "fileName": "Falkland Islands.obj",
+        "lat": -51.75,
+        "lng": -59,
+        "zoom": 75
+    },
+    "Faroe Islands": {
+        "fileName": "Faroe Islands.obj",
+        "lat": 62,
+        "lng": -7,
+        "zoom": 75
+    },
+    "Federated States of Micronesia": {
+        "fileName": "Federated States of Micronesia.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Fiji": {
+        "fileName": "Fiji.obj",
+        "lat": -18,
+        "lng": 175,
+        "zoom": 75
+    },
+    "Finland": {
+        "fileName": "Finland.obj",
+        "lat": 64,
+        "lng": 26,
+        "zoom": 75
+    },
+    "France": {
+        "fileName": "France.obj",
+        "lat": 46,
+        "lng": 2,
+        "zoom": 75
+    },
+    "French Polynesia": {
+        "fileName": "French Polynesia.obj",
+        "lat": -15,
+        "lng": -140,
+        "zoom": 75
+    },
+    "French Southern and Antarctic Lands": {
+        "fileName": "French Southern and Antarctic Lands.obj",
+        "lat": -49.25,
+        "lng": 69.167,
+        "zoom": 75
+    },
+    "Gabon": {
+        "fileName": "Gabon.obj",
+        "lat": -1,
+        "lng": 11.75,
+        "zoom": 75
+    },
+    "Gambia": {
+        "fileName": "Gambia.obj",
+        "lat": 13.46666666,
+        "lng": -16.56666666,
+        "zoom": 75
+    },
+    "Georgia": {
+        "fileName": "Georgia.obj",
+        "lat": 42,
+        "lng": 43.5,
+        "zoom": 75
+    },
+    "Germany": {
+        "fileName": "Germany.obj",
+        "lat": 51,
+        "lng": 9,
+        "zoom": 75
+    },
+    "Ghana": {
+        "fileName": "Ghana.obj",
+        "lat": 8,
+        "lng": -2,
+        "zoom": 75
+    },
+    "Gibraltar": {
+        "fileName": "Gibraltar.obj",
+        "lat": 36.13333333,
+        "lng": -5.35,
+        "zoom": 75
+    },
+    "Greece": {
+        "fileName": "Greece.obj",
+        "lat": 39,
+        "lng": 22,
+        "zoom": 75
+    },
+    "Greenland": {
+        "fileName": "Greenland.obj",
+        "lat": 72,
+        "lng": -40,
+        "zoom": 75
+    },
+    "Grenada": {
+        "fileName": "Grenada.obj",
+        "lat": 12.11666666,
+        "lng": -61.66666666,
+        "zoom": 75
+    },
+    "Guam": {
+        "fileName": "Guam.obj",
+        "lat": 13.46666666,
+        "lng": 144.78333333,
+        "zoom": 75
+    },
+    "Guatemala": {
+        "fileName": "Guatemala.obj",
+        "lat": 15.5,
+        "lng": -90.25,
+        "zoom": 75
+    },
+    "Guernsey": {
+        "fileName": "Guernsey.obj",
+        "lat": 49.46666666,
+        "lng": -2.58333333,
+        "zoom": 75
+    },
+    "Guinea Bissau": {
+        "fileName": "Guinea Bissau.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Guinea": {
+        "fileName": "Guinea.obj",
+        "lat": 11,
+        "lng": -10,
+        "zoom": 75
+    },
+    "Guyana": {
+        "fileName": "Guyana.obj",
+        "lat": 5,
+        "lng": -59,
+        "zoom": 75
+    },
+    "Haiti": {
+        "fileName": "Haiti.obj",
+        "lat": 19,
+        "lng": -72.41666666,
+        "zoom": 75
+    },
+    "Heard Island and McDonald Islands": {
+        "fileName": "Heard Island and McDonald Islands.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Honduras": {
+        "fileName": "Honduras.obj",
+        "lat": 15,
+        "lng": -86.5,
+        "zoom": 75
+    },
+    "Hong Kong S.A.R.": {
+        "fileName": "Hong Kong S.A.R..obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "hungary": {
+        "fileName": "hungary.obj",
+        "lat": 47,
+        "lng": 20,
+        "zoom": 75
+    },
+    "Iceland": {
+        "fileName": "Iceland.obj",
+        "lat": 65,
+        "lng": -18,
+        "zoom": 75
+    },
+    "India": {
+        "fileName": "India.obj",
+        "lat": 20,
+        "lng": 77,
+        "zoom": 75
+    },
+    "Indian Ocean Territories": {
+        "fileName": "Indian Ocean Territories.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Indonesia": {
+        "fileName": "Indonesia.obj",
+        "lat": -5,
+        "lng": 120,
+        "zoom": 75
+    },
+    "Iran": {
+        "fileName": "Iran.obj",
+        "lat": 32,
+        "lng": 53,
+        "zoom": 75
+    },
+    "Iraq": {
+        "fileName": "Iraq.obj",
+        "lat": 33,
+        "lng": 44,
+        "zoom": 75
+    },
+    "Ireland": {
+        "fileName": "Ireland.obj",
+        "lat": 53,
+        "lng": -8,
+        "zoom": 75
+    },
+    "Isle of Man": {
+        "fileName": "Isle of Man.obj",
+        "lat": 54.25,
+        "lng": -4.5,
+        "zoom": 75
+    },
+    "Israel": {
+        "fileName": "Israel.obj",
+        "lat": 31.47,
+        "lng": 35.13,
+        "zoom": 75
+    },
+    "italy": {
+        "fileName": "italy.obj",
+        "lat": 42.83333333,
+        "lng": 12.83333333,
+        "zoom": 75
+    },
+    "Ivory Coast": {
+        "fileName": "Ivory Coast.obj",
+        "lat": 8,
+        "lng": -5,
+        "zoom": 75
+    },
+    "Jamaica": {
+        "fileName": "Jamaica.obj",
+        "lat": 18.25,
+        "lng": -77.5,
+        "zoom": 75
+    },
+    "Japan": {
+        "fileName": "Japan.obj",
+        "lat": 36,
+        "lng": 138,
+        "zoom": 75
+    },
+    "Jersey": {
+        "fileName": "Jersey.obj",
+        "lat": 49.25,
+        "lng": -2.16666666,
+        "zoom": 75
+    },
+    "Jordan": {
+        "fileName": "Jordan.obj",
+        "lat": 31,
+        "lng": 36,
+        "zoom": 75
+    },
+    "Kazakhstan": {
+        "fileName": "Kazakhstan.obj",
+        "lat": 48,
+        "lng": 68,
+        "zoom": 75
+    },
+    "Kenya": {
+        "fileName": "Kenya.obj",
+        "lat": 1,
+        "lng": 38,
+        "zoom": 75
+    },
+    "Kiribati": {
+        "fileName": "Kiribati.obj",
+        "lat": 1.41666666,
+        "lng": 173,
+        "zoom": 75
+    },
+    "Kosovo": {
+        "fileName": "Kosovo.obj",
+        "lat": 42.666667,
+        "lng": 21.166667,
+        "zoom": 75
+    },
+    "Kuwait": {
+        "fileName": "Kuwait.obj",
+        "lat": 29.5,
+        "lng": 45.75,
+        "zoom": 75
+    },
+    "Kyrgyzstan": {
+        "fileName": "Kyrgyzstan.obj",
+        "lat": 41,
+        "lng": 75,
+        "zoom": 75
+    },
+    "Laos": {
+        "fileName": "Laos.obj",
+        "lat": 18,
+        "lng": 105,
+        "zoom": 75
+    },
+    "Latvia": {
+        "fileName": "Latvia.obj",
+        "lat": 57,
+        "lng": 25,
+        "zoom": 75
+    },
+    "Lebanon": {
+        "fileName": "Lebanon.obj",
+        "lat": 33.83333333,
+        "lng": 35.83333333,
+        "zoom": 75
+    },
+    "Lesotho": {
+        "fileName": "Lesotho.obj",
+        "lat": -29.5,
+        "lng": 28.5,
+        "zoom": 75
+    },
+    "Liberia": {
+        "fileName": "Liberia.obj",
+        "lat": 6.5,
+        "lng": -9.5,
+        "zoom": 75
+    },
+    "Libya": {
+        "fileName": "Libya.obj",
+        "lat": 25,
+        "lng": 17,
+        "zoom": 75
+    },
+    "Liechtenstein": {
+        "fileName": "Liechtenstein.obj",
+        "lat": 47.26666666,
+        "lng": 9.53333333,
+        "zoom": 75
+    },
+    "Lithuania": {
+        "fileName": "Lithuania.obj",
+        "lat": 56,
+        "lng": 24,
+        "zoom": 75
+    },
+    "Luxembourg": {
+        "fileName": "Luxembourg.obj",
+        "lat": 49.75,
+        "lng": 6.16666666,
+        "zoom": 75
+    },
+    "Macao S.A.R": {
+        "fileName": "Macao S.A.R.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Macedonia": {
+        "fileName": "Macedonia.obj",
+        "lat": 41.83333333,
+        "lng": 22,
+        "zoom": 75
+    },
+    "Madagascar": {
+        "fileName": "Madagascar.obj",
+        "lat": -20,
+        "lng": 47,
+        "zoom": 75
+    },
+    "Malawi": {
+        "fileName": "Malawi.obj",
+        "lat": -13.5,
+        "lng": 34,
+        "zoom": 75
+    },
+    "Malaysia": {
+        "fileName": "Malaysia.obj",
+        "lat": 2.5,
+        "lng": 112.5,
+        "zoom": 75
+    },
+    "Maldives": {
+        "fileName": "Maldives.obj",
+        "lat": 3.25,
+        "lng": 73,
+        "zoom": 75
+    },
+    "Mali": {
+        "fileName": "Mali.obj",
+        "lat": 17,
+        "lng": -4,
+        "zoom": 75
+    },
+    "Malta": {
+        "fileName": "Malta.obj",
+        "lat": 35.83333333,
+        "lng": 14.58333333,
+        "zoom": 75
+    },
+    "Marshall Islands": {
+        "fileName": "Marshall Islands.obj",
+        "lat": 9,
+        "lng": 168,
+        "zoom": 75
+    },
+    "Mauritania": {
+        "fileName": "Mauritania.obj",
+        "lat": 20,
+        "lng": -12,
+        "zoom": 75
+    },
+    "Mauritius": {
+        "fileName": "Mauritius.obj",
+        "lat": -20.28333333,
+        "lng": 57.55,
+        "zoom": 75
+    },
+    "Mexico": {
+        "fileName": "Mexico.obj",
+        "lat": 23,
+        "lng": -102,
+        "zoom": 75
+    },
+    "Moldova": {
+        "fileName": "Moldova.obj",
+        "lat": 47,
+        "lng": 29,
+        "zoom": 75
+    },
+    "Monaco": {
+        "fileName": "Monaco.obj",
+        "lat": 43.73333333,
+        "lng": 7.4,
+        "zoom": 75
+    },
+    "Mongolia": {
+        "fileName": "Mongolia.obj",
+        "lat": 46,
+        "lng": 105,
+        "zoom": 75
+    },
+    "Montenegro": {
+        "fileName": "Montenegro.obj",
+        "lat": 42.5,
+        "lng": 19.3,
+        "zoom": 75
+    },
+    "Montserrat": {
+        "fileName": "Montserrat.obj",
+        "lat": 16.75,
+        "lng": -62.2,
+        "zoom": 75
+    },
+    "Morocco": {
+        "fileName": "Morocco.obj",
+        "lat": 32,
+        "lng": -5,
+        "zoom": 75
+    },
+    "Mozambique": {
+        "fileName": "Mozambique.obj",
+        "lat": -18.25,
+        "lng": 35,
+        "zoom": 75
+    },
+    "Myanmar": {
+        "fileName": "Myanmar.obj",
+        "lat": 22,
+        "lng": 98,
+        "zoom": 75
+    },
+    "Namibia": {
+        "fileName": "Namibia.obj",
+        "lat": -22,
+        "lng": 17,
+        "zoom": 75
+    },
+    "Nauru": {
+        "fileName": "Nauru.obj",
+        "lat": -0.53333333,
+        "lng": 166.91666666,
+        "zoom": 75
+    },
+    "Nepal": {
+        "fileName": "Nepal.obj",
+        "lat": 28,
+        "lng": 84,
+        "zoom": 75
+    },
+    "Netherlands": {
+        "fileName": "Netherlands.obj",
+        "lat": 52.5,
+        "lng": 5.75,
+        "zoom": 75
+    },
+    "New Caledonia": {
+        "fileName": "New Caledonia.obj",
+        "lat": -21.5,
+        "lng": 165.5,
+        "zoom": 75
+    },
+    "New Zealand": {
+        "fileName": "New Zealand.obj",
+        "lat": -41,
+        "lng": 174,
+        "zoom": 75
+    },
+    "Nicaragua": {
+        "fileName": "Nicaragua.obj",
+        "lat": 13,
+        "lng": -85,
+        "zoom": 75
+    },
+    "Niger": {
+        "fileName": "Niger.obj",
+        "lat": 16,
+        "lng": 8,
+        "zoom": 75
+    },
+    "Nigeria": {
+        "fileName": "Nigeria.obj",
+        "lat": 10,
+        "lng": 8,
+        "zoom": 75
+    },
+    "Niue": {
+        "fileName": "Niue.obj",
+        "lat": -19.03333333,
+        "lng": -169.86666666,
+        "zoom": 75
+    },
+    "Norfolk Island": {
+        "fileName": "Norfolk Island.obj",
+        "lat": -29.03333333,
+        "lng": 167.95,
+        "zoom": 75
+    },
+    "North Korea": {
+        "fileName": "North Korea.obj",
+        "lat": 40,
+        "lng": 127,
+        "zoom": 75
+    },
+    "Northern Cyprus": {
+        "fileName": "Northern Cyprus.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Northern Mariana Islands": {
+        "fileName": "Northern Mariana Islands.obj",
+        "lat": 15.2,
+        "lng": 145.75,
+        "zoom": 75
+    },
+    "Norway": {
+        "fileName": "Norway.obj",
+        "lat": 62,
+        "lng": 10,
+        "zoom": 75
+    },
+    "Oman": {
+        "fileName": "Oman.obj",
+        "lat": 21,
+        "lng": 57,
+        "zoom": 75
+    },
+    "Pakistan": {
+        "fileName": "Pakistan.obj",
+        "lat": 30,
+        "lng": 70,
+        "zoom": 75
+    },
+    "Palau": {
+        "fileName": "Palau.obj",
+        "lat": 7.5,
+        "lng": 134.5,
+        "zoom": 75
+    },
+    "Palestine": {
+        "fileName": "Palestine.obj",
+        "lat": 31.9,
+        "lng": 35.2,
+        "zoom": 75
+    },
+    "Panama": {
+        "fileName": "Panama.obj",
+        "lat": 9,
+        "lng": -80,
+        "zoom": 75
+    },
+    "Papua New Guinea": {
+        "fileName": "Papua New Guinea.obj",
+        "lat": -6,
+        "lng": 147,
+        "zoom": 75
+    },
+    "Paraguay": {
+        "fileName": "Paraguay.obj",
+        "lat": -23,
+        "lng": -58,
+        "zoom": 75
+    },
+    "Peru": {
+        "fileName": "Peru.obj",
+        "lat": -10,
+        "lng": -76,
+        "zoom": 75
+    },
+    "Philippines": {
+        "fileName": "Philippines.obj",
+        "lat": 13,
+        "lng": 122,
+        "zoom": 75
+    },
+    "Pitcairn Islands": {
+        "fileName": "Pitcairn Islands.obj",
+        "lat": -25.06666666,
+        "lng": -130.1,
+        "zoom": 75
+    },
+    "Poland": {
+        "fileName": "Poland.obj",
+        "lat": 52,
+        "lng": 20,
+        "zoom": 75
+    },
+    "Portugal": {
+        "fileName": "Portugal.obj",
+        "lat": 39.5,
+        "lng": -8,
+        "zoom": 75
+    },
+    "Puerto Rico": {
+        "fileName": "Puerto Rico.obj",
+        "lat": 18.25,
+        "lng": -66.5,
+        "zoom": 75
+    },
+    "Qatar": {
+        "fileName": "Qatar.obj",
+        "lat": 25.5,
+        "lng": 51.25,
+        "zoom": 75
+    },
+    "Republic of Congo": {
+        "fileName": "Republic of Congo.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Republic of Serbia": {
+        "fileName": "Republic of Serbia.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Romania": {
+        "fileName": "Romania.obj",
+        "lat": 46,
+        "lng": 25,
+        "zoom": 75
+    },
+    "Russia": {
+        "fileName": "Russia.obj",
+        "lat": 60,
+        "lng": 100,
+        "zoom": 75
+    },
+    "Rwanda": {
+        "fileName": "Rwanda.obj",
+        "lat": -2,
+        "lng": 30,
+        "zoom": 75
+    },
+    "Saint Barthelemy": {
+        "fileName": "Saint Barthelemy.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Saint Helena": {
+        "fileName": "Saint Helena.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Saint Kitts and Nevis": {
+        "fileName": "Saint Kitts and Nevis.obj",
+        "lat": 17.33333333,
+        "lng": -62.75,
+        "zoom": 75
+    },
+    "Saint Lucia": {
+        "fileName": "Saint Lucia.obj",
+        "lat": 13.88333333,
+        "lng": -60.96666666,
+        "zoom": 75
+    },
+    "Saint Martin": {
+        "fileName": "Saint Martin.obj",
+        "lat": 18.08333333,
+        "lng": -63.95,
+        "zoom": 75
+    },
+    "Saint Pierre and Miquelon": {
+        "fileName": "Saint Pierre and Miquelon.obj",
+        "lat": 46.83333333,
+        "lng": -56.33333333,
+        "zoom": 75
+    },
+    "Saint Vincent and the Grenadines": {
+        "fileName": "Saint Vincent and the Grenadines.obj",
+        "lat": 13.25,
+        "lng": -61.2,
+        "zoom": 75
+    },
+    "Samoa": {
+        "fileName": "Samoa.obj",
+        "lat": -13.58333333,
+        "lng": -172.33333333,
+        "zoom": 75
+    },
+    "San Marino": {
+        "fileName": "San Marino.obj",
+        "lat": 43.76666666,
+        "lng": 12.41666666,
+        "zoom": 75
+    },
+    "Sao Tome and Principe": {
+        "fileName": "Sao Tome and Principe.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Saudi Arabia": {
+        "fileName": "Saudi Arabia.obj",
+        "lat": 25,
+        "lng": 45,
+        "zoom": 75
+    },
+    "Scarborough Reef": {
+        "fileName": "Scarborough Reef.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Senegal": {
+        "fileName": "Senegal.obj",
+        "lat": 14,
+        "lng": -14,
+        "zoom": 75
+    },
+    "Serranilla Bank": {
+        "fileName": "Serranilla Bank.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Seychelles": {
+        "fileName": "Seychelles.obj",
+        "lat": -4.58333333,
+        "lng": 55.66666666,
+        "zoom": 75
+    },
+    "Siachen Glacier": {
+        "fileName": "Siachen Glacier.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Sierra Leone": {
+        "fileName": "Sierra Leone.obj",
+        "lat": 8.5,
+        "lng": -11.5,
+        "zoom": 75
+    },
+    "Singapore": {
+        "fileName": "Singapore.obj",
+        "lat": 1.36666666,
+        "lng": 103.8,
+        "zoom": 75
+    },
+    "Sint Maarten": {
+        "fileName": "Sint Maarten.obj",
+        "lat": 18.033333,
+        "lng": -63.05,
+        "zoom": 75
+    },
+    "Slovakia": {
+        "fileName": "Slovakia.obj",
+        "lat": 48.66666666,
+        "lng": 19.5,
+        "zoom": 75
+    },
+    "Slovenia": {
+        "fileName": "Slovenia.obj",
+        "lat": 46.11666666,
+        "lng": 14.81666666,
+        "zoom": 75
+    },
+    "Solomon Islands": {
+        "fileName": "Solomon Islands.obj",
+        "lat": -8,
+        "lng": 159,
+        "zoom": 75
+    },
+    "Somalia": {
+        "fileName": "Somalia.obj",
+        "lat": 10,
+        "lng": 49,
+        "zoom": 75
+    },
+    "Somaliland": {
+        "fileName": "Somaliland.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "South Africa": {
+        "fileName": "South Africa.obj",
+        "lat": -29,
+        "lng": 24,
+        "zoom": 75
+    },
+    "South Georgia and South Sandwich Islands": {
+        "fileName": "South Georgia and South Sandwich Islands.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "South Korea": {
+        "fileName": "South Korea.obj",
+        "lat": 37,
+        "lng": 127.5,
+        "zoom": 75
+    },
+    "South Sudan": {
+        "fileName": "South Sudan.obj",
+        "lat": 7,
+        "lng": 30,
+        "zoom": 75
+    },
+    "Spain": {
+        "fileName": "Spain.obj",
+        "lat": 40,
+        "lng": -4,
+        "zoom": 75
+    },
+    "Spratly Islands": {
+        "fileName": "Spratly Islands.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Sri Lanka": {
+        "fileName": "Sri Lanka.obj",
+        "lat": 7,
+        "lng": 81,
+        "zoom": 75
+    },
+    "Sudan": {
+        "fileName": "Sudan.obj",
+        "lat": 15,
+        "lng": 30,
+        "zoom": 75
+    },
+    "Suriname": {
+        "fileName": "Suriname.obj",
+        "lat": 4,
+        "lng": -56,
+        "zoom": 75
+    },
+    "Swaziland": {
+        "fileName": "Swaziland.obj",
+        "lat": -26.5,
+        "lng": 31.5,
+        "zoom": 75
+    },
+    "Sweden": {
+        "fileName": "Sweden.obj",
+        "lat": 62,
+        "lng": 15,
+        "zoom": 75
+    },
+    "Switzerland": {
+        "fileName": "Switzerland.obj",
+        "lat": 47,
+        "lng": 8,
+        "zoom": 75
+    },
+    "Syria": {
+        "fileName": "Syria.obj",
+        "lat": 35,
+        "lng": 38,
+        "zoom": 75
+    },
+    "Taiwan": {
+        "fileName": "Taiwan.obj",
+        "lat": 23.5,
+        "lng": 121,
+        "zoom": 75
+    },
+    "Tajikistan": {
+        "fileName": "Tajikistan.obj",
+        "lat": 39,
+        "lng": 71,
+        "zoom": 75
+    },
+    "Thailand": {
+        "fileName": "Thailand.obj",
+        "lat": 15,
+        "lng": 100,
+        "zoom": 75
+    },
+    "The Bahamas": {
+        "fileName": "The Bahamas.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Togo": {
+        "fileName": "Togo.obj",
+        "lat": 8,
+        "lng": 1.16666666,
+        "zoom": 75
+    },
+    "Tonga": {
+        "fileName": "Tonga.obj",
+        "lat": -20,
+        "lng": -175,
+        "zoom": 75
+    },
+    "Trinidad and Tobago": {
+        "fileName": "Trinidad and Tobago.obj",
+        "lat": 11,
+        "lng": -61,
+        "zoom": 75
+    },
+    "Tunisia": {
+        "fileName": "Tunisia.obj",
+        "lat": 34,
+        "lng": 9,
+        "zoom": 75
+    },
+    "Turkey": {
+        "fileName": "Turkey.obj",
+        "lat": 39,
+        "lng": 35,
+        "zoom": 75
+    },
+    "Turkmenistan": {
+        "fileName": "Turkmenistan.obj",
+        "lat": 40,
+        "lng": 60,
+        "zoom": 75
+    },
+    "Turks and Caicos Islands": {
+        "fileName": "Turks and Caicos Islands.obj",
+        "lat": 21.75,
+        "lng": -71.58333333,
+        "zoom": 75
+    },
+    "Tuvalu": {
+        "fileName": "Tuvalu.obj",
+        "lat": -8,
+        "lng": 178,
+        "zoom": 75
+    },
+    "Uganda": {
+        "fileName": "Uganda.obj",
+        "lat": 1,
+        "lng": 32,
+        "zoom": 75
+    },
+    "Ukraine": {
+        "fileName": "Ukraine.obj",
+        "lat": 49,
+        "lng": 32,
+        "zoom": 75
+    },
+    "United Arab Emirates": {
+        "fileName": "United Arab Emirates.obj",
+        "lat": 24,
+        "lng": 54,
+        "zoom": 75
+    },
+    "United Kingdom": {
+        "fileName": "United Kingdom.obj",
+        "lat": 54,
+        "lng": -2,
+        "zoom": 75
+    },
+    "United Republic of Tanzania": {
+        "fileName": "United Republic of Tanzania.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "United States Minor Outlying Islands": {
+        "fileName": "United States Minor Outlying Islands.obj",
+        "lat": 19.2911437,
+        "lng": 166.618332,
+        "zoom": 75
+    },
+    "United States of America": {
+        "fileName": "United States of America.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "United States Virgin Islands": {
+        "fileName": "United States Virgin Islands.obj",
+        "lat": 18.35,
+        "lng": -64.933333,
+        "zoom": 75
+    },
+    "Uruguay": {
+        "fileName": "Uruguay.obj",
+        "lat": -33,
+        "lng": -56,
+        "zoom": 75
+    },
+    "US Naval Base Guantanamo Bay": {
+        "fileName": "US Naval Base Guantanamo Bay.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Uzbekistan": {
+        "fileName": "Uzbekistan.obj",
+        "lat": 41,
+        "lng": 64,
+        "zoom": 75
+    },
+    "Vanuatu": {
+        "fileName": "Vanuatu.obj",
+        "lat": -16,
+        "lng": 167,
+        "zoom": 75
+    },
+    "Vatican": {
+        "fileName": "Vatican.obj",
+        "lat": "?",
+        "lng": "?",
+        "zoom": 75
+    },
+    "Venezuela": {
+        "fileName": "Venezuela.obj",
+        "lat": 8,
+        "lng": -66,
+        "zoom": 75
+    },
+    "Vietnam": {
+        "fileName": "Vietnam.obj",
+        "lat": 16.16666666,
+        "lng": 107.83333333,
+        "zoom": 75
+    },
+    "Wallis and Futuna": {
+        "fileName": "Wallis and Futuna.obj",
+        "lat": -13.3,
+        "lng": -176.2,
+        "zoom": 75
+    },
+    "Western Sahara": {
+        "fileName": "Western Sahara.obj",
+        "lat": 24.5,
+        "lng": -13,
+        "zoom": 75
+    },
+    "Yemen": {
+        "fileName": "Yemen.obj",
+        "lat": 15,
+        "lng": 48,
+        "zoom": 75
+    },
+    "Zambia": {
+        "fileName": "Zambia.obj",
+        "lat": -15,
+        "lng": 30,
+        "zoom": 75
+    },
+    "Zimbabwe": {
+        "fileName": "Zimbabwe.obj",
+        "lat": -20,
+        "lng": 30,
+        "zoom": 75
+    }
 }

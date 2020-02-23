@@ -21,14 +21,15 @@ fs.readdir(foler, function (err, files) {
     let key = file.replace(".obj", "");
     countries[key] = new Object();
     countries[key]["fileName"] = file;
-    countries[key]["lat"] = getCoordinates(countryData, key)[0];
-    countries[key]["lng"] = getCoordinates(countryData, key)[1];
+    let coor = getCoordinates(countryData, key);
+    countries[key]["lat"] = coor[0];
+    countries[key]["lng"] = coor[1];
     countries[key]["zoom"] = 75;
 
   });
   //console.log(countries);
   var myJSON = JSON.stringify(countries, null, 4);
-  console.log(myJSON);
+  //console.log(myJSON);
   fs.writeFile('./resources/countries.json', myJSON, function(err, result) {
     if(err) console.log('error', err);
   });
@@ -37,8 +38,9 @@ fs.readdir(foler, function (err, files) {
 
 function getCoordinates(countryData, country){
   for(data of countryData){
-    if(country === data['name'])
+    if(country.toUpperCase() === data['name'].toUpperCase())
       return data['latlng'];
   }
+  console.log("NOT FOUND: " + country);
   return ["?", "?"];
 }

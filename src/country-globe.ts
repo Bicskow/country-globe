@@ -113,8 +113,8 @@ export default class CountryGlobe {
     console.log("Loading country objs and borders countries data");
     for (let coutry in data) {
       console.log(coutry);
-      this.loadCountryOBJ("/3dobj/" + data[coutry]);
-      this.loadCountryBorderOBJ("/flatobj/" + data[coutry]);
+      this.loadCountryOBJ("/3dobj/" + data[coutry]['fileName']);
+      this.loadCountryBorderOBJ("/flatobj/" + data[coutry]['fileName']);
     }
   }
 
