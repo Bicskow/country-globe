@@ -21,9 +21,11 @@ export default class CountryGlobe {
   private mouseX: number = 0;
   private mouseY: number = 0;
   private controls: OrbitControls;
+  private highlightedCountry: string = "";
 
   private mapColors = [0xf78786,0x8aec7b, 0xf3f361, 0x6cbaeb, 0xbd8fcf];
   private countryObjects = [] as THREE.Object3D[];
+  private countryData: any;
 
   private orbitCoords = new THREE.Spherical(75, Math.PI/2, 0);
 
@@ -73,7 +75,7 @@ export default class CountryGlobe {
     this.container.addEventListener('keypress', this.onKeypres.bind(this) as any);
 
     this.loadCountriesJson();
-    setTimeout(this.testAnimation.bind(this), 60000);
+    //setTimeout(this.testAnimation.bind(this), 120000);
     this.render();
   }
 
@@ -111,6 +113,7 @@ export default class CountryGlobe {
 
   public loadCountriesJsonData(data: any){
     console.log("Loading country objs and borders countries data");
+    this.countryData = data;
     for (let coutry in data) {
       console.log(coutry);
       this.loadCountryOBJ("/3dobj/" + data[coutry]['fileName']);
@@ -209,11 +212,18 @@ export default class CountryGlobe {
   }
 
   private onKeypres(event: Event){
-    this.setOrbit(21.30694,-157.85833, 30);
+    this.testAnimation();
+    //this.setOrbit(21.30694,-157.85833, 30);
     //this.setOrbit(35.6895,139.69171, 30);
     //this.setOrbit(40.71427,-74.00597,30);
     //this.setOrbit(-34.90328,-56.18816,30);
     //this.setOrbit(47.49801,19.03991,30);
+  }
+
+  public zoomToCountry(country: string){
+    console.log(this.countryData[country]['lat']);
+    console.log(this.countryData[country]['lng']);
+    this.setOrbit(this.countryData[country]['lat'],this.countryData[country]['lng'],75);
   }
 
   public highlightCounty(country: string){
@@ -225,7 +235,34 @@ export default class CountryGlobe {
   }
 
   public testAnimation(){
-    this.highlightCounty("Turkey");
+    console.log("ANIMATION START")
+    let keys = Object.keys(this.countryData);
+    keys.sort();
+    let country = keys[0];
+    if(this.highlightedCountry === ""){
+      country = keys[0];
+    } else {
+      for (let i = 0; i < keys.length; i++) {
+        if(keys[i] === this.highlightedCountry){
+          if(i + 1 < keys.length){
+            country = keys[i+1];
+          } else {
+            country = keys[0];
+          }
+        }
+      }
+    }
+    //let country = this.getRandomCountry()
+    this.highlightCounty(country);
+    this.zoomToCountry(country);
+    this.highlightedCountry = country;
+    console.log(this.highlightedCountry);
+    //setTimeout(this.testAnimation.bind(this), 3000);
+  }
+
+  public getRandomCountry() {
+    var keys = Object.keys(this.countryData)
+    return keys[ keys.length * Math.random() << 0];
   }
 }
 
