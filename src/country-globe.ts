@@ -202,7 +202,10 @@ export default class CountryGlobe {
     return deg * (Math.PI/180);
   }
 
-  public setOrbit(lat: number, lng: number, zoom: number){
+  public async setOrbit(lat: number, lng: number, zoom: number){
+    while(this.orbitUpdate){
+      await new Promise(r => setTimeout(r, 2000));
+    } 
     this.orbitUpdate = true;
     let sp = new THREE.Spherical(zoom, this.degrees_to_radians((lat * -1) + 90) , this.degrees_to_radians(lng + 90));
     TWEEN.removeAll();
@@ -211,8 +214,14 @@ export default class CountryGlobe {
     camTween.start();
   }
 
-  private onKeypres(event: Event){
-    this.testAnimation();
+  private onKeypres(event: KeyboardEvent){
+    let key = String.fromCharCode(event.keyCode);
+    console.log(key);
+    if(key === 'n'){
+      this.testAnimation();
+    } else if(key === 'z'){
+      console.log(this.orbitCoords.radius)
+    }
     //this.setOrbit(21.30694,-157.85833, 30);
     //this.setOrbit(35.6895,139.69171, 30);
     //this.setOrbit(40.71427,-74.00597,30);
@@ -220,10 +229,14 @@ export default class CountryGlobe {
     //this.setOrbit(47.49801,19.03991,30);
   }
 
+  public zoomOut(){
+    console.log("ZOMMOUT");
+    this.setOrbit(this.countryData[this.highlightedCountry]['lat'], this.countryData[this.highlightedCountry]['lng'], 75);
+  }
   public zoomToCountry(country: string){
     console.log(this.countryData[country]['lat']);
     console.log(this.countryData[country]['lng']);
-    this.setOrbit(this.countryData[country]['lat'],this.countryData[country]['lng'],75);
+    this.setOrbit(this.countryData[country]['lat'],this.countryData[country]['lng'],this.countryData[country]['zoom']);
   }
 
   public highlightCounty(country: string){
@@ -254,6 +267,9 @@ export default class CountryGlobe {
     }
     //let country = this.getRandomCountry()
     this.highlightCounty(country);
+    if(!(this.highlightedCountry === "")){
+      this.zoomOut();
+    }
     this.zoomToCountry(country);
     this.highlightedCountry = country;
     console.log(this.highlightedCountry);
