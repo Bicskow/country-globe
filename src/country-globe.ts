@@ -203,15 +203,15 @@ export default class CountryGlobe {
   }
 
   public async setOrbit(lat: number, lng: number, zoom: number){
-    while(this.orbitUpdate){
-      await new Promise(r => setTimeout(r, 2000));
-    } 
     this.orbitUpdate = true;
-    let sp = new THREE.Spherical(zoom, this.degrees_to_radians((lat * -1) + 90) , this.degrees_to_radians(lng + 90));
+    let sp2 = new THREE.Spherical(zoom, this.degrees_to_radians((lat * -1) + 90) , this.degrees_to_radians(lng + 90)); 
+    let sp1 = new THREE.Spherical(75, (sp2.phi + this.orbitCoords.phi)/2, (sp2.theta + this.orbitCoords.theta)/2);
     TWEEN.removeAll();
-    let camTween = new TWEEN.Tween(this.orbitCoords).to(sp, 1000).easing(TWEEN.Easing.Quadratic.InOut);
-    camTween.onComplete(this.orbitUpdateDone.bind(this));
-    camTween.start();
+    let camTween1 = new TWEEN.Tween(this.orbitCoords).to(sp1, 1000).easing(TWEEN.Easing.Quadratic.In);
+    let camTween2 = new TWEEN.Tween(this.orbitCoords).to(sp2, 1000).easing(TWEEN.Easing.Quadratic.Out);
+    camTween2.onComplete(this.orbitUpdateDone.bind(this));
+    camTween1.chain(camTween2);
+    camTween1.start();
   }
 
   private onKeypres(event: KeyboardEvent){
@@ -267,9 +267,6 @@ export default class CountryGlobe {
     }
     //let country = this.getRandomCountry()
     this.highlightCounty(country);
-    if(!(this.highlightedCountry === "")){
-      this.zoomOut();
-    }
     this.zoomToCountry(country);
     this.highlightedCountry = country;
     console.log(this.highlightedCountry);
