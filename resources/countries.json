@@ -111,127 +111,127 @@
         "fileName": "Bahrain.obj",
         "lat": 26,
         "lng": 50.55,
-        "zoom": 75
+        "zoom": 12
     },
     "Bajo Nuevo Bank (Petrel Is.)": {
         "fileName": "Bajo Nuevo Bank (Petrel Is.).obj",
         "lat": 15.8638025,
         "lng": -78.7404745,
-        "zoom": 75
+        "zoom": 5.2
     },
     "Bangladesh": {
         "fileName": "Bangladesh.obj",
         "lat": 24,
         "lng": 90,
-        "zoom": 75
+        "zoom": 28
     },
     "Barbados": {
         "fileName": "Barbados.obj",
         "lat": 13.16666666,
         "lng": -59.53333333,
-        "zoom": 75
+        "zoom": 12
     },
     "Baykonur Cosmodrome": {
         "fileName": "Baykonur Cosmodrome.obj",
         "lat": 45.9645851,
         "lng": 63.3030541,
-        "zoom": 75
+        "zoom": 19
     },
     "Belarus": {
         "fileName": "Belarus.obj",
         "lat": 53,
         "lng": 28,
-        "zoom": 75
+        "zoom": 22
     },
     "Belgium": {
         "fileName": "Belgium.obj",
         "lat": 50.83333333,
         "lng": 4,
-        "zoom": 75
+        "zoom": 25
     },
     "Belize": {
         "fileName": "Belize.obj",
         "lat": 17.25,
         "lng": -88.75,
-        "zoom": 75
+        "zoom": 15
     },
     "Benin": {
         "fileName": "Benin.obj",
         "lat": 9.5,
         "lng": 2.25,
-        "zoom": 75
+        "zoom": 25.5
     },
     "Bermuda": {
         "fileName": "Bermuda.obj",
         "lat": 32.33333333,
         "lng": -64.75,
-        "zoom": 75
+        "zoom": 5.5
     },
     "Bhutan": {
         "fileName": "Bhutan.obj",
         "lat": 27.5,
         "lng": 90.5,
-        "zoom": 75
+        "zoom": 30
     },
     "Bolivia": {
         "fileName": "Bolivia.obj",
         "lat": -17,
         "lng": -65,
-        "zoom": 75
+        "zoom": 40.5
     },
     "Bosnia and Herzegovina": {
         "fileName": "Bosnia and Herzegovina.obj",
         "lat": 44,
         "lng": 18,
-        "zoom": 75
+        "zoom": 18
     },
     "Botswana": {
         "fileName": "Botswana.obj",
         "lat": -22,
         "lng": 24,
-        "zoom": 75
+        "zoom": 26.8
     },
     "Brazil": {
         "fileName": "Brazil.obj",
         "lat": -10,
         "lng": -55,
-        "zoom": 75
+        "zoom": 45
     },
     "British Indian Ocean Territory": {
         "fileName": "British Indian Ocean Territory.obj",
         "lat": -6,
         "lng": 71.5,
-        "zoom": 75
+        "zoom": 6.7
     },
     "British Virgin Islands": {
         "fileName": "British Virgin Islands.obj",
         "lat": 18.431383,
         "lng": -64.62305,
-        "zoom": 75
+        "zoom": 11.2
     },
     "Brunei": {
         "fileName": "Brunei.obj",
         "lat": 4.5,
         "lng": 114.66666666,
-        "zoom": 75
+        "zoom": 17
     },
     "Bulgaria": {
         "fileName": "Bulgaria.obj",
         "lat": 43,
         "lng": 25,
-        "zoom": 75
+        "zoom": 23
     },
     "Burkina Faso": {
         "fileName": "Burkina Faso.obj",
         "lat": 13,
         "lng": -2,
-        "zoom": 75
+        "zoom": 33
     },
     "Burundi": {
         "fileName": "Burundi.obj",
         "lat": -3.5,
         "lng": 30,
-        "zoom": 75
+        "zoom": 24
     },
     "Cambodia": {
         "fileName": "Cambodia.obj",
