@@ -237,127 +237,127 @@
         "fileName": "Cambodia.obj",
         "lat": 13,
         "lng": 105,
-        "zoom": 75
+        "zoom": 20
     },
     "Cameroon": {
         "fileName": "Cameroon.obj",
         "lat": 6,
         "lng": 12,
-        "zoom": 75
+        "zoom": 28
     },
     "Canada": {
         "fileName": "Canada.obj",
         "lat": 60,
         "lng": -95,
-        "zoom": 75
+        "zoom": 45
     },
     "Cape Verde": {
         "fileName": "Cape Verde.obj",
         "lat": 16,
         "lng": -24,
-        "zoom": 75
+        "zoom": 12
     },
     "Cayman Islands": {
         "fileName": "Cayman Islands.obj",
         "lat": 19.5,
         "lng": -80.5,
-        "zoom": 75
+        "zoom": 9.5
     },
     "Central African Republic": {
         "fileName": "Central African Republic.obj",
         "lat": 7,
         "lng": 21,
-        "zoom": 75
+        "zoom": 31
     },
     "Chad": {
         "fileName": "Chad.obj",
         "lat": 15,
         "lng": 19,
-        "zoom": 75
+        "zoom": 30
     },
     "Chile": {
         "fileName": "Chile.obj",
         "lat": -30,
         "lng": -71,
-        "zoom": 75
+        "zoom": 35
     },
     "China": {
         "fileName": "China.obj",
         "lat": 35,
         "lng": 105,
-        "zoom": 75
+        "zoom": 33
     },
     "Clipperton Island": {
         "fileName": "Clipperton Island.obj",
         "lat": 10.283333,
         "lng": -109.2254215,
-        "zoom": 75
+        "zoom": 5.5
     },
     "Colombia": {
         "fileName": "Colombia.obj",
         "lat": 4,
         "lng": -72,
-        "zoom": 75
+        "zoom": 20.5
     },
     "Comoros": {
         "fileName": "Comoros.obj",
         "lat": -12.16666666,
         "lng": 44.25,
-        "zoom": 75
+        "zoom": 10.5
     },
     "Cook Islands": {
         "fileName": "Cook Islands.obj",
         "lat": -21.23333333,
         "lng": -159.76666666,
-        "zoom": 75
+        "zoom": 8
     },
     "Coral Sea Islands": {
         "fileName": "Coral Sea Islands.obj",
         "lat": -18.5474914,
         "lng": 146.3898913,
-        "zoom": 75
+        "zoom": 14
     },
     "Costa Rica": {
         "fileName": "Costa Rica.obj",
         "lat": 10,
         "lng": -84,
-        "zoom": 75
+        "zoom": 17
     },
     "Croatia": {
         "fileName": "Croatia.obj",
         "lat": 45.16666666,
         "lng": 15.5,
-        "zoom": 75
+        "zoom": 14
     },
     "Cuba": {
         "fileName": "Cuba.obj",
         "lat": 21.5,
         "lng": -80,
-        "zoom": 75
+        "zoom": 12.5
     },
     "Curaçao": {
         "fileName": "Curaçao.obj",
         "lat": 12.116667,
         "lng": -68.933333,
-        "zoom": 75
+        "zoom": 8
     },
     "Cyprus No Mans Area": {
         "fileName": "Cyprus No Mans Area.obj",
         "lat": 35.0933707,
         "lng": 32.9203405,
-        "zoom": 75
+        "zoom": 8
     },
     "Cyprus": {
         "fileName": "Cyprus.obj",
         "lat": 35,
         "lng": 33,
-        "zoom": 75
+        "zoom": 8
     },
     "Czech Republic": {
         "fileName": "Czech Republic.obj",
         "lat": 49.75,
         "lng": 15.5,
-        "zoom": 75
+        "zoom": 12
     },
     "Democratic Republic of the Congo": {
         "fileName": "Democratic Republic of the Congo.obj",
