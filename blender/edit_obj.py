@@ -22,6 +22,32 @@ def setClipStart():
             if oArea.type == 'VIEW_3D':      
                 oArea.spaces.active.clip_start = 0.01
 
+def setZoom(value):
+    oContextOverride = AssembleOverrideContextForView3dOps() 
+    currentZoom = getZoom()
+    while currentZoom < value:
+        bpy.ops.view3d.zoom(oContextOverride, delta=-1)
+        currentZoom = getZoom()
+    while currentZoom > value:
+        bpy.ops.view3d.zoom(oContextOverride, delta=+1)
+        currentZoom = getZoom()
+        
+
+def getZoom():
+    for oWindow in bpy.context.window_manager.windows:          ###IMPROVE: Find way to avoid doing four levels of traversals at every request!!
+        oScreen = oWindow.screen
+        for oArea in oScreen.areas:
+            if oArea.type == 'VIEW_3D':      
+                return oArea.spaces.active.region_3d.view_distance
+            
+def isPerspective():
+    for oWindow in bpy.context.window_manager.windows:          ###IMPROVE: Find way to avoid doing four levels of traversals at every request!!
+        oScreen = oWindow.screen
+        for oArea in oScreen.areas:
+            if oArea.type == 'VIEW_3D':      
+                print(oArea.spaces.active.region_3d.is_perspective)
+                return oArea.spaces.active.region_3d.is_perspective
+
 def AssembleOverrideContextForView3dOps():
     #=== Iterates through the blender GUI's windows, screens, areas, regions to find the View3D space and its associated window.  Populate an 'oContextOverride context' that can be used with bpy.ops that require to be used from within a View3D (like most addon code that runs of View3D panels)
     # Tip: If your operator fails the log will show an "PyContext: 'xyz' not found".  To fix stuff 'xyz' into the override context and try again!
@@ -86,9 +112,10 @@ def generateObjFile(file_name, file_loc):
         bpy.ops.object.mode_set(mode='EDIT', toggle=False)
         oContextOverride = AssembleOverrideContextForView3dOps()
         bpy.ops.view3d.view_axis(oContextOverride, type='TOP', align_active=True)
+        bpy.ops.view3d.view_persportho(oContextOverride)
         bpy.ops.view3d.view_selected(oContextOverride, use_all_regions=False)
-
-
+        setZoom(0.1)
+        
         bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
         bpy.ops.object.select_all(action='DESELECT')
 
@@ -98,6 +125,7 @@ def generateObjFile(file_name, file_loc):
         bpy.ops.object.mode_set(mode='EDIT', toggle=False)
         oContextOverride = AssembleOverrideContextForView3dOps() 
         bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1) 
+           
         bpy.ops.mesh.knife_project(oContextOverride, cut_through=False)
 
         bpy.ops.mesh.separate(type='SELECTED')
@@ -115,12 +143,13 @@ def generateObjFile(file_name, file_loc):
             triangulate_object(bpy.data.objects[key])
          
             
-    bpy.ops.export_scene.obj(filepath="d:\\gitrepos\\javascript\\country-globe\\3dobj\\" + file_name )
+    bpy.ops.export_scene.obj(filepath="c:\\gitrepos\\javascript\\country-globe\\3dobj\\" + file_name )
     
 
-file_loc = 'd:\\gitrepos\\javascript\\country-globe\\flatobj\\'
+file_loc = 'c:\\gitrepos\\javascript\\country-globe\\flatobj\\'
 
 for filename in os.listdir(file_loc):
     if filename.endswith(".obj"): 
          print(filename)
          generateObjFile(filename, file_loc)
+
