@@ -1,6 +1,7 @@
 import bpy
 import bmesh
 import os
+import time
 
 
 def triangulate_object(obj):
@@ -145,6 +146,7 @@ def generateObjFile(file_name, file_loc):
             
     bpy.ops.export_scene.obj(filepath="c:\\gitrepos\\javascript\\country-globe\\3dobj\\" + file_name )
     
+start = time.time()
 
 file_loc = 'c:\\gitrepos\\javascript\\country-globe\\flatobj\\'
 
@@ -153,3 +155,5 @@ for filename in os.listdir(file_loc):
          print(filename)
          generateObjFile(filename, file_loc)
 
+end = time.time()
+print(f"Time duration: {end - start}")
