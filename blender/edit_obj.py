@@ -104,6 +104,7 @@ def generateObjFile(file_name, file_loc):
         bmesh.ops.create_uvsphere(bm, u_segments=200, v_segments=200, diameter=5.0)
         bm.to_mesh(mesh)
         bm.free()
+        bpy.ops.object.shade_smooth()
         
 
         bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
