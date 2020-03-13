@@ -24,6 +24,7 @@ export default class CountryGlobe {
   private highlightedCountry: string = "";
 
   private mapColors = [0xf78786,0x8aec7b, 0xf3f361, 0x6cbaeb, 0xbd8fcf];
+  private countyColor = 0x44ab2b;
   private countryObjects = [] as THREE.Object3D[];
   private countryData: any;
 
@@ -82,8 +83,7 @@ export default class CountryGlobe {
   private addCountryOBJ(object: THREE.Object3D){
     object.name = (object as any).materialLibraries[0].replace("\.mtl", "");
     this.countryObjects.push(object);
-    var color = 0x44ab2b;
-    var ship_material = new THREE.MeshPhongMaterial( { color: color } );
+    var ship_material = new THREE.MeshPhongMaterial( { color: this.countyColor } );
     object.traverse( function( child ) {
       if ( child instanceof THREE.Mesh ) {
           child.material = ship_material;
@@ -165,9 +165,9 @@ export default class CountryGlobe {
   private onMouseMove(evt: MouseEvent) {
   }
 
-  private highlightObject(obj: THREE.Object3D){
+  private setObjectColor(obj: THREE.Object3D, colNum: number){
     if(obj != null){
-      var select_material = new THREE.MeshPhongMaterial({ color: 0xff0513 });
+      var select_material = new THREE.MeshPhongMaterial({ color: colNum });
       obj.traverse( function( child ) {
         if ( child instanceof THREE.Mesh ) {
           child.material = select_material;
@@ -182,8 +182,7 @@ export default class CountryGlobe {
     this.mouseY = evt.clientY;
     let obj = this.getIntersections();
     if(obj != null){
-      this.highlightObject(obj);
-      console.log(obj.name);
+      this.highlightCounty(obj.name)
     }
   }
 
@@ -230,7 +229,6 @@ export default class CountryGlobe {
   }
 
   public zoomOut(){
-    console.log("ZOMMOUT");
     this.setOrbit(this.countryData[this.highlightedCountry]['lat'], this.countryData[this.highlightedCountry]['lng'], 75);
   }
   public zoomToCountry(country: string){
@@ -239,12 +237,31 @@ export default class CountryGlobe {
     this.setOrbit(this.countryData[country]['lat'],this.countryData[country]['lng'],this.countryData[country]['zoom']);
   }
 
-  public highlightCounty(country: string){
-    for(let object of this.countryObjects){
-      if(object.name == country){
-        this.highlightObject(object);
+  public removeCountryHighlight(){
+    if(this.highlightedCountry){
+      for(let object of this.countryObjects){
+        if(object.name === this.highlightedCountry){
+          this.setObjectColor(object, this.countyColor);
+          this.highlightedCountry = "";
+        }
       }
     }
+  }
+
+  public highlightCounty(country: string){
+    if(this.highlightedCountry === country){
+      this.removeCountryHighlight();
+      return;
+    }
+    this.removeCountryHighlight();
+
+    for(let object of this.countryObjects){
+      if(object.name === country){
+        this.setObjectColor(object, 0xfcf0513);
+        this.highlightedCountry = country;
+      }
+    }
+    console.log(this.highlightedCountry)
   }
 
   public testAnimation(){
@@ -265,12 +282,8 @@ export default class CountryGlobe {
         }
       }
     }
-    //let country = this.getRandomCountry()
     this.highlightCounty(country);
     this.zoomToCountry(country);
-    this.highlightedCountry = country;
-    console.log(this.highlightedCountry);
-    //setTimeout(this.testAnimation.bind(this), 3000);
   }
 
   public getRandomCountry() {
