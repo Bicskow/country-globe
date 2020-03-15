@@ -1,4 +1,4 @@
-#Country Globe
+# Country Globe
 
 Country Globe is a web component to display and highlight countries on a 3D globe.
 The project uses ThreeJS/WebGL for 3D rendering
@@ -7,7 +7,7 @@ The project uses ThreeJS/WebGL for 3D rendering
    <a href="https://bicskow.github.io/country-globe/examples/"><img width="48%" src="https://bicskow.github.io/country-globe/examples/country_globe.png"></a>
 </p>
 
-##Quick Start
+## Quick Start
 
 ```
 <div id="container"></div>
@@ -18,13 +18,13 @@ The project uses ThreeJS/WebGL for 3D rendering
 </script>
 ```
 
-##Features
+## Features
 - Highlight a country on the globe
 - Rotate the globe to show a specific country
 - Rotate and zoom with mouse
 - Detect which country is clicked by the user
 
-##License
+## License
 
 All source code is licensed under the [MIT licence][mit].
 
