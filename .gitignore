@@ -1,4 +1,6 @@
-/dist
+/dist/country-globe.js
+/dist/country-globe.d.ts
+/dist/country-globe-node.js
 /.vscode
 /node_modules
 /geo-countries-master

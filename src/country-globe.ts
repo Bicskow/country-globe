@@ -6,6 +6,7 @@ import TWEEN from '@tweenjs/tween.js';
 
 export default class CountryGlobe {
   private container: Element;
+  private basePath: string;
   private scene: THREE.Scene;
   private renderer: THREE.WebGLRenderer;
   private camera: THREE.PerspectiveCamera;
@@ -25,10 +26,11 @@ export default class CountryGlobe {
 
   private orbitCoords = new THREE.Spherical(75, Math.PI/2, 0);
 
-  constructor(ct: Element) {
+  constructor(ct: Element, basePath = "") {
     this.objLoader = new OBJLoader();
 
     this.container = ct;
+    this.basePath = basePath;
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(10, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -106,14 +108,14 @@ export default class CountryGlobe {
     this.countryData = data;
     for (let coutry in data) {
       console.log(coutry);
-      this.loadCountryOBJ("/3dobj/" + data[coutry]['fileName']);
-      this.loadCountryBorderOBJ("/flatobj/" + data[coutry]['fileName']);
+      this.loadCountryOBJ(this.basePath + "/3dobj/" + data[coutry]['fileName']);
+      this.loadCountryBorderOBJ(this.basePath + "/flatobj/" + data[coutry]['fileName']);
     }
   }
 
   private loadCountriesJson(){
     console.log("Loading countries JSON");
-    $.getJSON("resources/countries.json", this.loadCountriesJsonData.bind(this))
+    $.getJSON(this.basePath + "resources/countries.json", this.loadCountriesJsonData.bind(this))
   }
 
   private render() {
