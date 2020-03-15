@@ -73,10 +73,10 @@ export default class CountryGlobe {
   private addCountryOBJ(object: THREE.Object3D){
     object.name = (object as any).materialLibraries[0].replace("\.mtl", "");
     this.countryObjects.push(object);
-    var ship_material = new THREE.MeshPhongMaterial( { color: this.countyColor } );
+    let country_material = new THREE.MeshPhongMaterial( { color: this.countyColor } );
     object.traverse( function( child ) {
       if ( child instanceof THREE.Mesh ) {
-          child.material = ship_material;
+          child.material = country_material;
       }
     });
     this.scene.add( object );
@@ -147,9 +147,6 @@ export default class CountryGlobe {
     return null;
   }
 
-  private onMouseMove(evt: MouseEvent) {
-  }
-
   private setObjectColor(obj: THREE.Object3D, colNum: number){
     if(obj != null){
       var select_material = new THREE.MeshPhongMaterial({ color: colNum });
@@ -171,10 +168,23 @@ export default class CountryGlobe {
     }
   }
 
+  private onMouseMove(evt: MouseEvent) {
+  }
+
   private onMouseUp(evt: MouseEvent) {
   }
 
   private onMouseWheel(event: WheelEvent) {
+  }
+
+  private onKeypres(event: KeyboardEvent){
+    let key = String.fromCharCode(event.keyCode);
+    console.log(key);
+    if(key === 'n'){
+      this.testAnimation();
+    } else if(key === 'z'){
+      console.log(this.orbitCoords.radius)
+    }
   }
 
   private orbitUpdateDone(){
@@ -198,24 +208,6 @@ export default class CountryGlobe {
     camTween1.start();
   }
 
-  private onKeypres(event: KeyboardEvent){
-    let key = String.fromCharCode(event.keyCode);
-    console.log(key);
-    if(key === 'n'){
-      this.testAnimation();
-    } else if(key === 'z'){
-      console.log(this.orbitCoords.radius)
-    }
-    //this.setOrbit(21.30694,-157.85833, 30);
-    //this.setOrbit(35.6895,139.69171, 30);
-    //this.setOrbit(40.71427,-74.00597,30);
-    //this.setOrbit(-34.90328,-56.18816,30);
-    //this.setOrbit(47.49801,19.03991,30);
-  }
-
-  public zoomOut(){
-    this.setOrbit(this.countryData[this.highlightedCountry]['lat'], this.countryData[this.highlightedCountry]['lng'], 75);
-  }
   public zoomToCountry(country: string){
     console.log(this.countryData[country]['lat']);
     console.log(this.countryData[country]['lng']);
@@ -249,7 +241,7 @@ export default class CountryGlobe {
     console.log(this.highlightedCountry)
   }
 
-  public testAnimation(){
+  private testAnimation(){
     console.log("ANIMATION START")
     let keys = Object.keys(this.countryData);
     keys.sort();
@@ -269,11 +261,6 @@ export default class CountryGlobe {
     }
     this.highlightCounty(country);
     this.zoomToCountry(country);
-  }
-
-  public getRandomCountry() {
-    var keys = Object.keys(this.countryData)
-    return keys[ keys.length * Math.random() << 0];
   }
 }
 
