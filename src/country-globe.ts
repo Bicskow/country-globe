@@ -9,10 +9,6 @@ export default class CountryGlobe {
   private scene: THREE.Scene;
   private renderer: THREE.WebGLRenderer;
   private camera: THREE.PerspectiveCamera;
-  private geometry: THREE.SphereGeometry;
-  private texture = [] as THREE.Texture[];
-  private material: THREE.MeshPhongMaterial;
-  private mesh: THREE.Mesh;
   private raycaster = new THREE.Raycaster();
   private objLoader: OBJLoader;
 
@@ -23,7 +19,6 @@ export default class CountryGlobe {
   private controls: OrbitControls;
   private highlightedCountry: string = "";
 
-  private mapColors = [0xf78786,0x8aec7b, 0xf3f361, 0x6cbaeb, 0xbd8fcf];
   private countyColor = 0x44ab2b;
   private countryObjects = [] as THREE.Object3D[];
   private countryData: any;
@@ -54,15 +49,11 @@ export default class CountryGlobe {
       this.camera.updateProjectionMatrix();
     });
 
-    this.geometry = new THREE.SphereGeometry(this.radius - 0.01, 100, 100);
+    let globeGeometry = new THREE.SphereGeometry(this.radius - 0.01, 100, 100);
 
-    this.texture.push(new THREE.TextureLoader().load('img/w1.png'));
-    this.texture.push(new THREE.TextureLoader().load('img/w2.png'));
-
-    //this.material = new THREE.MeshPhongMaterial({ map: this.texture[0] });
-    this.material = new THREE.MeshPhongMaterial({color: 0x3471eb});
-    this.mesh = new THREE.Mesh(this.geometry, this.material);
-    this.scene.add(this.mesh);
+    let globeMaterial = new THREE.MeshPhongMaterial({color: 0x3471eb});
+    let globeMesh = new THREE.Mesh(globeGeometry, globeMaterial);
+    this.scene.add(globeMesh);
 
     const light = new THREE.PointLight(0xffffff, 1, 0, 2);
     light.position.set(1000, 5, 1500);
@@ -76,7 +67,6 @@ export default class CountryGlobe {
     this.container.addEventListener('keypress', this.onKeypres.bind(this) as any);
 
     this.loadCountriesJson();
-    //setTimeout(this.testAnimation.bind(this), 120000);
     this.render();
   }
 
@@ -111,7 +101,7 @@ export default class CountryGlobe {
     this.objLoader.load(objFile, this.addCountryBorderOBJ.bind(this));
   }
 
-  public loadCountriesJsonData(data: any){
+  private loadCountriesJsonData(data: any){
     console.log("Loading country objs and borders countries data");
     this.countryData = data;
     for (let coutry in data) {
@@ -121,14 +111,9 @@ export default class CountryGlobe {
     }
   }
 
-  public loadCountriesJson(){
+  private loadCountriesJson(){
     console.log("Loading countries JSON");
     $.getJSON("resources/countries.json", this.loadCountriesJsonData.bind(this))
-  }
-
-  public setTexture() {
-    this.material.map = this.texture[1];
-    this.material.map.needsUpdate = true;
   }
 
   private render() {
