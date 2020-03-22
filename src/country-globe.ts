@@ -33,21 +33,31 @@ export default class CountryGlobe {
     this.basePath = basePath;
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
     this.scene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(10, window.innerWidth / window.innerHeight, 0.1, 1000);
+    this.camera = new THREE.PerspectiveCamera(10, this.container.clientWidth / this.container.clientHeight, 0.1, 1000);
     this.camera.position.setFromSpherical(this.orbitCoords);
 
     this.controls = new OrbitControls( this.camera, this.renderer.domElement );
 
     this.renderer.setClearColor('#050505');
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.renderer.setSize(this.container.clientWidth , this.container.clientHeight);
+
+    this.renderer.domElement.style.color = 'blue';
+    this.renderer.domElement.style.position = 'absolute';
+    this.renderer.domElement.style.top = '0';
+    this.renderer.domElement.style.left = '0';
+    this.renderer.domElement.style.bottom = '0';
+    this.renderer.domElement.style.right = '0';
+    this.renderer.domElement.style.textAlign = 'center';
 
     this.container.appendChild(this.renderer.domElement);
 
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
 
     window.addEventListener('resize', () => {
-      this.renderer.setSize(window.innerWidth, window.innerHeight);
-      this.camera.aspect = window.innerWidth / window.innerHeight;
+      this.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
+      this.camera.aspect = this.container.clientWidth/this.container.clientHeight;
+      //this.renderer.setSize(window.innerWidth, window.innerHeight);
+      //this.camera.aspect = window.innerWidth / window.innerHeight;
       this.camera.updateProjectionMatrix();
     });
 
@@ -63,13 +73,25 @@ export default class CountryGlobe {
     this.scene.add(this.camera);
 
     //this.container.addEventListener('mousemove', this.onMouseMove.bind(this) as any);
-    this.container.addEventListener('mousedown', this.onMouseDown.bind(this) as any);
+    this.renderer.domElement.addEventListener('mousedown', this.onMouseDown.bind(this) as any);
     //this.container.addEventListener('mouseup', this.onMouseUp.bind(this) as any);
     //this.container.addEventListener('DOMMouseScroll', this.onMouseWheel.bind(this) as any);
     this.container.addEventListener('keypress', this.onKeypres.bind(this) as any);
 
     this.loadCountriesJson();
     this.render();
+  }
+
+  private createEvents(){
+    let div: any = document.getElementById("my_div");
+
+let c_event = new CustomEvent("build",{detail: 3});
+
+div.addEventListener("build", function(e: CustomEvent) { // change here Event to CustomEvent
+    console.log(e.detail);
+}.bind(this));
+
+div.dispatchEvent(c_event);
   }
 
   private addCountryOBJ(object: THREE.Object3D){
@@ -134,8 +156,8 @@ export default class CountryGlobe {
 
   private getIntersections(){
     let mouse = new THREE.Vector2();
-    mouse.x = (this.mouseX / window.innerWidth) * 2 - 1;
-    mouse.y = -(this.mouseY / window.innerHeight) * 2 + 1;
+    mouse.x = (this.mouseX / this.container.clientWidth) * 2 - 1;
+    mouse.y = -(this.mouseY / this.container.clientHeight) * 2 + 1;
     this.raycaster.setFromCamera(mouse, this.camera);
 
     for(let object of this.countryObjects){
@@ -162,8 +184,13 @@ export default class CountryGlobe {
 
   private onMouseDown(evt: MouseEvent) {
     evt.preventDefault();
-    this.mouseX = evt.clientX;
-    this.mouseY = evt.clientY;
+
+    let viewportOffset = this.renderer.domElement.getBoundingClientRect();
+    let top = viewportOffset.top;
+    let left = viewportOffset.left;
+
+    this.mouseX = evt.pageX - left;
+    this.mouseY = evt.pageY - top;
     let obj = this.getIntersections();
     if(obj != null){
       this.highlightCounty(obj.name)

@@ -3,20 +3,10 @@ body {
     height: 100vh;
 }
 
-  
-canvas { 
-    display: block;
+#globe {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    padding-top: 100%;
+    position: relative;
 }
-
-h1 {
-    position: absolute;
-    top: 2em;
-    left: 2em;
-    font-family: 'Montserrat';
-    font-size: 7em;
-    text-transform: uppercase;
-    width: auto;
-    line-height: .8em;
-    border: 5px solid black;
-    padding: .2em;
-  }
