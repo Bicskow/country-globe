@@ -41,7 +41,6 @@ export default class CountryGlobe {
     this.renderer.setClearColor('#050505');
     this.renderer.setSize(this.container.clientWidth , this.container.clientHeight);
 
-    this.renderer.domElement.style.color = 'blue';
     this.renderer.domElement.style.position = 'absolute';
     this.renderer.domElement.style.top = '0';
     this.renderer.domElement.style.left = '0';
@@ -189,8 +188,9 @@ div.dispatchEvent(c_event);
     let top = viewportOffset.top;
     let left = viewportOffset.left;
 
-    this.mouseX = evt.pageX - left;
-    this.mouseY = evt.pageY - top;
+    this.mouseX = evt.clientX  - left;
+    this.mouseY = evt.clientY - top;
+
     let obj = this.getIntersections();
     if(obj != null){
       this.highlightCounty(obj.name)
