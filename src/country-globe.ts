@@ -254,9 +254,15 @@ div.dispatchEvent(c_event);
     }
   }
 
+  private dispatchCountrySelected(country: string){
+    let event = new CustomEvent('country_selected', { detail: country });
+    this.container.dispatchEvent(event);
+  }
+
   public highlightCounty(country: string){
     if(this.highlightedCountry === country){
       this.removeCountryHighlight();
+      this.dispatchCountrySelected("");
       return;
     }
     this.removeCountryHighlight();
@@ -265,6 +271,7 @@ div.dispatchEvent(c_event);
       if(object.name === country){
         this.setObjectColor(object, 0xfcf0513);
         this.highlightedCountry = country;
+        this.dispatchCountrySelected(this.highlightedCountry);
       }
     }
     console.log(this.highlightedCountry)

@@ -12,12 +12,22 @@
     <title>Country Globe</title>
   </head>
   <body>
-    <div class="jumbotron">
-      <h1 class="display-4">Country Globe</h1>
-    </div>
-    <div class="container">
+    
+    <div class="container-fluid ">
         <div class="row">
-            <div class="col"><div id="globe"></div></div> 
+            <div class="col-6">
+            <div class="jumbotron">
+              <h1 class="display-4">Country Globe</h1>
+            </div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5  class="card-title">Selected country:</h5>
+                  <p id="selected_country" class="card-text"></p>
+                </div>
+              </div>
+            </div></div> 
+            <div class="col-6"><div id="globe"></div></div> 
         </div>
     </div>
 
@@ -30,6 +40,9 @@
     <script>
         var container = document.getElementById('globe');
         var cg = new CountryGlobe(container, "../");
+        container.addEventListener("country_selected",function (e) { 
+          document.getElementById('selected_country').textContent  = e.detail;
+        })
     </script>
 </body>
 </html>
