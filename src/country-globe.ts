@@ -225,6 +225,21 @@ div.dispatchEvent(c_event);
     return deg * (Math.PI/180);
   }
 
+  private sleep(ms: number) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  private async waitForCountryDataLoad(resolve: any){
+    while(typeof this.countryData === "undefined"){
+      await this.sleep(100);
+    }
+    resolve(Object.keys(this.countryData));
+  }
+
+  public getCountryList(){
+    return new Promise(resolve => { this.waitForCountryDataLoad.bind(this)(resolve)});
+  }
+
   public async setOrbit(lat: number, lng: number, zoom: number){
     this.orbitUpdate = true;
     let sp2 = new THREE.Spherical(zoom, this.degrees_to_radians((lat * -1) + 90) , this.degrees_to_radians(lng + 90)); 
