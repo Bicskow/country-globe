@@ -26,7 +26,10 @@
                   <p id="selected_country" class="card-text"></p>
                 </div>
               </div>
-            </div></div> 
+            </div>
+            <ul id="country_list" class="list-group">
+            </ul>
+          </div> 
             <div class="col-6"><div id="globe"></div></div> 
         </div>
     </div>
@@ -42,6 +45,15 @@
         var cg = new CountryGlobe(container, "../");
         container.addEventListener("country_selected",function (e) { 
           document.getElementById('selected_country').textContent  = e.detail;
+        })
+        cg.getCountryList().then(countryList => {
+          var list = document.getElementById('country_list');
+          for (var i = 0; i < countryList.length; i++) {
+            var entry = document.createElement('li');
+            entry.setAttribute("class", "list-group-item");
+            entry.appendChild(document.createTextNode(countryList[i]));
+            list.appendChild(entry);
+          }
         })
     </script>
 </body>
