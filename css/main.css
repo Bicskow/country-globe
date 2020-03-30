@@ -9,3 +9,12 @@ body {
     padding-top: 100%;
     position: relative;
 }
+
+.list-group{
+    margin-top: 50px;
+    max-height: 800px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
