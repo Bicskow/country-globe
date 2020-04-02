@@ -15,17 +15,15 @@
     
     <div class="container-fluid ">
         <div class="row">
-            <div class="col-6">
+          <div class="col-6">
             <div class="jumbotron">
               <h1 class="display-4">Country Globe</h1>
             </div>
-            <div>
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5  class="card-title">Selected country:</h5>
-                  <p id="selected_country" class="card-text"></p>
-                </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">Selected Country:</span>
               </div>
+              <input id="selected_country" style="height: 70px;" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
             </div>
             <ul id="country_list" class="list-group">
             </ul>
@@ -43,8 +41,9 @@
     <script>
         var container = document.getElementById('globe');
         var cg = new CountryGlobe(container, "../");
+        var old_selection;
         container.addEventListener("country_selected",function (e) { 
-          document.getElementById('selected_country').textContent  = e.detail;
+          document.getElementById('selected_country').value  = e.detail;
         })
         cg.getCountryList().then(countryList => {
           var list = document.getElementById('country_list');
@@ -52,6 +51,15 @@
             var entry = document.createElement('li');
             entry.setAttribute("class", "list-group-item");
             entry.appendChild(document.createTextNode(countryList[i]));
+            entry.addEventListener("click", function(event){
+              cg.zoomToCountry(event.target.innerText);
+              cg.highlightCounty(event.target.innerText);
+              event.target.setAttribute("class", "list-group-item active");
+              if(old_selection){
+                old_selection.setAttribute("class", "list-group-item");
+              }
+              old_selection = event.target;
+            })
             list.appendChild(entry);
           }
         })
