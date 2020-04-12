@@ -363,85 +363,85 @@
         "fileName": "Democratic Republic of the Congo.obj",
         "lat": -3.3069357,
         "lng": 13.4255805,
-        "zoom": 75
+        "zoom": 42
     },
     "Denmark": {
         "fileName": "Denmark.obj",
         "lat": 56,
         "lng": 10,
-        "zoom": 75
+        "zoom": 14
     },
     "Dhekelia Sovereign Base Area": {
         "fileName": "Dhekelia Sovereign Base Area.obj",
         "lat": 34.8427247,
         "lng": 33.0555601,
-        "zoom": 75
+        "zoom": 8
     },
     "Djibouti": {
         "fileName": "Djibouti.obj",
         "lat": 11.5,
         "lng": 43,
-        "zoom": 75
+        "zoom": 17
     },
     "Dominica": {
         "fileName": "Dominica.obj",
         "lat": 15.41666666,
         "lng": -61.33333333,
-        "zoom": 75
+        "zoom": 12
     },
     "Dominican Republic": {
         "fileName": "Dominican Republic.obj",
         "lat": 19,
         "lng": -70.66666666,
-        "zoom": 75
+        "zoom": 16
     },
     "East Timor": {
         "fileName": "East Timor.obj",
         "lat": -8.787693,
         "lng": 124.6076624,
-        "zoom": 75
+        "zoom": 16
     },
     "Ecuador": {
         "fileName": "Ecuador.obj",
         "lat": -2,
         "lng": -77.5,
-        "zoom": 75
+        "zoom": 17
     },
     "Egypt": {
         "fileName": "Egypt.obj",
         "lat": 27,
         "lng": 30,
-        "zoom": 75
+        "zoom": 21
     },
     "El Salvador": {
         "fileName": "El Salvador.obj",
         "lat": 13.83333333,
         "lng": -88.91666666,
-        "zoom": 75
+        "zoom": 16
     },
     "Equatorial Guinea": {
         "fileName": "Equatorial Guinea.obj",
         "lat": 2,
         "lng": 10,
-        "zoom": 75
+        "zoom": 13
     },
     "Eritrea": {
         "fileName": "Eritrea.obj",
         "lat": 15,
         "lng": 39,
-        "zoom": 75
+        "zoom": 21
     },
     "Estonia": {
         "fileName": "Estonia.obj",
         "lat": 59,
         "lng": 26,
-        "zoom": 75
+        "zoom": 12
     },
     "Ethiopia": {
         "fileName": "Ethiopia.obj",
         "lat": 8,
         "lng": 38,
-        "zoom": 75
+        "zoom": 25.5
     },
     "Falkland Islands": {
         "fileName": "Falkland Islands.obj",
