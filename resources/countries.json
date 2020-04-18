@@ -605,8 +605,8 @@
         "lng": 113.9876138,
         "zoom": 9
     },
-    "hungary": {
-        "fileName": "hungary.obj",
+    "Hungary": {
+        "fileName": "Hungary.obj",
         "lat": 47,
         "lng": 20,
         "zoom": 12.5
@@ -665,8 +665,8 @@
         "lng": 35.13,
         "zoom": 75
     },
-    "italy": {
-        "fileName": "italy.obj",
+    "Italy": {
+        "fileName": "Italy.obj",
         "lat": 42.83333333,
         "lng": 12.83333333,
         "zoom": 75
