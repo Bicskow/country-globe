@@ -447,169 +447,169 @@
         "fileName": "Falkland Islands.obj",
         "lat": -51.75,
         "lng": -59,
-        "zoom": 75
+        "zoom": 20
     },
     "Faroe Islands": {
         "fileName": "Faroe Islands.obj",
         "lat": 62,
         "lng": -7,
-        "zoom": 75
+        "zoom": 13
     },
     "Federated States of Micronesia": {
         "fileName": "Federated States of Micronesia.obj",
         "lat": 5.1508976,
         "lng": 141.1718417,
-        "zoom": 75
+        "zoom": 10
     },
     "Fiji": {
         "fileName": "Fiji.obj",
         "lat": -18,
         "lng": 175,
-        "zoom": 75
+        "zoom": 45
     },
     "Finland": {
         "fileName": "Finland.obj",
         "lat": 64,
         "lng": 26,
-        "zoom": 75
+        "zoom": 20
     },
     "France": {
         "fileName": "France.obj",
         "lat": 46,
         "lng": 2,
-        "zoom": 75
+        "zoom": 23
     },
     "French Polynesia": {
         "fileName": "French Polynesia.obj",
         "lat": -15,
         "lng": -140,
-        "zoom": 75
+        "zoom": 21
     },
     "French Southern and Antarctic Lands": {
         "fileName": "French Southern and Antarctic Lands.obj",
         "lat": -49.25,
         "lng": 69.167,
-        "zoom": 75
+        "zoom": 15
     },
     "Gabon": {
         "fileName": "Gabon.obj",
         "lat": -1,
         "lng": 11.75,
-        "zoom": 75
+        "zoom": 28
     },
     "Gambia": {
         "fileName": "Gambia.obj",
         "lat": 13.46666666,
         "lng": -16.56666666,
-        "zoom": 75
+        "zoom": 14
     },
     "Georgia": {
         "fileName": "Georgia.obj",
         "lat": 42,
         "lng": 43.5,
-        "zoom": 75
+        "zoom": 19
     },
     "Germany": {
         "fileName": "Germany.obj",
         "lat": 51,
         "lng": 9,
-        "zoom": 75
+        "zoom": 17
     },
     "Ghana": {
         "fileName": "Ghana.obj",
         "lat": 8,
         "lng": -2,
-        "zoom": 75
+        "zoom": 21
     },
     "Gibraltar": {
         "fileName": "Gibraltar.obj",
         "lat": 36.13333333,
         "lng": -5.35,
-        "zoom": 75
+        "zoom": 6
     },
     "Greece": {
         "fileName": "Greece.obj",
         "lat": 39,
         "lng": 22,
-        "zoom": 75
+        "zoom": 12
     },
     "Greenland": {
         "fileName": "Greenland.obj",
         "lat": 72,
         "lng": -40,
-        "zoom": 75
+        "zoom": 27
     },
     "Grenada": {
         "fileName": "Grenada.obj",
         "lat": 12.11666666,
         "lng": -61.66666666,
-        "zoom": 75
+        "zoom": 9
     },
     "Guam": {
         "fileName": "Guam.obj",
         "lat": 13.46666666,
         "lng": 144.78333333,
-        "zoom": 75
+        "zoom": 12
     },
     "Guatemala": {
         "fileName": "Guatemala.obj",
         "lat": 15.5,
         "lng": -90.25,
-        "zoom": 75
+        "zoom": 12
     },
     "Guernsey": {
         "fileName": "Guernsey.obj",
         "lat": 49.46666666,
         "lng": -2.58333333,
-        "zoom": 75
+        "zoom": 7
     },
     "Guinea Bissau": {
         "fileName": "Guinea Bissau.obj",
         "lat": 11.6985942,
         "lng": -16.4105889,
-        "zoom": 75
+        "zoom": 11
     },
     "Guinea": {
         "fileName": "Guinea.obj",
         "lat": 11,
         "lng": -10,
-        "zoom": 75
+        "zoom": 15
     },
     "Guyana": {
         "fileName": "Guyana.obj",
         "lat": 5,
         "lng": -59,
-        "zoom": 75
+        "zoom": 21
     },
     "Haiti": {
         "fileName": "Haiti.obj",
         "lat": 19,
         "lng": -72.41666666,
-        "zoom": 75
+        "zoom": 20
     },
     "Heard Island and McDonald Islands": {
         "fileName": "Heard Island and McDonald Islands.obj",
         "lat": -53.0762338,
         "lng": 73.3748465,
-        "zoom": 75
+        "zoom": 10
     },
     "Honduras": {
         "fileName": "Honduras.obj",
         "lat": 15,
         "lng": -86.5,
-        "zoom": 75
+        "zoom": 18
     },
     "Hong Kong S.A.R.": {
         "fileName": "Hong Kong S.A.R..obj",
         "lat": 22.3526632,
         "lng": 113.9876138,
-        "zoom": 75
+        "zoom": 9
     },
     "hungary": {
         "fileName": "hungary.obj",
         "lat": 47,
         "lng": 20,
-        "zoom": 75
+        "zoom": 12.5
     },
     "Iceland": {
         "fileName": "Iceland.obj",
