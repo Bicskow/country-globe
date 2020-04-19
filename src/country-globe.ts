@@ -3,6 +3,7 @@ import $ from "jquery";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import TWEEN from '@tweenjs/tween.js';
+let ProgressBar = require('progressbar.js');
 
 export default class CountryGlobe {
   private container: Element;
@@ -12,6 +13,8 @@ export default class CountryGlobe {
   private camera: THREE.PerspectiveCamera;
   private raycaster = new THREE.Raycaster();
   private objLoader: OBJLoader;
+  private progressBar: any;
+  private progressElement: HTMLDivElement = document.createElement("div");
 
   private radius: number = 5
   private orbitUpdate: boolean = false;
@@ -77,20 +80,53 @@ export default class CountryGlobe {
     //this.container.addEventListener('DOMMouseScroll', this.onMouseWheel.bind(this) as any);
     this.container.addEventListener('keypress', this.onKeypres.bind(this) as any);
 
+    this.createProgressBar();
+
     this.loadCountriesJson();
     this.render();
   }
 
-  private createEvents(){
-    let div: any = document.getElementById("my_div");
+  private createProgressBar(){
+    this.progressElement.id = "progress";
+    this.progressElement.style.zIndex = "1";
+    this.progressElement.style.position = 'absolute';
+    this.progressElement.style.top = (this.container.clientWidth/2).toString() + "px";
+    this.progressElement.style.left = "25px";
+    this.progressElement.style.textAlign = 'center';
 
-let c_event = new CustomEvent("build",{detail: 3});
+    this.progressElement.style.height = "10px";
+    this.progressElement.style.width = (this.container.clientWidth - 50).toString() + "px";
+    this.container.clientWidth.toString() + "px"
 
-div.addEventListener("build", function(e: CustomEvent) { // change here Event to CustomEvent
-    console.log(e.detail);
-}.bind(this));
-
-div.dispatchEvent(c_event);
+    this.container.appendChild(this.progressElement);
+    this.progressBar = new ProgressBar.Line(
+      '#progress',
+      {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#FFEA82',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: {width: '100%', height: '100%'},
+        text: {
+          style: {
+            color: '#999',
+            position: 'absolute',
+            right: '0',
+            top: '30px',
+            padding: 0,
+            margin: 0,
+            transform: null
+          },
+          autoStyleContainer: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ED6A5A'},
+        step: (state: any, bar:any) => {
+          bar.setText(Math.round(bar.value() * 100) + ' %');
+        }
+      });
   }
 
   private addCountryOBJ(object: THREE.Object3D){
@@ -117,7 +153,15 @@ div.dispatchEvent(c_event);
   }
   
   private loadCountryOBJ(objFile: string){
-    this.objLoader.load(objFile, this.addCountryOBJ.bind(this))
+    return new Promise((resolve => {
+      this.objLoader.load(objFile,
+        this.addCountryOBJ.bind(this),
+        (event: ProgressEvent) => {
+          if(event.loaded == event.total){
+            resolve();
+          }
+        })
+    }))
   }
 
   private loadCountryBorderOBJ(objFile: string){
@@ -127,9 +171,18 @@ div.dispatchEvent(c_event);
   private loadCountriesJsonData(data: any){
     console.log("Loading country objs and borders countries data");
     this.countryData = data;
+
+    let counter = 0;
     for (let coutry in data) {
-      console.log(coutry);
-      this.loadCountryOBJ(this.basePath + "/3dobj/" + data[coutry]['fileName']);
+      this.loadCountryOBJ(this.basePath + "/3dobj/" + data[coutry]['fileName'])
+      .then(() => 
+        {
+          let bar = ++counter / Object.keys(data).length;
+          this.progressBar.animate(bar);
+          if(bar >= 1){
+            this.progressElement.style.zIndex = "-1";
+          }
+        })
       this.loadCountryBorderOBJ(this.basePath + "/flatobj/" + data[coutry]['fileName']);
     }
   }
@@ -150,7 +203,6 @@ div.dispatchEvent(c_event);
     } else {
       this.orbitCoords.setFromVector3(this.camera.position);
     }
-    
   }
 
   private getIntersections(){

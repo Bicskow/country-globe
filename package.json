@@ -8,6 +8,7 @@
     "@types/three": "^0.103.2",
     "cities.json": "^1.1.5",
     "jquery": "^3.4.1",
+    "progressbar.js": "git://github.com/Zellerich/progressbar.js.git#0978bd7a45c1e1fcc8cf9b0890caddb5362941f",
     "three": "^0.112.1",
     "three-gltf-exporter": "0.0.1",
     "three-gltf-loader": "^1.111.0",
