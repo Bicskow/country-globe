@@ -67,7 +67,7 @@ def AssembleOverrideContextForView3dOps():
 
 
 
-def generateObjFile(file_name, file_loc):
+def generateObjFile(file_name, file_loc, folder_name):
     print("---------------------------------------------------------------------------------------")
     # Deselect all
     bpy.context.view_layer.objects.active = bpy.data.objects[0]
@@ -145,16 +145,20 @@ def generateObjFile(file_name, file_loc):
             triangulate_object(bpy.data.objects[key])
          
             
-    bpy.ops.export_scene.obj(filepath="c:\\gitrepos\\javascript\\country-globe\\3dobj\\" + file_name )
+    bpy.ops.export_scene.obj(filepath=f"d:/gitrepos/javascript/country-globe/3dobj/{folder_name}/" + file_name)
+
+
+def generateObjFiles(folders_loc, folder_name):
+    file_loc = f'{folders_loc}/{folder_name}/'
+    for filename in os.listdir(file_loc):
+        if filename.endswith(".obj"): 
+            print(filename)
+            generateObjFile(filename, file_loc, folder_name)
+    
     
 start = time.time()
 
-file_loc = 'c:\\gitrepos\\javascript\\country-globe\\flatobj\\'
-
-for filename in os.listdir(file_loc):
-    if filename.endswith(".obj"): 
-         print(filename)
-         generateObjFile(filename, file_loc)
+generateObjFiles('d:/gitrepos/javascript/country-globe/flatobj/', '110m')
 
 end = time.time()
 print(f"Time duration: {end - start}")
