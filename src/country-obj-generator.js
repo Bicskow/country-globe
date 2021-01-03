@@ -13,14 +13,19 @@ function getVertex(longitude, latitude){
     );
   }
 
-function loadGeoJsonData(data){
+function exportGeoJsonData(data, folderName){
     for (let feature of data["features"]) {
-      let countryName = feature["properties"]["ADMIN"];
+      let geomType = feature["geometry"]["type"]
+      let countryName = feature["properties"]["admin"] || feature["properties"]["ADMIN"];
       let outObject3d = new THREE.Object3D();
       let counter = 0;
       console.log(countryName);
-      if(countryName == "Aland" || true){
-        for (let entry of feature["geometry"]["coordinates"]) {
+      if(countryName == "Hungary" || true){
+        let coordinates = feature["geometry"]["coordinates"];
+        if(geomType === "Polygon"){
+          coordinates = [feature["geometry"]["coordinates"]];
+        }
+        for (let entry of coordinates) {
           for (let entry2 of entry) {
             const geometry = new THREE.Geometry();
             for (let entry3 of entry2) {
@@ -60,16 +65,18 @@ function loadGeoJsonData(data){
             resultFixed += lines[i] + "\n";
           }
         }
-        fs.writeFileSync('./flatobj/' + countryName + '.obj', resultFixed);
+        fs.writeFileSync(`./flatobj/${folderName}/${countryName}.obj`, resultFixed);
       }
     }
   }
 
-function loadGeoJson(){
-    let rawdata = fs.readFileSync('./geo-countries-master/data/countries.geojson');
+function exportGeoJson(folderName){
+    let rawdata = fs.readFileSync(`./geojson-regions/countries/${folderName}/all.geojson`);
     let data = JSON.parse(rawdata);
-    loadGeoJsonData(data);
+    exportGeoJsonData(data, folderName);
 }
 
 console.log("hello");
-loadGeoJson();
+exportGeoJson('110m');
+exportGeoJson('50m');
+exportGeoJson('10m');
