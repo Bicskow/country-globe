@@ -403,7 +403,7 @@
         "lat": 35.0933707,
         "lng": 32.9203405,
         "zoom": 8,
-        "color": "#4b657"
+        "color": "#04b657"
     },
     "Cyprus": {
         "fileName": "Cyprus.obj",
@@ -676,7 +676,7 @@
         "lat": 5,
         "lng": -59,
         "zoom": 21,
-        "color": "#aa000"
+        "color": "#0aa000"
     },
     "Haiti": {
         "fileName": "Haiti.obj",
@@ -837,7 +837,7 @@
         "lat": 1.41666666,
         "lng": 173,
         "zoom": 75,
-        "color": "#bc29b"
+        "color": "#0bc29b"
     },
     "Kosovo": {
         "fileName": "Kosovo.obj",
@@ -1264,7 +1264,7 @@
         "lat": 25.5,
         "lng": 51.25,
         "zoom": 75,
-        "color": "#a8e16"
+        "color": "#0a8e16"
     },
     "Republic of Congo": {
         "fileName": "Republic of Congo.obj",
@@ -1425,7 +1425,7 @@
         "lat": 1.36666666,
         "lng": 103.8,
         "zoom": 75,
-        "color": "#376c4"
+        "color": "#0376c4"
     },
     "Sint Maarten": {
         "fileName": "Sint Maarten.obj",
@@ -1544,7 +1544,7 @@
         "lat": 62,
         "lng": 15,
         "zoom": 75,
-        "color": "#b255e"
+        "color": "#0b255e"
     },
     "Switzerland": {
         "fileName": "Switzerland.obj",
@@ -1593,7 +1593,7 @@
         "lat": 8,
         "lng": 1.16666666,
         "zoom": 75,
-        "color": "#476d8"
+        "color": "#0476d8"
     },
     "Tonga": {
         "fileName": "Tonga.obj",
@@ -1614,7 +1614,7 @@
         "lat": 34,
         "lng": 9,
         "zoom": 75,
-        "color": "#e434d"
+        "color": "#0e434d"
     },
     "Turkey": {
         "fileName": "Turkey.obj",
@@ -1656,7 +1656,7 @@
         "lat": 49,
         "lng": 32,
         "zoom": 75,
-        "color": "#fd407"
+        "color": "#0fd407"
     },
     "United Arab Emirates": {
         "fileName": "United Arab Emirates.obj",
