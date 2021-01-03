@@ -132,7 +132,7 @@ export default class CountryGlobe {
   private addCountryOBJ(object: THREE.Object3D){
     object.name = (object as any).materialLibraries[0].replace("\.mtl", "");
     this.countryObjects.push(object);
-    let country_material = new THREE.MeshPhongMaterial( { color: this.countyColor } );
+    let country_material = new  THREE.MeshPhongMaterial( { color: this.countryData[object.name]['color']});
     object.traverse( function( child ) {
       if ( child instanceof THREE.Mesh ) {
           child.material = country_material;
@@ -158,7 +158,7 @@ export default class CountryGlobe {
         this.addCountryOBJ.bind(this),
         (event: ProgressEvent) => {
           if(event.loaded == event.total){
-            resolve();
+            resolve(true);
           }
         })
     }))
@@ -183,7 +183,6 @@ export default class CountryGlobe {
             this.progressElement.style.zIndex = "-1";
           }
         })
-      this.loadCountryBorderOBJ(this.basePath + "/flatobj/" + data[coutry]['fileName']);
     }
   }
 
@@ -314,7 +313,7 @@ export default class CountryGlobe {
     if(this.highlightedCountry){
       for(let object of this.countryObjects){
         if(object.name === this.highlightedCountry){
-          this.setObjectColor(object, this.countyColor);
+          this.setObjectColor(object, this.countryData[this.highlightedCountry]['color']);
           this.highlightedCountry = "";
         }
       }
