@@ -174,7 +174,7 @@ export default class CountryGlobe {
 
     let counter = 0;
     for (let coutry in data) {
-      this.loadCountryOBJ(this.basePath + "/3dobj/" + data[coutry]['fileName'])
+      this.loadCountryOBJ(this.basePath + "/3dobj/10m/" + data[coutry]['fileName'])
       .then(() => 
         {
           let bar = ++counter / Object.keys(data).length;
