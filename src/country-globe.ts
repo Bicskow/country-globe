@@ -23,7 +23,7 @@ export default class CountryGlobe {
   private controls: OrbitControls;
   private highlightedCountry: string = "";
 
-  private countyColor = 0x44ab2b;
+  private resolution = '10m'
   private countryObjects = [] as THREE.Object3D[];
   private countryData: any;
 
@@ -104,7 +104,7 @@ export default class CountryGlobe {
       {
         strokeWidth: 4,
         easing: 'easeInOut',
-        duration: 1400,
+        duration: 0,
         color: '#FFEA82',
         trailColor: '#eee',
         trailWidth: 1,
@@ -174,15 +174,19 @@ export default class CountryGlobe {
 
     let counter = 0;
     for (let coutry in data) {
-      this.loadCountryOBJ(this.basePath + "/3dobj/10m/" + data[coutry]['fileName'])
-      .then(() => 
-        {
-          let bar = ++counter / Object.keys(data).length;
-          this.progressBar.animate(bar);
-          if(bar >= 1){
-            this.progressElement.style.zIndex = "-1";
-          }
-        })
+      if(data[coutry][this.resolution]){
+        this.loadCountryOBJ(`${this.basePath}/3dobj/${this.resolution}/${data[coutry]['fileName']}`)
+        .then(() => 
+          { 
+            let bar = ++counter / Object.keys(data).length;
+            this.progressBar.animate(bar);
+            if(bar >= 1){
+              this.progressElement.style.zIndex = "-1";
+            }
+          })
+      } else {
+        counter++;
+      }
     }
   }
 

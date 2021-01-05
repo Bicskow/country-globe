@@ -4,1784 +4,2549 @@
         "lat": 33,
         "lng": 65,
         "zoom": 31,
-        "color": "#6eccf5"
+        "color": "#6eccf5",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Akrotiri Sovereign Base Area": {
         "fileName": "Akrotiri Sovereign Base Area.obj",
         "lat": 35,
         "lng": 33,
         "zoom": 6.5,
-        "color": "#fb607a"
+        "color": "#fb607a",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Aland": {
         "fileName": "Aland.obj",
         "lat": 60.2991697,
         "lng": 19.9182768,
         "zoom": 11,
-        "color": "#209e7f"
+        "color": "#209e7f",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Albania": {
         "fileName": "Albania.obj",
         "lat": 41,
         "lng": 20,
         "zoom": 13.1,
-        "color": "#b898bc"
+        "color": "#b898bc",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Algeria": {
         "fileName": "Algeria.obj",
         "lat": 28,
         "lng": 3,
         "zoom": 20,
-        "color": "#55fe15"
+        "color": "#55fe15",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "American Samoa": {
         "fileName": "American Samoa.obj",
         "lat": -14.33333333,
         "lng": -170,
         "zoom": 10,
-        "color": "#8bca6c"
+        "color": "#8bca6c",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Andorra": {
         "fileName": "Andorra.obj",
         "lat": 42.5,
         "lng": 1.5,
         "zoom": 10,
-        "color": "#79d068"
+        "color": "#79d068",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Angola": {
         "fileName": "Angola.obj",
         "lat": -12.5,
         "lng": 18.5,
         "zoom": 27,
-        "color": "#1e8419"
+        "color": "#1e8419",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Anguilla": {
         "fileName": "Anguilla.obj",
         "lat": 18.25,
         "lng": -63.16666666,
         "zoom": 7,
-        "color": "#3d5714"
+        "color": "#3d5714",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Antarctica": {
         "fileName": "Antarctica.obj",
         "lat": -90,
         "lng": 0,
         "zoom": 75,
-        "color": "#3295ad"
+        "color": "#3295ad",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Antigua and Barbuda": {
         "fileName": "Antigua and Barbuda.obj",
         "lat": 17.05,
         "lng": -61.8,
         "zoom": 11,
-        "color": "#ad5eb2"
+        "color": "#ad5eb2",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Argentina": {
         "fileName": "Argentina.obj",
         "lat": -34,
         "lng": -64,
         "zoom": 33,
-        "color": "#9ddf51"
+        "color": "#9ddf51",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Armenia": {
         "fileName": "Armenia.obj",
         "lat": 40,
         "lng": 45,
         "zoom": 14.5,
-        "color": "#197054"
+        "color": "#197054",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Aruba": {
         "fileName": "Aruba.obj",
         "lat": 12.5,
         "lng": -69.96666666,
         "zoom": 9,
-        "color": "#e82fa1"
+        "color": "#e82fa1",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Ashmore and Cartier Islands": {
         "fileName": "Ashmore and Cartier Islands.obj",
         "lat": -12.2478378,
         "lng": 123.0507638,
         "zoom": 6,
-        "color": "#e3b0f5"
+        "color": "#e3b0f5",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Australia": {
         "fileName": "Australia.obj",
         "lat": -27,
         "lng": 133,
         "zoom": 75,
-        "color": "#ed9dd2"
+        "color": "#ed9dd2",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Austria": {
         "fileName": "Austria.obj",
         "lat": 47.33333333,
         "lng": 13.33333333,
         "zoom": 22,
-        "color": "#abf0d2"
+        "color": "#abf0d2",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Azerbaijan": {
         "fileName": "Azerbaijan.obj",
         "lat": 40.5,
         "lng": 47.5,
         "zoom": 14.5,
-        "color": "#6158ab"
+        "color": "#6158ab",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Bahrain": {
         "fileName": "Bahrain.obj",
         "lat": 26,
         "lng": 50.55,
         "zoom": 12,
-        "color": "#36e223"
+        "color": "#36e223",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Bajo Nuevo Bank (Petrel Is.)": {
         "fileName": "Bajo Nuevo Bank (Petrel Is.).obj",
         "lat": 15.8638025,
         "lng": -78.7404745,
         "zoom": 5.2,
-        "color": "#abd00f"
+        "color": "#abd00f",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Bangladesh": {
         "fileName": "Bangladesh.obj",
         "lat": 24,
         "lng": 90,
         "zoom": 28,
-        "color": "#5c1d5d"
+        "color": "#5c1d5d",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Barbados": {
         "fileName": "Barbados.obj",
         "lat": 13.16666666,
         "lng": -59.53333333,
         "zoom": 12,
-        "color": "#defeb3"
+        "color": "#defeb3",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Baykonur Cosmodrome": {
         "fileName": "Baykonur Cosmodrome.obj",
         "lat": 45.9645851,
         "lng": 63.3030541,
         "zoom": 19,
-        "color": "#32ea39"
+        "color": "#32ea39",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Belarus": {
         "fileName": "Belarus.obj",
         "lat": 53,
         "lng": 28,
         "zoom": 22,
-        "color": "#61b2fc"
+        "color": "#61b2fc",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Belgium": {
         "fileName": "Belgium.obj",
         "lat": 50.83333333,
         "lng": 4,
         "zoom": 25,
-        "color": "#613f16"
+        "color": "#613f16",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Belize": {
         "fileName": "Belize.obj",
         "lat": 17.25,
         "lng": -88.75,
         "zoom": 15,
-        "color": "#1352fc"
+        "color": "#1352fc",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Benin": {
         "fileName": "Benin.obj",
         "lat": 9.5,
         "lng": 2.25,
         "zoom": 25.5,
-        "color": "#77ad3b"
+        "color": "#77ad3b",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Bermuda": {
         "fileName": "Bermuda.obj",
         "lat": 32.33333333,
         "lng": -64.75,
         "zoom": 5.5,
-        "color": "#78c77d"
+        "color": "#78c77d",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Bhutan": {
         "fileName": "Bhutan.obj",
         "lat": 27.5,
         "lng": 90.5,
         "zoom": 30,
-        "color": "#baaeee"
+        "color": "#baaeee",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Bolivia": {
         "fileName": "Bolivia.obj",
         "lat": -17,
         "lng": -65,
         "zoom": 40.5,
-        "color": "#67e5d8"
+        "color": "#67e5d8",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Bosnia and Herzegovina": {
         "fileName": "Bosnia and Herzegovina.obj",
         "lat": 44,
         "lng": 18,
         "zoom": 18,
-        "color": "#67f387"
+        "color": "#67f387",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Botswana": {
         "fileName": "Botswana.obj",
         "lat": -22,
         "lng": 24,
         "zoom": 26.8,
-        "color": "#83dc12"
+        "color": "#83dc12",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Brazil": {
         "fileName": "Brazil.obj",
         "lat": -10,
         "lng": -55,
         "zoom": 45,
-        "color": "#2bcbe7"
+        "color": "#2bcbe7",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "British Indian Ocean Territory": {
         "fileName": "British Indian Ocean Territory.obj",
         "lat": -6,
         "lng": 71.5,
         "zoom": 6.7,
-        "color": "#ca1275"
+        "color": "#ca1275",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "British Virgin Islands": {
         "fileName": "British Virgin Islands.obj",
         "lat": 18.431383,
         "lng": -64.62305,
         "zoom": 11.2,
-        "color": "#3a12d9"
+        "color": "#3a12d9",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Brunei": {
         "fileName": "Brunei.obj",
         "lat": 4.5,
         "lng": 114.66666666,
         "zoom": 17,
-        "color": "#4c307d"
+        "color": "#4c307d",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Bulgaria": {
         "fileName": "Bulgaria.obj",
         "lat": 43,
         "lng": 25,
         "zoom": 23,
-        "color": "#ea7c70"
+        "color": "#ea7c70",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Burkina Faso": {
         "fileName": "Burkina Faso.obj",
         "lat": 13,
         "lng": -2,
         "zoom": 33,
-        "color": "#ee7b81"
+        "color": "#ee7b81",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Burundi": {
         "fileName": "Burundi.obj",
         "lat": -3.5,
         "lng": 30,
         "zoom": 24,
-        "color": "#6f5796"
+        "color": "#6f5796",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Cambodia": {
         "fileName": "Cambodia.obj",
         "lat": 13,
         "lng": 105,
         "zoom": 20,
-        "color": "#aacb2d"
+        "color": "#aacb2d",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Cameroon": {
         "fileName": "Cameroon.obj",
         "lat": 6,
         "lng": 12,
         "zoom": 28,
-        "color": "#4975fa"
+        "color": "#4975fa",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Canada": {
         "fileName": "Canada.obj",
         "lat": 60,
         "lng": -95,
         "zoom": 45,
-        "color": "#8195a0"
+        "color": "#8195a0",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Cape Verde": {
         "fileName": "Cape Verde.obj",
         "lat": 16,
         "lng": -24,
         "zoom": 12,
-        "color": "#20158d"
+        "color": "#20158d",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Cayman Islands": {
         "fileName": "Cayman Islands.obj",
         "lat": 19.5,
         "lng": -80.5,
         "zoom": 9.5,
-        "color": "#2f298c"
+        "color": "#2f298c",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Central African Republic": {
         "fileName": "Central African Republic.obj",
         "lat": 7,
         "lng": 21,
         "zoom": 31,
-        "color": "#1218a2"
+        "color": "#1218a2",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Chad": {
         "fileName": "Chad.obj",
         "lat": 15,
         "lng": 19,
         "zoom": 30,
-        "color": "#726ade"
+        "color": "#726ade",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Chile": {
         "fileName": "Chile.obj",
         "lat": -30,
         "lng": -71,
         "zoom": 35,
-        "color": "#c231bc"
+        "color": "#c231bc",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "China": {
         "fileName": "China.obj",
         "lat": 35,
         "lng": 105,
         "zoom": 33,
-        "color": "#138ea3"
+        "color": "#138ea3",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Clipperton Island": {
         "fileName": "Clipperton Island.obj",
         "lat": 10.283333,
         "lng": -109.2254215,
         "zoom": 5.5,
-        "color": "#25dabd"
+        "color": "#25dabd",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Colombia": {
         "fileName": "Colombia.obj",
         "lat": 4,
         "lng": -72,
         "zoom": 20.5,
-        "color": "#7451a2"
+        "color": "#7451a2",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Comoros": {
         "fileName": "Comoros.obj",
         "lat": -12.16666666,
         "lng": 44.25,
         "zoom": 10.5,
-        "color": "#365142"
+        "color": "#365142",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Cook Islands": {
         "fileName": "Cook Islands.obj",
         "lat": -21.23333333,
         "lng": -159.76666666,
         "zoom": 8,
-        "color": "#3d46ea"
+        "color": "#3d46ea",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Coral Sea Islands": {
         "fileName": "Coral Sea Islands.obj",
         "lat": -18.5474914,
         "lng": 146.3898913,
         "zoom": 14,
-        "color": "#a84542"
+        "color": "#a84542",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Costa Rica": {
         "fileName": "Costa Rica.obj",
         "lat": 10,
         "lng": -84,
         "zoom": 17,
-        "color": "#f449c9"
+        "color": "#f449c9",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Croatia": {
         "fileName": "Croatia.obj",
         "lat": 45.16666666,
         "lng": 15.5,
         "zoom": 14,
-        "color": "#50ba35"
+        "color": "#50ba35",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Cuba": {
         "fileName": "Cuba.obj",
         "lat": 21.5,
         "lng": -80,
         "zoom": 12.5,
-        "color": "#65d1fd"
+        "color": "#65d1fd",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Curaçao": {
         "fileName": "Curaçao.obj",
         "lat": 12.116667,
         "lng": -68.933333,
         "zoom": 8,
-        "color": "#c915a1"
+        "color": "#c915a1",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Cyprus No Mans Area": {
         "fileName": "Cyprus No Mans Area.obj",
         "lat": 35.0933707,
         "lng": 32.9203405,
         "zoom": 8,
-        "color": "#04b657"
+        "color": "#04b657",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Cyprus": {
         "fileName": "Cyprus.obj",
         "lat": 35,
         "lng": 33,
         "zoom": 8,
-        "color": "#41c7e8"
+        "color": "#41c7e8",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Czech Republic": {
         "fileName": "Czech Republic.obj",
         "lat": 49.75,
         "lng": 15.5,
         "zoom": 12,
-        "color": "#bbd87d"
+        "color": "#bbd87d",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Democratic Republic of the Congo": {
         "fileName": "Democratic Republic of the Congo.obj",
         "lat": -3.3069357,
         "lng": 13.4255805,
         "zoom": 42,
-        "color": "#6a450e"
+        "color": "#6a450e",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Denmark": {
         "fileName": "Denmark.obj",
         "lat": 56,
         "lng": 10,
         "zoom": 14,
-        "color": "#e4d47d"
+        "color": "#e4d47d",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Dhekelia Sovereign Base Area": {
         "fileName": "Dhekelia Sovereign Base Area.obj",
         "lat": 34.8427247,
         "lng": 33.0555601,
         "zoom": 8,
-        "color": "#477e35"
+        "color": "#477e35",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Djibouti": {
         "fileName": "Djibouti.obj",
         "lat": 11.5,
         "lng": 43,
         "zoom": 17,
-        "color": "#b20cb3"
+        "color": "#b20cb3",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Dominica": {
         "fileName": "Dominica.obj",
         "lat": 15.41666666,
         "lng": -61.33333333,
         "zoom": 12,
-        "color": "#c76ba9"
+        "color": "#c76ba9",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Dominican Republic": {
         "fileName": "Dominican Republic.obj",
         "lat": 19,
         "lng": -70.66666666,
         "zoom": 16,
-        "color": "#10ca41"
+        "color": "#10ca41",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "East Timor": {
         "fileName": "East Timor.obj",
         "lat": -8.787693,
         "lng": 124.6076624,
         "zoom": 16,
-        "color": "#eed315"
+        "color": "#eed315",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Ecuador": {
         "fileName": "Ecuador.obj",
         "lat": -2,
         "lng": -77.5,
         "zoom": 17,
-        "color": "#7a2ee0"
+        "color": "#7a2ee0",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Egypt": {
         "fileName": "Egypt.obj",
         "lat": 27,
         "lng": 30,
         "zoom": 21,
-        "color": "#967f37"
+        "color": "#967f37",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "El Salvador": {
         "fileName": "El Salvador.obj",
         "lat": 13.83333333,
         "lng": -88.91666666,
         "zoom": 16,
-        "color": "#e03a03"
+        "color": "#e03a03",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Equatorial Guinea": {
         "fileName": "Equatorial Guinea.obj",
         "lat": 2,
         "lng": 10,
         "zoom": 13,
-        "color": "#5c1ba7"
+        "color": "#5c1ba7",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Eritrea": {
         "fileName": "Eritrea.obj",
         "lat": 15,
         "lng": 39,
         "zoom": 21,
-        "color": "#4b93d1"
+        "color": "#4b93d1",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Estonia": {
         "fileName": "Estonia.obj",
         "lat": 59,
         "lng": 26,
         "zoom": 12,
-        "color": "#e4eedf"
+        "color": "#e4eedf",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Ethiopia": {
         "fileName": "Ethiopia.obj",
         "lat": 8,
         "lng": 38,
         "zoom": 25.5,
-        "color": "#465f2f"
+        "color": "#465f2f",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Falkland Islands": {
         "fileName": "Falkland Islands.obj",
         "lat": -51.75,
         "lng": -59,
         "zoom": 20,
-        "color": "#b3733f"
+        "color": "#b3733f",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Faroe Islands": {
         "fileName": "Faroe Islands.obj",
         "lat": 62,
         "lng": -7,
         "zoom": 13,
-        "color": "#b16c77"
+        "color": "#b16c77",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Federated States of Micronesia": {
         "fileName": "Federated States of Micronesia.obj",
         "lat": 5.1508976,
         "lng": 141.1718417,
         "zoom": 10,
-        "color": "#184058"
+        "color": "#184058",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Fiji": {
         "fileName": "Fiji.obj",
         "lat": -18,
         "lng": 175,
         "zoom": 45,
-        "color": "#811b77"
+        "color": "#811b77",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Finland": {
         "fileName": "Finland.obj",
         "lat": 64,
         "lng": 26,
         "zoom": 20,
-        "color": "#acc093"
+        "color": "#acc093",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "France": {
         "fileName": "France.obj",
         "lat": 46,
         "lng": 2,
         "zoom": 23,
-        "color": "#d80263"
+        "color": "#d80263",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "French Polynesia": {
         "fileName": "French Polynesia.obj",
         "lat": -15,
         "lng": -140,
         "zoom": 21,
-        "color": "#97c695"
+        "color": "#97c695",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "French Southern and Antarctic Lands": {
         "fileName": "French Southern and Antarctic Lands.obj",
         "lat": -49.25,
         "lng": 69.167,
         "zoom": 15,
-        "color": "#2109b8"
+        "color": "#2109b8",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Gabon": {
         "fileName": "Gabon.obj",
         "lat": -1,
         "lng": 11.75,
         "zoom": 28,
-        "color": "#1f6cad"
+        "color": "#1f6cad",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Gambia": {
         "fileName": "Gambia.obj",
         "lat": 13.46666666,
         "lng": -16.56666666,
         "zoom": 14,
-        "color": "#ceb8c3"
+        "color": "#ceb8c3",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Georgia": {
         "fileName": "Georgia.obj",
         "lat": 42,
         "lng": 43.5,
         "zoom": 19,
-        "color": "#8ec916"
+        "color": "#8ec916",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Germany": {
         "fileName": "Germany.obj",
         "lat": 51,
         "lng": 9,
         "zoom": 17,
-        "color": "#d7759e"
+        "color": "#d7759e",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Ghana": {
         "fileName": "Ghana.obj",
         "lat": 8,
         "lng": -2,
         "zoom": 21,
-        "color": "#3ef232"
+        "color": "#3ef232",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Gibraltar": {
         "fileName": "Gibraltar.obj",
         "lat": 36.13333333,
         "lng": -5.35,
         "zoom": 6,
-        "color": "#244029"
+        "color": "#244029",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Greece": {
         "fileName": "Greece.obj",
         "lat": 39,
         "lng": 22,
         "zoom": 12,
-        "color": "#a183f4"
+        "color": "#a183f4",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Greenland": {
         "fileName": "Greenland.obj",
         "lat": 72,
         "lng": -40,
         "zoom": 27,
-        "color": "#aaed79"
+        "color": "#aaed79",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Grenada": {
         "fileName": "Grenada.obj",
         "lat": 12.11666666,
         "lng": -61.66666666,
         "zoom": 9,
-        "color": "#c8d00e"
+        "color": "#c8d00e",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Guam": {
         "fileName": "Guam.obj",
         "lat": 13.46666666,
         "lng": 144.78333333,
         "zoom": 12,
-        "color": "#f21718"
+        "color": "#f21718",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Guatemala": {
         "fileName": "Guatemala.obj",
         "lat": 15.5,
         "lng": -90.25,
         "zoom": 12,
-        "color": "#22484e"
+        "color": "#22484e",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Guernsey": {
         "fileName": "Guernsey.obj",
         "lat": 49.46666666,
         "lng": -2.58333333,
         "zoom": 7,
-        "color": "#6ef0a3"
+        "color": "#6ef0a3",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Guinea Bissau": {
         "fileName": "Guinea Bissau.obj",
         "lat": 11.6985942,
         "lng": -16.4105889,
         "zoom": 11,
-        "color": "#4cb503"
+        "color": "#4cb503",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Guinea": {
         "fileName": "Guinea.obj",
         "lat": 11,
         "lng": -10,
         "zoom": 15,
-        "color": "#7208d6"
+        "color": "#7208d6",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Guyana": {
         "fileName": "Guyana.obj",
         "lat": 5,
         "lng": -59,
         "zoom": 21,
-        "color": "#0aa000"
+        "color": "#0aa000",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Haiti": {
         "fileName": "Haiti.obj",
         "lat": 19,
         "lng": -72.41666666,
         "zoom": 20,
-        "color": "#4dece0"
+        "color": "#4dece0",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Heard Island and McDonald Islands": {
         "fileName": "Heard Island and McDonald Islands.obj",
         "lat": -53.0762338,
         "lng": 73.3748465,
         "zoom": 10,
-        "color": "#d00874"
+        "color": "#d00874",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Honduras": {
         "fileName": "Honduras.obj",
         "lat": 15,
         "lng": -86.5,
         "zoom": 18,
-        "color": "#750589"
+        "color": "#750589",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Hong Kong S.A.R.": {
         "fileName": "Hong Kong S.A.R..obj",
         "lat": 22.3526632,
         "lng": 113.9876138,
         "zoom": 9,
-        "color": "#f48a61"
+        "color": "#f48a61",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Hungary": {
         "fileName": "Hungary.obj",
         "lat": 47,
         "lng": 20,
         "zoom": 12.5,
-        "color": "#22d15b"
+        "color": "#22d15b",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Iceland": {
         "fileName": "Iceland.obj",
         "lat": 65,
         "lng": -18,
         "zoom": 75,
-        "color": "#132435"
+        "color": "#132435",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "India": {
         "fileName": "India.obj",
         "lat": 20,
         "lng": 77,
         "zoom": 75,
-        "color": "#f40e6a"
+        "color": "#f40e6a",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Indian Ocean Territories": {
         "fileName": "Indian Ocean Territories.obj",
         "lat": -6.3134491,
         "lng": 70.7655841,
         "zoom": 75,
-        "color": "#d167af"
+        "color": "#d167af",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Indonesia": {
         "fileName": "Indonesia.obj",
         "lat": -5,
         "lng": 120,
         "zoom": 75,
-        "color": "#546366"
+        "color": "#546366",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Iran": {
         "fileName": "Iran.obj",
         "lat": 32,
         "lng": 53,
         "zoom": 75,
-        "color": "#fc7c4b"
+        "color": "#fc7c4b",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Iraq": {
         "fileName": "Iraq.obj",
         "lat": 33,
         "lng": 44,
         "zoom": 75,
-        "color": "#c8fb87"
+        "color": "#c8fb87",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Ireland": {
         "fileName": "Ireland.obj",
         "lat": 53,
         "lng": -8,
         "zoom": 75,
-        "color": "#c18c51"
+        "color": "#c18c51",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Isle of Man": {
         "fileName": "Isle of Man.obj",
         "lat": 54.25,
         "lng": -4.5,
         "zoom": 75,
-        "color": "#692006"
+        "color": "#692006",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Israel": {
         "fileName": "Israel.obj",
         "lat": 31.47,
         "lng": 35.13,
         "zoom": 75,
-        "color": "#cdfc0d"
+        "color": "#cdfc0d",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Italy": {
         "fileName": "Italy.obj",
         "lat": 42.83333333,
         "lng": 12.83333333,
         "zoom": 75,
-        "color": "#ee3ed7"
+        "color": "#ee3ed7",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Ivory Coast": {
         "fileName": "Ivory Coast.obj",
         "lat": 8,
         "lng": -5,
         "zoom": 75,
-        "color": "#6e13b2"
+        "color": "#6e13b2",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Jamaica": {
         "fileName": "Jamaica.obj",
         "lat": 18.25,
         "lng": -77.5,
         "zoom": 75,
-        "color": "#28b5eb"
+        "color": "#28b5eb",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Japan": {
         "fileName": "Japan.obj",
         "lat": 36,
         "lng": 138,
         "zoom": 75,
-        "color": "#ec2996"
+        "color": "#ec2996",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Jersey": {
         "fileName": "Jersey.obj",
         "lat": 49.25,
         "lng": -2.16666666,
         "zoom": 75,
-        "color": "#e6555b"
+        "color": "#e6555b",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Jordan": {
         "fileName": "Jordan.obj",
         "lat": 31,
         "lng": 36,
         "zoom": 75,
-        "color": "#d3688e"
+        "color": "#d3688e",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Kazakhstan": {
         "fileName": "Kazakhstan.obj",
         "lat": 48,
         "lng": 68,
         "zoom": 75,
-        "color": "#18bb4c"
+        "color": "#18bb4c",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Kenya": {
         "fileName": "Kenya.obj",
         "lat": 1,
         "lng": 38,
         "zoom": 75,
-        "color": "#87eb4a"
+        "color": "#87eb4a",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Kiribati": {
         "fileName": "Kiribati.obj",
         "lat": 1.41666666,
         "lng": 173,
         "zoom": 75,
-        "color": "#0bc29b"
+        "color": "#0bc29b",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Kosovo": {
         "fileName": "Kosovo.obj",
         "lat": 42.666667,
         "lng": 21.166667,
         "zoom": 75,
-        "color": "#7e7a13"
+        "color": "#7e7a13",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Kuwait": {
         "fileName": "Kuwait.obj",
         "lat": 29.5,
         "lng": 45.75,
         "zoom": 75,
-        "color": "#945225"
+        "color": "#945225",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Kyrgyzstan": {
         "fileName": "Kyrgyzstan.obj",
         "lat": 41,
         "lng": 75,
         "zoom": 75,
-        "color": "#32fe11"
+        "color": "#32fe11",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Laos": {
         "fileName": "Laos.obj",
         "lat": 18,
         "lng": 105,
         "zoom": 75,
-        "color": "#8242e9"
+        "color": "#8242e9",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Latvia": {
         "fileName": "Latvia.obj",
         "lat": 57,
         "lng": 25,
         "zoom": 75,
-        "color": "#e2003f"
+        "color": "#e2003f",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Lebanon": {
         "fileName": "Lebanon.obj",
         "lat": 33.83333333,
         "lng": 35.83333333,
         "zoom": 75,
-        "color": "#9ce7c1"
+        "color": "#9ce7c1",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Lesotho": {
         "fileName": "Lesotho.obj",
         "lat": -29.5,
         "lng": 28.5,
         "zoom": 75,
-        "color": "#685c7b"
+        "color": "#685c7b",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Liberia": {
         "fileName": "Liberia.obj",
         "lat": 6.5,
         "lng": -9.5,
         "zoom": 75,
-        "color": "#127475"
+        "color": "#127475",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Libya": {
         "fileName": "Libya.obj",
         "lat": 25,
         "lng": 17,
         "zoom": 75,
-        "color": "#1c019e"
+        "color": "#1c019e",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Liechtenstein": {
         "fileName": "Liechtenstein.obj",
         "lat": 47.26666666,
         "lng": 9.53333333,
         "zoom": 75,
-        "color": "#6943f5"
+        "color": "#6943f5",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Lithuania": {
         "fileName": "Lithuania.obj",
         "lat": 56,
         "lng": 24,
         "zoom": 75,
-        "color": "#f5efee"
+        "color": "#f5efee",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Luxembourg": {
         "fileName": "Luxembourg.obj",
         "lat": 49.75,
         "lng": 6.16666666,
         "zoom": 75,
-        "color": "#a70cc1"
+        "color": "#a70cc1",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Macao S.A.R": {
         "fileName": "Macao S.A.R.obj",
         "lat": 22.1618283,
         "lng": 113.5351331,
         "zoom": 75,
-        "color": "#d1f7be"
+        "color": "#d1f7be",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Macedonia": {
         "fileName": "Macedonia.obj",
         "lat": 41.83333333,
         "lng": 22,
         "zoom": 75,
-        "color": "#855b11"
+        "color": "#855b11",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Madagascar": {
         "fileName": "Madagascar.obj",
         "lat": -20,
         "lng": 47,
         "zoom": 75,
-        "color": "#b58eef"
+        "color": "#b58eef",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Malawi": {
         "fileName": "Malawi.obj",
         "lat": -13.5,
         "lng": 34,
         "zoom": 75,
-        "color": "#eac25e"
+        "color": "#eac25e",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Malaysia": {
         "fileName": "Malaysia.obj",
         "lat": 2.5,
         "lng": 112.5,
         "zoom": 75,
-        "color": "#429dfb"
+        "color": "#429dfb",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Maldives": {
         "fileName": "Maldives.obj",
         "lat": 3.25,
         "lng": 73,
         "zoom": 75,
-        "color": "#aa69fd"
+        "color": "#aa69fd",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Mali": {
         "fileName": "Mali.obj",
         "lat": 17,
         "lng": -4,
         "zoom": 75,
-        "color": "#e03377"
+        "color": "#e03377",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Malta": {
         "fileName": "Malta.obj",
         "lat": 35.83333333,
         "lng": 14.58333333,
         "zoom": 75,
-        "color": "#b9d98b"
+        "color": "#b9d98b",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Marshall Islands": {
         "fileName": "Marshall Islands.obj",
         "lat": 9,
         "lng": 168,
         "zoom": 75,
-        "color": "#8fc903"
+        "color": "#8fc903",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Mauritania": {
         "fileName": "Mauritania.obj",
         "lat": 20,
         "lng": -12,
         "zoom": 75,
-        "color": "#90dd5e"
+        "color": "#90dd5e",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Mauritius": {
         "fileName": "Mauritius.obj",
         "lat": -20.28333333,
         "lng": 57.55,
         "zoom": 75,
-        "color": "#e22d7b"
+        "color": "#e22d7b",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Mexico": {
         "fileName": "Mexico.obj",
         "lat": 23,
         "lng": -102,
         "zoom": 75,
-        "color": "#97042b"
+        "color": "#97042b",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Moldova": {
         "fileName": "Moldova.obj",
         "lat": 47,
         "lng": 29,
         "zoom": 75,
-        "color": "#d0b450"
+        "color": "#d0b450",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Monaco": {
         "fileName": "Monaco.obj",
         "lat": 43.73333333,
         "lng": 7.4,
         "zoom": 75,
-        "color": "#84b505"
+        "color": "#84b505",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Mongolia": {
         "fileName": "Mongolia.obj",
         "lat": 46,
         "lng": 105,
         "zoom": 75,
-        "color": "#7ee901"
+        "color": "#7ee901",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Montenegro": {
         "fileName": "Montenegro.obj",
         "lat": 42.5,
         "lng": 19.3,
         "zoom": 75,
-        "color": "#cc5441"
+        "color": "#cc5441",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Montserrat": {
         "fileName": "Montserrat.obj",
         "lat": 16.75,
         "lng": -62.2,
         "zoom": 75,
-        "color": "#aee93f"
+        "color": "#aee93f",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Morocco": {
         "fileName": "Morocco.obj",
         "lat": 32,
         "lng": -5,
         "zoom": 75,
-        "color": "#33c432"
+        "color": "#33c432",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Mozambique": {
         "fileName": "Mozambique.obj",
         "lat": -18.25,
         "lng": 35,
         "zoom": 75,
-        "color": "#c66321"
+        "color": "#c66321",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Myanmar": {
         "fileName": "Myanmar.obj",
         "lat": 22,
         "lng": 98,
         "zoom": 75,
-        "color": "#f77eab"
+        "color": "#f77eab",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Namibia": {
         "fileName": "Namibia.obj",
         "lat": -22,
         "lng": 17,
         "zoom": 75,
-        "color": "#d4949a"
+        "color": "#d4949a",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Nauru": {
         "fileName": "Nauru.obj",
         "lat": -0.53333333,
         "lng": 166.91666666,
         "zoom": 75,
-        "color": "#d68abd"
+        "color": "#d68abd",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Nepal": {
         "fileName": "Nepal.obj",
         "lat": 28,
         "lng": 84,
         "zoom": 75,
-        "color": "#2afd20"
+        "color": "#2afd20",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Netherlands": {
         "fileName": "Netherlands.obj",
         "lat": 52.5,
         "lng": 5.75,
         "zoom": 75,
-        "color": "#2200b9"
+        "color": "#2200b9",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "New Caledonia": {
         "fileName": "New Caledonia.obj",
         "lat": -21.5,
         "lng": 165.5,
         "zoom": 75,
-        "color": "#8c4af0"
+        "color": "#8c4af0",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "New Zealand": {
         "fileName": "New Zealand.obj",
         "lat": -41,
         "lng": 174,
         "zoom": 75,
-        "color": "#46e49b"
+        "color": "#46e49b",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Nicaragua": {
         "fileName": "Nicaragua.obj",
         "lat": 13,
         "lng": -85,
         "zoom": 75,
-        "color": "#113e13"
+        "color": "#113e13",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Niger": {
         "fileName": "Niger.obj",
         "lat": 16,
         "lng": 8,
         "zoom": 75,
-        "color": "#62c1da"
+        "color": "#62c1da",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Nigeria": {
         "fileName": "Nigeria.obj",
         "lat": 10,
         "lng": 8,
         "zoom": 75,
-        "color": "#65db9f"
+        "color": "#65db9f",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Niue": {
         "fileName": "Niue.obj",
         "lat": -19.03333333,
         "lng": -169.86666666,
         "zoom": 75,
-        "color": "#53ef50"
+        "color": "#53ef50",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Norfolk Island": {
         "fileName": "Norfolk Island.obj",
         "lat": -29.03333333,
         "lng": 167.95,
         "zoom": 75,
-        "color": "#2a445a"
+        "color": "#2a445a",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "North Korea": {
         "fileName": "North Korea.obj",
         "lat": 40,
         "lng": 127,
         "zoom": 75,
-        "color": "#590c75"
+        "color": "#590c75",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Northern Cyprus": {
         "fileName": "Northern Cyprus.obj",
         "lat": 35.3567998,
         "lng": 33.0964174,
         "zoom": 75,
-        "color": "#502d97"
+        "color": "#502d97",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Northern Mariana Islands": {
         "fileName": "Northern Mariana Islands.obj",
         "lat": 15.2,
         "lng": 145.75,
         "zoom": 75,
-        "color": "#62b674"
+        "color": "#62b674",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Norway": {
         "fileName": "Norway.obj",
         "lat": 62,
         "lng": 10,
         "zoom": 75,
-        "color": "#e76758"
+        "color": "#e76758",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Oman": {
         "fileName": "Oman.obj",
         "lat": 21,
         "lng": 57,
         "zoom": 75,
-        "color": "#63311d"
+        "color": "#63311d",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Pakistan": {
         "fileName": "Pakistan.obj",
         "lat": 30,
         "lng": 70,
         "zoom": 75,
-        "color": "#cb322d"
+        "color": "#cb322d",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Palau": {
         "fileName": "Palau.obj",
         "lat": 7.5,
         "lng": 134.5,
         "zoom": 75,
-        "color": "#aa86df"
+        "color": "#aa86df",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Palestine": {
         "fileName": "Palestine.obj",
         "lat": 31.9,
         "lng": 35.2,
         "zoom": 75,
-        "color": "#e0f1d6"
+        "color": "#e0f1d6",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Panama": {
         "fileName": "Panama.obj",
         "lat": 9,
         "lng": -80,
         "zoom": 75,
-        "color": "#b8b547"
+        "color": "#b8b547",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Papua New Guinea": {
         "fileName": "Papua New Guinea.obj",
         "lat": -6,
         "lng": 147,
         "zoom": 75,
-        "color": "#780a11"
+        "color": "#780a11",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Paraguay": {
         "fileName": "Paraguay.obj",
         "lat": -23,
         "lng": -58,
         "zoom": 75,
-        "color": "#23ee35"
+        "color": "#23ee35",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Peru": {
         "fileName": "Peru.obj",
         "lat": -10,
         "lng": -76,
         "zoom": 75,
-        "color": "#e532bc"
+        "color": "#e532bc",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Philippines": {
         "fileName": "Philippines.obj",
         "lat": 13,
         "lng": 122,
         "zoom": 75,
-        "color": "#f07c6f"
+        "color": "#f07c6f",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Pitcairn Islands": {
         "fileName": "Pitcairn Islands.obj",
         "lat": -25.06666666,
         "lng": -130.1,
         "zoom": 75,
-        "color": "#e44f46"
+        "color": "#e44f46",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Poland": {
         "fileName": "Poland.obj",
         "lat": 52,
         "lng": 20,
         "zoom": 75,
-        "color": "#b060e4"
+        "color": "#b060e4",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Portugal": {
         "fileName": "Portugal.obj",
         "lat": 39.5,
         "lng": -8,
         "zoom": 75,
-        "color": "#207c28"
+        "color": "#207c28",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Puerto Rico": {
         "fileName": "Puerto Rico.obj",
         "lat": 18.25,
         "lng": -66.5,
         "zoom": 75,
-        "color": "#4946d1"
+        "color": "#4946d1",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Qatar": {
         "fileName": "Qatar.obj",
         "lat": 25.5,
         "lng": 51.25,
         "zoom": 75,
-        "color": "#0a8e16"
+        "color": "#0a8e16",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Republic of Congo": {
         "fileName": "Republic of Congo.obj",
         "lat": -0.6921656,
         "lng": 10.3856237,
         "zoom": 75,
-        "color": "#84d08f"
+        "color": "#84d08f",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Republic of Serbia": {
         "fileName": "Republic of Serbia.obj",
         "lat": 44.1888178,
         "lng": 18.6793902,
         "zoom": 75,
-        "color": "#b2c86b"
+        "color": "#b2c86b",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Romania": {
         "fileName": "Romania.obj",
         "lat": 46,
         "lng": 25,
         "zoom": 75,
-        "color": "#f1921a"
+        "color": "#f1921a",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Russia": {
         "fileName": "Russia.obj",
         "lat": 60,
         "lng": 100,
         "zoom": 75,
-        "color": "#9586dd"
+        "color": "#9586dd",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Rwanda": {
         "fileName": "Rwanda.obj",
         "lat": -2,
         "lng": 30,
         "zoom": 75,
-        "color": "#47fcc3"
+        "color": "#47fcc3",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Saint Barthelemy": {
         "fileName": "Saint Barthelemy.obj",
         "lat": 17.9221469,
         "lng": -62.9064695,
         "zoom": 75,
-        "color": "#e0c061"
+        "color": "#e0c061",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Saint Helena": {
         "fileName": "Saint Helena.obj",
         "lat": -15.9587411,
         "lng": -5.7854431,
         "zoom": 75,
-        "color": "#aa11b9"
+        "color": "#aa11b9",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Saint Kitts and Nevis": {
         "fileName": "Saint Kitts and Nevis.obj",
         "lat": 17.33333333,
         "lng": -62.75,
         "zoom": 75,
-        "color": "#41e017"
+        "color": "#41e017",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Saint Lucia": {
         "fileName": "Saint Lucia.obj",
         "lat": 13.88333333,
         "lng": -60.96666666,
         "zoom": 75,
-        "color": "#575747"
+        "color": "#575747",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Saint Martin": {
         "fileName": "Saint Martin.obj",
         "lat": 18.08333333,
         "lng": -63.95,
         "zoom": 75,
-        "color": "#80c640"
+        "color": "#80c640",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Saint Pierre and Miquelon": {
         "fileName": "Saint Pierre and Miquelon.obj",
         "lat": 46.83333333,
         "lng": -56.33333333,
         "zoom": 75,
-        "color": "#76e98e"
+        "color": "#76e98e",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Saint Vincent and the Grenadines": {
         "fileName": "Saint Vincent and the Grenadines.obj",
         "lat": 13.25,
         "lng": -61.2,
         "zoom": 75,
-        "color": "#dc637a"
+        "color": "#dc637a",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Samoa": {
         "fileName": "Samoa.obj",
         "lat": -13.58333333,
         "lng": -172.33333333,
         "zoom": 75,
-        "color": "#7a1036"
+        "color": "#7a1036",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "San Marino": {
         "fileName": "San Marino.obj",
         "lat": 43.76666666,
         "lng": 12.41666666,
         "zoom": 75,
-        "color": "#6f5991"
+        "color": "#6f5991",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Sao Tome and Principe": {
         "fileName": "Sao Tome and Principe.obj",
         "lat": 0.8984738,
         "lng": 5.8720835,
         "zoom": 75,
-        "color": "#7c9660"
+        "color": "#7c9660",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Saudi Arabia": {
         "fileName": "Saudi Arabia.obj",
         "lat": 25,
         "lng": 45,
         "zoom": 75,
-        "color": "#655818"
+        "color": "#655818",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Scarborough Reef": {
         "fileName": "Scarborough Reef.obj",
         "lat": 15.1641788,
         "lng": 117.708202,
         "zoom": 75,
-        "color": "#ab96aa"
+        "color": "#ab96aa",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Senegal": {
         "fileName": "Senegal.obj",
         "lat": 14,
         "lng": -14,
         "zoom": 75,
-        "color": "#60934e"
+        "color": "#60934e",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Serranilla Bank": {
         "fileName": "Serranilla Bank.obj",
         "lat": 15.8554262,
         "lng": -80.0048262,
         "zoom": 75,
-        "color": "#ac1b84"
+        "color": "#ac1b84",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Seychelles": {
         "fileName": "Seychelles.obj",
         "lat": -4.58333333,
         "lng": 55.66666666,
         "zoom": 75,
-        "color": "#be58bc"
+        "color": "#be58bc",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Siachen Glacier": {
         "fileName": "Siachen Glacier.obj",
         "lat": 35.4305282,
         "lng": 76.7144928,
         "zoom": 75,
-        "color": "#c6d03a"
+        "color": "#c6d03a",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Sierra Leone": {
         "fileName": "Sierra Leone.obj",
         "lat": 8.5,
         "lng": -11.5,
         "zoom": 75,
-        "color": "#b93868"
+        "color": "#b93868",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Singapore": {
         "fileName": "Singapore.obj",
         "lat": 1.36666666,
         "lng": 103.8,
         "zoom": 75,
-        "color": "#0376c4"
+        "color": "#0376c4",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Sint Maarten": {
         "fileName": "Sint Maarten.obj",
         "lat": 18.033333,
         "lng": -63.05,
         "zoom": 75,
-        "color": "#bd8a83"
+        "color": "#bd8a83",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Slovakia": {
         "fileName": "Slovakia.obj",
         "lat": 48.66666666,
         "lng": 19.5,
         "zoom": 75,
-        "color": "#7b483b"
+        "color": "#7b483b",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Slovenia": {
         "fileName": "Slovenia.obj",
         "lat": 46.11666666,
         "lng": 14.81666666,
         "zoom": 75,
-        "color": "#5720f4"
+        "color": "#5720f4",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Solomon Islands": {
         "fileName": "Solomon Islands.obj",
         "lat": -8,
         "lng": 159,
         "zoom": 75,
-        "color": "#e1c8e8"
+        "color": "#e1c8e8",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Somalia": {
         "fileName": "Somalia.obj",
         "lat": 10,
         "lng": 49,
         "zoom": 75,
-        "color": "#2ae0ff"
+        "color": "#2ae0ff",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Somaliland": {
         "fileName": "Somaliland.obj",
         "lat": 9.717748,
         "lng": 43.5560337,
         "zoom": 75,
-        "color": "#f31129"
+        "color": "#f31129",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "South Africa": {
         "fileName": "South Africa.obj",
         "lat": -29,
         "lng": 24,
         "zoom": 75,
-        "color": "#f7119d"
+        "color": "#f7119d",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "South Georgia and South Sandwich Islands": {
         "fileName": "South Georgia and South Sandwich Islands.obj",
         "lat": -56.8013382,
         "lng": -36.4319485,
         "zoom": 75,
-        "color": "#a274be"
+        "color": "#a274be",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "South Korea": {
         "fileName": "South Korea.obj",
         "lat": 37,
         "lng": 127.5,
         "zoom": 75,
-        "color": "#449a4f"
+        "color": "#449a4f",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "South Sudan": {
         "fileName": "South Sudan.obj",
         "lat": 7,
         "lng": 30,
         "zoom": 75,
-        "color": "#b5ad05"
+        "color": "#b5ad05",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Spain": {
         "fileName": "Spain.obj",
         "lat": 40,
         "lng": -4,
         "zoom": 75,
-        "color": "#71bd42"
+        "color": "#71bd42",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Spratly Islands": {
         "fileName": "Spratly Islands.obj",
         "lat": 10.7232817,
         "lng": 115.8177107,
         "zoom": 75,
-        "color": "#9eae14"
+        "color": "#9eae14",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Sri Lanka": {
         "fileName": "Sri Lanka.obj",
         "lat": 7,
         "lng": 81,
         "zoom": 75,
-        "color": "#f90af9"
+        "color": "#f90af9",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Sudan": {
         "fileName": "Sudan.obj",
         "lat": 15,
         "lng": 30,
         "zoom": 75,
-        "color": "#4bd536"
+        "color": "#4bd536",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Suriname": {
         "fileName": "Suriname.obj",
         "lat": 4,
         "lng": -56,
         "zoom": 75,
-        "color": "#e3a33f"
+        "color": "#e3a33f",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Swaziland": {
         "fileName": "Swaziland.obj",
         "lat": -26.5,
         "lng": 31.5,
         "zoom": 75,
-        "color": "#a19949"
+        "color": "#a19949",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Sweden": {
         "fileName": "Sweden.obj",
         "lat": 62,
         "lng": 15,
         "zoom": 75,
-        "color": "#0b255e"
+        "color": "#0b255e",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Switzerland": {
         "fileName": "Switzerland.obj",
         "lat": 47,
         "lng": 8,
         "zoom": 75,
-        "color": "#f2007f"
+        "color": "#f2007f",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Syria": {
         "fileName": "Syria.obj",
         "lat": 35,
         "lng": 38,
         "zoom": 75,
-        "color": "#2b75e5"
+        "color": "#2b75e5",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Taiwan": {
         "fileName": "Taiwan.obj",
         "lat": 23.5,
         "lng": 121,
         "zoom": 75,
-        "color": "#c308d9"
+        "color": "#c308d9",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Tajikistan": {
         "fileName": "Tajikistan.obj",
         "lat": 39,
         "lng": 71,
         "zoom": 75,
-        "color": "#1fd063"
+        "color": "#1fd063",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Thailand": {
         "fileName": "Thailand.obj",
         "lat": 15,
         "lng": 100,
         "zoom": 75,
-        "color": "#cdfa4b"
+        "color": "#cdfa4b",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "The Bahamas": {
         "fileName": "The Bahamas.obj",
         "lat": 24.4179174,
         "lng": -78.2108466,
         "zoom": 75,
-        "color": "#fc7185"
+        "color": "#fc7185",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Togo": {
         "fileName": "Togo.obj",
         "lat": 8,
         "lng": 1.16666666,
         "zoom": 75,
-        "color": "#0476d8"
+        "color": "#0476d8",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Tonga": {
         "fileName": "Tonga.obj",
         "lat": -20,
         "lng": -175,
         "zoom": 75,
-        "color": "#f07b7d"
+        "color": "#f07b7d",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Trinidad and Tobago": {
         "fileName": "Trinidad and Tobago.obj",
         "lat": 11,
         "lng": -61,
         "zoom": 75,
-        "color": "#6ed334"
+        "color": "#6ed334",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Tunisia": {
         "fileName": "Tunisia.obj",
         "lat": 34,
         "lng": 9,
         "zoom": 75,
-        "color": "#0e434d"
+        "color": "#0e434d",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Turkey": {
         "fileName": "Turkey.obj",
         "lat": 39,
         "lng": 35,
         "zoom": 75,
-        "color": "#792015"
+        "color": "#792015",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Turkmenistan": {
         "fileName": "Turkmenistan.obj",
         "lat": 40,
         "lng": 60,
         "zoom": 75,
-        "color": "#70f1d9"
+        "color": "#70f1d9",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Turks and Caicos Islands": {
         "fileName": "Turks and Caicos Islands.obj",
         "lat": 21.75,
         "lng": -71.58333333,
         "zoom": 75,
-        "color": "#b1bc24"
+        "color": "#b1bc24",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Tuvalu": {
         "fileName": "Tuvalu.obj",
         "lat": -8,
         "lng": 178,
         "zoom": 75,
-        "color": "#423230"
+        "color": "#423230",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Uganda": {
         "fileName": "Uganda.obj",
         "lat": 1,
         "lng": 32,
         "zoom": 75,
-        "color": "#a50600"
+        "color": "#a50600",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Ukraine": {
         "fileName": "Ukraine.obj",
         "lat": 49,
         "lng": 32,
         "zoom": 75,
-        "color": "#0fd407"
+        "color": "#0fd407",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "United Arab Emirates": {
         "fileName": "United Arab Emirates.obj",
         "lat": 24,
         "lng": 54,
         "zoom": 75,
-        "color": "#7fa3ff"
+        "color": "#7fa3ff",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "United Kingdom": {
         "fileName": "United Kingdom.obj",
         "lat": 54,
         "lng": -2,
         "zoom": 75,
-        "color": "#7afbff"
+        "color": "#7afbff",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "United Republic of Tanzania": {
         "fileName": "United Republic of Tanzania.obj",
         "lat": -6.3533544,
         "lng": 30.4914538,
         "zoom": 75,
-        "color": "#ae9652"
+        "color": "#ae9652",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "United States Minor Outlying Islands": {
         "fileName": "United States Minor Outlying Islands.obj",
         "lat": 19.2911437,
         "lng": 166.618332,
         "zoom": 75,
-        "color": "#c13c49"
+        "color": "#c13c49",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "United States of America": {
         "fileName": "United States of America.obj",
         "lat": 36.2113865,
         "lng": -113.7172988,
         "zoom": 75,
-        "color": "#1a141c"
+        "color": "#1a141c",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "United States Virgin Islands": {
         "fileName": "United States Virgin Islands.obj",
         "lat": 18.35,
         "lng": -64.933333,
         "zoom": 75,
-        "color": "#57fb2c"
+        "color": "#57fb2c",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Uruguay": {
         "fileName": "Uruguay.obj",
         "lat": -33,
         "lng": -56,
         "zoom": 75,
-        "color": "#1d3952"
+        "color": "#1d3952",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "US Naval Base Guantanamo Bay": {
         "fileName": "US Naval Base Guantanamo Bay.obj",
         "lat": 9.9757384,
         "lng": -75.2316885,
         "zoom": 75,
-        "color": "#3f2914"
+        "color": "#3f2914",
+        "10m": true,
+        "50m": false,
+        "110m": false
     },
     "Uzbekistan": {
         "fileName": "Uzbekistan.obj",
         "lat": 41,
         "lng": 64,
         "zoom": 75,
-        "color": "#bb402c"
+        "color": "#bb402c",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Vanuatu": {
         "fileName": "Vanuatu.obj",
         "lat": -16,
         "lng": 167,
         "zoom": 75,
-        "color": "#f0fcf9"
+        "color": "#f0fcf9",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Vatican": {
         "fileName": "Vatican.obj",
         "lat": 41.9038163,
         "lng": 12.4476838,
         "zoom": 75,
-        "color": "#6af7d7"
+        "color": "#6af7d7",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Venezuela": {
         "fileName": "Venezuela.obj",
         "lat": 8,
         "lng": -66,
         "zoom": 75,
-        "color": "#fa2351"
+        "color": "#fa2351",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Vietnam": {
         "fileName": "Vietnam.obj",
         "lat": 16.16666666,
         "lng": 107.83333333,
         "zoom": 75,
-        "color": "#95ea49"
+        "color": "#95ea49",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Wallis and Futuna": {
         "fileName": "Wallis and Futuna.obj",
         "lat": -13.3,
         "lng": -176.2,
         "zoom": 75,
-        "color": "#e6db90"
+        "color": "#e6db90",
+        "10m": true,
+        "50m": true,
+        "110m": false
     },
     "Western Sahara": {
         "fileName": "Western Sahara.obj",
         "lat": 24.5,
         "lng": -13,
         "zoom": 75,
-        "color": "#7fbd07"
+        "color": "#7fbd07",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Yemen": {
         "fileName": "Yemen.obj",
         "lat": 15,
         "lng": 48,
         "zoom": 75,
-        "color": "#60fd49"
+        "color": "#60fd49",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Zambia": {
         "fileName": "Zambia.obj",
         "lat": -15,
         "lng": 30,
         "zoom": 75,
-        "color": "#95fe84"
+        "color": "#95fe84",
+        "10m": true,
+        "50m": true,
+        "110m": true
     },
     "Zimbabwe": {
         "fileName": "Zimbabwe.obj",
         "lat": -20,
         "lng": 30,
         "zoom": 75,
-        "color": "#510420"
+        "color": "#510420",
+        "10m": true,
+        "50m": true,
+        "110m": true
     }
 }
