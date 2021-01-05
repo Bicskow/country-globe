@@ -1,0 +1,16 @@
+# Blender v2.81 (sub 16) OBJ File: ''
+# www.blender.org
+mtllib Ashmore and Cartier Islands.mtl
+o 0_Ashmore_and_Cartier_Islands_sphere.001
+v -2.701352 -1.076598 -4.066597
+v -2.699807 -1.076450 -4.067649
+v -2.699832 -1.075578 -4.067858
+v -2.701380 -1.075727 -4.066803
+vn -0.5366 -0.2102 -0.8172
+vn -0.5369 -0.2107 -0.8169
+vn -0.5365 -0.2099 -0.8173
+vn -0.5370 -0.2110 -0.8167
+usemtl None
+s 1
+f 4//1 2//2 1//3
+f 4//1 3//4 2//2
