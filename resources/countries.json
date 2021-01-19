@@ -4,7 +4,7 @@
         "lat": 33,
         "lng": 65,
         "zoom": 31,
-        "color": "#6eccf5",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -264,7 +264,7 @@
         "lat": 9.5,
         "lng": 2.25,
         "zoom": 25.5,
-        "color": "#77ad3b",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -284,7 +284,7 @@
         "lat": 27.5,
         "lng": 90.5,
         "zoom": 30,
-        "color": "#baaeee",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -394,7 +394,7 @@
         "lat": 13,
         "lng": 105,
         "zoom": 20,
-        "color": "#aacb2d",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -454,7 +454,7 @@
         "lat": 15,
         "lng": 19,
         "zoom": 30,
-        "color": "#726ade",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -604,7 +604,7 @@
         "lat": -3.3069357,
         "lng": 13.4255805,
         "zoom": 42,
-        "color": "#6a450e",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -1164,7 +1164,7 @@
         "lat": 31,
         "lng": 36,
         "zoom": 75,
-        "color": "#d3688e",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -1184,7 +1184,7 @@
         "lat": 1,
         "lng": 38,
         "zoom": 75,
-        "color": "#87eb4a",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -1214,7 +1214,7 @@
         "lat": 29.5,
         "lng": 45.75,
         "zoom": 75,
-        "color": "#945225",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -1224,7 +1224,7 @@
         "lat": 41,
         "lng": 75,
         "zoom": 75,
-        "color": "#32fe11",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -1354,7 +1354,7 @@
         "lat": -13.5,
         "lng": 34,
         "zoom": 75,
-        "color": "#eac25e",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -1384,7 +1384,7 @@
         "lat": 17,
         "lng": -4,
         "zoom": 75,
-        "color": "#e03377",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -1734,7 +1734,7 @@
         "lat": -23,
         "lng": -58,
         "zoom": 75,
-        "color": "#23ee35",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -2514,7 +2514,7 @@
         "lat": 24.5,
         "lng": -13,
         "zoom": 75,
-        "color": "#7fbd07",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
@@ -2544,7 +2544,7 @@
         "lat": -20,
         "lng": 30,
         "zoom": 75,
-        "color": "#510420",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": true
