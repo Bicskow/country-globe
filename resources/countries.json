@@ -24,7 +24,7 @@
         "lat": 60.2991697,
         "lng": 19.9182768,
         "zoom": 11,
-        "color": "#209e7f",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": false
@@ -64,7 +64,7 @@
         "lat": 42.5,
         "lng": 1.5,
         "zoom": 10,
-        "color": "#79d068",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": false
@@ -1294,7 +1294,7 @@
         "lat": 47.26666666,
         "lng": 9.53333333,
         "zoom": 75,
-        "color": "#6943f5",
+        "color": "#CEFFAD",
         "10m": true,
         "50m": true,
         "110m": false
@@ -1454,7 +1454,7 @@
         "lat": 43.73333333,
         "lng": 7.4,
         "zoom": 75,
-        "color": "#84b505",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": false
@@ -1944,7 +1944,7 @@
         "lat": 43.76666666,
         "lng": 12.41666666,
         "zoom": 75,
-        "color": "#6f5991",
+        "color": "#E7E7E7",
         "10m": true,
         "50m": true,
         "110m": false
@@ -2474,7 +2474,7 @@
         "lat": 41.9038163,
         "lng": 12.4476838,
         "zoom": 75,
-        "color": "#6af7d7",
+        "color": "#CEFFAD",
         "10m": true,
         "50m": true,
         "110m": false
