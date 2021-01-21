@@ -209,9 +209,11 @@ export default class CountryGlobe {
   }
 
   private getIntersections(){
+    let sizeVec = new THREE.Vector2();
+    this.renderer.getSize(sizeVec);
     let mouse = new THREE.Vector2();
-    mouse.x = (this.mouseX / this.container.clientWidth) * 2 - 1;
-    mouse.y = -(this.mouseY / this.container.clientHeight) * 2 + 1;
+    mouse.x = (this.mouseX / sizeVec.x) * 2 - 1;
+    mouse.y = -(this.mouseY / sizeVec.y) * 2 + 1;
     this.raycaster.setFromCamera(mouse, this.camera);
 
     for(let object of this.countryObjects){
