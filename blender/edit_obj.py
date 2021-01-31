@@ -90,7 +90,7 @@ def generateObjFile(file_name, file_loc, folder_name):
     for obj_object in bpy.context.selected_objects:
         print('Imported name: ', obj_object.name)
         
-        if not obj_object.name.startswith("24_" and False):
+        if not obj_object.name.startswith("24_") and False:
             continue
            
         sphere_name = obj_object.name + "_sphere"
