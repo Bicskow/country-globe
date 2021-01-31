@@ -123,6 +123,7 @@ def generateObjFile(file_name, file_loc, folder_name):
         bpy.ops.view3d.view_selected(oContextOverride, use_all_regions=False)
         #setZoom(0.1)
         setZoom(0.15)
+        #setZoom(0.2)
         
         #return
         
