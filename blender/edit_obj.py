@@ -89,6 +89,9 @@ def generateObjFile(file_name, file_loc, folder_name):
 
     for obj_object in bpy.context.selected_objects:
         print('Imported name: ', obj_object.name)
+        
+        if not obj_object.name.startswith("24_" and False):
+            continue
            
         sphere_name = obj_object.name + "_sphere"
         bpyscene = bpy.context.scene
@@ -106,6 +109,8 @@ def generateObjFile(file_name, file_loc, folder_name):
         bm.free()
         bpy.ops.object.shade_smooth()
         
+        #return
+        
 
         bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
         bpy.ops.object.select_all(action='DESELECT')
@@ -116,7 +121,10 @@ def generateObjFile(file_name, file_loc, folder_name):
         bpy.ops.view3d.view_axis(oContextOverride, type='TOP', align_active=True)
         bpy.ops.view3d.view_persportho(oContextOverride)
         bpy.ops.view3d.view_selected(oContextOverride, use_all_regions=False)
-        setZoom(0.1)
+        #setZoom(0.1)
+        setZoom(0.15)
+        
+        #return
         
         bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
         bpy.ops.object.select_all(action='DESELECT')
@@ -142,6 +150,7 @@ def generateObjFile(file_name, file_loc, folder_name):
             bpy.data.objects[key].select_set(True)
             bpy.ops.object.delete()
         else:
+            pass
             triangulate_object(bpy.data.objects[key])
          
             
