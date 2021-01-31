@@ -171,3 +171,10 @@ generateObjFiles('d:/gitrepos/javascript/country-globe/flatobj/', '110m')
 
 end = time.time()
 print(f"Time duration: {end - start}")
+
+
+#shift + num 7 --> align view to normal
+#numlock , -->view selected
+#object mode, select object, edit mode, select all vertices, ctrl click on knife shape, mesh --> knife project, P ->l Selection
+#edit mode A select all points
+#object mode, modifies triangulate
