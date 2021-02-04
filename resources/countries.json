@@ -219,16 +219,6 @@
         "50m": true,
         "110m": false
     },
-    "Baykonur Cosmodrome": {
-        "fileName": "Baykonur Cosmodrome.obj",
-        "lat": 45.9645851,
-        "lng": 63.3030541,
-        "zoom": 19,
-        "color": "#CEFFAD",
-        "10m": true,
-        "50m": false,
-        "110m": false
-    },
     "Belarus": {
         "fileName": "Belarus.obj",
         "lat": 53,
