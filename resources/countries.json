@@ -509,16 +509,6 @@
         "50m": true,
         "110m": false
     },
-    "Coral Sea Islands": {
-        "fileName": "Coral Sea Islands.obj",
-        "lat": -18.5474914,
-        "lng": 146.3898913,
-        "zoom": 14,
-        "color": "#C2A78B",
-        "10m": true,
-        "50m": false,
-        "110m": false
-    },
     "Costa Rica": {
         "fileName": "Costa Rica.obj",
         "lat": 10,
