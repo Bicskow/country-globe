@@ -741,9 +741,9 @@
     },
     "Federated States of Micronesia": {
         "fileName": "Federated States of Micronesia.obj",
-        "lat": 5.1508976,
-        "lng": 141.1718417,
-        "zoom": 10,
+        "lat": 6.890934654899699,
+        "lng": 158.22988220772945,
+        "zoom": 20,
         "color": "#D9D980",
         "10m": true,
         "50m": true,
