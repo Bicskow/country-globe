@@ -1021,9 +1021,9 @@
     },
     "Indian Ocean Territories": {
         "fileName": "Indian Ocean Territories.obj",
-        "lat": -6.3134491,
-        "lng": 70.7655841,
-        "zoom": 75,
+        "lat": -12.194512627999854,
+        "lng": 101.1139103520001,
+        "zoom": 15,
         "color": "#CEFFAD",
         "10m": true,
         "50m": true,
