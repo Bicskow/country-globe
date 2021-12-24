@@ -362,6 +362,7 @@ export default class CountryGlobe {
     console.log("ANIMATION START")
     let keys = Object.keys(this.countryData);
     keys.sort();
+    keys = keys.filter(key => this.countryData[key][this.resolution]);
     let country = keys[0];
     if(this.highlightedCountry === ""){
       country = keys[0];
